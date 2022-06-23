@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Nook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.min.js" charset="utf-8"></script>
+    <script src="sidebar.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <menu>
+          <div class="flex-wrapper-menu">
+          <div class="left-menu">
+            <ul class="menu-links">
+              <li><a href="#">Book Nook</a></li>
+            </ul>
+          </div>
+
+            <div class="menu-logo" id="top"><a href="#"></a></div>
+
+          <div class="right-menu">
+            <input type="checkbox" id="menu-toggle">
+            <ul class="menu-links" id="mobile-hamburger">
+              <li><a href="index.html">Портфолио</a></li>
+              <li><a href="https://drive.google.com/file/d/1rS8QZR-4WJ_xSexREimgkVyXL4VpF3A2/view?usp=sharing" target="_blank">Resume</a></li>
+              <!-- language switcher -->
+              <li class="language-button"><a href="https://ekaterinavernigorova.github.io/en/book-nook.html">En</a></li>
+              <li class="language-button current"><a href="https://ekaterinavernigorova.github.io/ru/book-nook.html">Ru</a></li>
+            </ul>
+            <label for="menu-toggle" class="menu-toggle-label">
+              <span></span>
+            </label>
+          </div>
+
+        </div>
+      </menu>
+    </header>
+
+    <!-- Left sidebar -->
+    <nav id="dvid">
+      <ul>
+        <li><a href="#h2-overview">Overview</a></li>
+        <li><a href="#h2-user-research">User Research</a></li>
+
+        <ul>
+          <li><a href="#h3-user-interview">User Interview</a></li>
+          <li><a href="#h3-user-stories">User Stories</a></li>
+        </ul>
+
+        <li><a href="#h2-idea">Idea</a></li>
+
+        <li><a href="#h2-information-architecture">Information Architecture</a></li>
+        <li><a href="#h2-user-flow">User Flow</a></li>
+        <li><a href="#h2-wireframes">Wireframes</a></li>
+        <li><a href="#h2-main-features">Main Features</a></li>
+
+        <ul>
+          <li><a href="#h3-onboarding">Onboarding</a></li>
+          <li><a href="#h3-discover">Discover</a></li>
+          <li><a href="#h3-book-details">Book details</a></li>
+          <li><a href="#h3-catching-a-book">Catching a book</a></li>
+        </ul>
+
+        <li><a href="#video-hifiprototype">High Fidelity Prototype</a></li>
+        <li><a href="#h3-empty_states">Empty States</a></li>
+        <li><a href="#img-design-system">Design System</a></li>
+        <li><a href="#h2-conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <!-- First screen image -->
+        <section id= "first-screen">
+          <div class="text-wrapper-700px hero-title">
+            <h1>Book Nook</h1>
+            <p>Глобальное приложение для буккроссинга</p>
+          </div>
+          <div class="hero-image-wrapper book-nook">
+            <img src="images/book_nook-hero_img@2x.png" alt="Book Nook App hero image">
+          </div>
+        </section>
+
+        <!-- Overview -->
+        <section id="othdiv" class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-overview">Overview</h2>
+            <p>Book Nook — это глобальное приложение для буккроссинга, предназначенное для тех, кто считает, что между книгами и кофе существует особая связь.</p>
+            <div class="overview-details">
+
+              <div class="overview-col">
+                <h5>Мои обязанности</h5>
+                <ul>
+                  <li>Branding</li>
+                  <li>User Research</li>
+                  <li>Information Architecture</li>
+                  <li>User Flow</li>
+                  <li>Wireframing</li>
+                  <li>Prototyping</li>
+                </ul>
+              </div>
+
+              <div class="overview-col">
+                <h5>Timeline</h5>
+                <ul>
+                  <li>Jan–Feb 2021</li>
+                </ul>
+              </div>
+
+              <div class="overview-col tag">
+                <h5>Tags</h5>
+                <ul>
+                  <li>mobile app design</li>
+                  <li>2021</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- User Research -->
+        <section class="content-wrapper" >
+          <div class="text-wrapper-700px">
+            <h2 id="h2-user-research">User Research</h2>
+            <p >To better define my target audience I conducted remote user interviews and used the collected data for creating several user stories. If you would like to see the screening questionnaire that I used to find people for upcoming interview, follow <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk__amJtdRqY0B4x0n_noMlUfJkV323a1tWkvYjFIvRFBzeQ/viewform" target="_blank">this link</a>.</p>
+            <!-- User Interview -->
+            <h3 id="h3-user-interview">User Interview</h3>
+            <ol >
+              <li>What books did you read in the past month? </li>
+              <li>How did you choose those specific books?</li>
+              <li>What do you like most about bookcrossing.com?</li>
+              <li>How do you usually choose which coffee shop to go?</li>
+              <li>Are there any coffee shops that you visit frequently?</li>
+              <li>What makes reading in a coffee shop so enjoyable for you?</li>
+            </ol>
+            <!-- User Stories -->
+            <h3 id="h3-user-stories">User Stories</h3>
+            <h4 >Philip</h4>
+            <blockquote  cite="http://">Constantly searching for the best coffee in town.</blockquote>
+            <p >Always carries a poetry book in his pocket to accompany him on this journey.</p>
+            <h4 >Kelly</h4>
+            <blockquote  cite="http://">Sharing books she enjoys reading with like-minded people.</blockquote>
+            <p >Finds that the only drawback of the official bookcrossing platform is its poorly curated library, which makes the process of finding a new book to read very tedious.</p>
+            <h4 >Jonathon</h4>
+            <blockquote  cite="http://">Reading at a new place helps to unplug and recover from daily routine.</blockquote>
+            <p >Enjoys the feeling of being carried away by an intriguing narrative, invigorating scent of freshly brewed coffee as well as soothing sounds of working coffee machine and conversation of strangers in the background.</p>
+            </div>
+
+            <div class="spacer-L_desktop"></div>
+            <div class="spacer-L_mobile"></div>
+        </section>
+
+          <!-- Idea -->
+        <section class="content-wrapper" id="opaque-background-1">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-idea">Idea</h2>
+            <p >One of the reasons why people come to coffee shops is to read a book. Coffee in this case plays a key role as it engages and stimulates a reader’s mind. </p>
+            <p >Book Nook app solves two main problems that usually come to mind of a bibliophile:</p>
+            <ol>
+              <li>What should I read next?</li>
+              <li>Are there any great coffee shops in town that I’ve not discovered yet?</li>
+            </ol>
+            <p >For coffee shop owners this concept is appealing because an interesting book collection along with flavorful coffee will attract more visitors. </p>
+
+            <h3>Logo Icon Semantics</h3>
+            </div>
+
+            <img id="img-700px" src="images/logo icon semantics img-desktop@2x.png" alt="Book Nook App Logo Icon Semantics image">
+        </section>
+
+        <!-- Information Architecture -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-information-architecture">Information Architecture</h2>
+          </div>
+
+          <img src="images/information architecture img-desktop@2x.jpg" alt="Book Nook App Information Architecture image">
+        </section>
+
+        <!-- User Flow -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-user-flow">User Flow</h2>
+          </div>
+
+          <img src="images/user flow img-desktop@2x.jpg" alt="Book Nook App User Flow image">
+          <div class="spacer-L_desktop"></div>
+          <div class="spacer-L_mobile"></div>
+        </section>
+
+        <!-- Wireframes -->
+        <section class="content-wrapper" id="opaque-background-2">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-wireframes">Wireframes</h2>
+          </div>
+
+          <img src="images/wireframes@2x.png" alt="Book Nook App Wireframes image">
+        </section>
+
+        <!-- Main Features -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-main-features">Main Features</h2>
+          </div>
+        </section>
+
+          <!-- Onboarding -->
+        <section class="content-wrapper" id="absolute-1">
+          <div class="text-wrapper-500px">
+            <h3 id="h3-onboarding">Onboarding</h3>
+            <p>This screen immediately prompts users to&nbsp;discover the app&rsquo;s main features. Signup will be&nbsp;required later if&nbsp;the user wants to&nbsp;add a&nbsp;book to&nbsp;their library.</p>
+          </div>
+          <div id="onboarding-video">
+            <video class="main-preview__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/onboarding.mp4"></video>
+          </div>
+        </section>
+
+          <!-- Discover -->
+          <section class="content-wrapper">
+            <div class="text-wrapper-700px">
+              <h3 id="h3-discover">Discover</h3>
+              <p>There are several possible ways to find the next perfect read:</p>
+              <ol>
+                <li>All recently released books appear on the top of the Discover screen.</li>
+                <li>Using the Search input if you have a specific book title or author in mind.</li>
+                <li>Browsing the whole catalog using the Filter option, where books are organized by different categories. </li>
+                <li>In the Inbox looking through friends' activities, especially 5-star reviews. </li>
+              </ol>
+            </div>
+
+            <img src="images/discover_img-desktop@2x.jpg" alt="">
+          </section>
+
+          <!-- Book details -->
+          <section class="content-wrapper" id="absolute-2">
+          <div class="text-wrapper-500px">
+            <h3 id="h3-book-details">Book details</h3>
+            <p>Each book has its own page where users can find book overview, reviews, location, similar books and tags. </p>
+            <p>The user can catch<span>&#42;</span> only those books that are currently available (the book status can be&nbsp;checked by&nbsp;swiping right). There is&nbsp;also an&nbsp;option to&nbsp;save a&nbsp;book to&nbsp;read it&nbsp;later.</p>
+            <p class="footnote"><span>&#42;</span>catch a book – get a book in a certain location after book-hunting.</p>
+          </div>
+          <div id="book-details-video">
+            <video class="main-preview__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/book-details.mp4"></video>
+          </div>
+          </section>
+
+          <!-- Catching a book -->
+          <section class="content-wrapper">
+            <div class="text-wrapper-700px">
+              <h3 id="h3-catching-a-book">Catching a book</h3>
+              <ol>
+                <li>All caught and saved books can be found in the Library</li>
+                <li>The activities of catching and saving books as well as releasing<span>&#42;</span> and writing book reviews are displayed in the Inbox.</li>
+              </ol>
+              <p class="footnote"><span>&#42;</span>release a book – place a book in a certain location for some person to find it.</p>
+            </div>
+
+            <img src="images/catching-a-book_img-desktop@2x.jpg" alt="">
+            <div style="height:40px;"></div>
+          </section>
+
+          <!-- High Fidelity Prototype -->
+          <section class="video-wrapper" id="video-hifiprototype">
+              <!-- <iframe src="https://player.vimeo.com/video/662222775?h=a5aa786ae8&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" allowfullscreen></iframe> -->
+              <iframe src="https://www.youtube.com/embed/MGKIQMMvjj4?&vq=hd1080&amp;ecver=1&amp;controls=1&amp;fs=1&amp;modestbranding=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;iv_load_policy=3&amp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+          <!-- Empty States -->
+          <section class="content-wrapper">
+            <div class="text-wrapper-700px">
+              <h3 id="h3-empty_states">Empty states</h3>
+              <p>Along with designing main screens, I also invested some time into empty states in order to improve the user experience of the app.</p>
+            </div>
+            <img src="images/empty-states_img-desktop@2x.jpg" alt="">
+
+            <div class="spacer-L_desktop"></div>
+            <div class="spacer-L_mobile"></div>
+          </section>
+
+        <!-- Design System -->
+        <section class="content-wrapper" id="opaque-background-1">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-design-system">Design System</h2>
+          </div>
+
+          <img class="desktop" src="images/Design System img-desktop@2x.png" alt="Book Nook App Design System image">
+          <img class="mobile" src="images/Design System img-mobile@2x.png" alt="Book Nook App Design System image">
+
+        </section>
+
+        <!-- Conclusion -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-conclusion">Conclusion</h2>
+            <p>The challenging part of this project was developing its user flow. Currently there are no apps solving similar problems on the market, and I had to do a lot of research work  in order to create a product which core features would be clear and easy to use even for those people who had no previous experience with book crossing before. </p>
+          </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="bottom-navigation">
+          <div class="flex-wrapper-700px">
+            <a class="other-projects" href="#top">
+            <p>Back to&nbsp;top</p>
+            </a>
+
+            <a class="other-projects" href="index.html">
+              <p id="p-other-projects">Other projects</p>
+            </a>
+          </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer class="case_studies">
+      <div class="flex-wrapper-footer">
+        <span class="copyright">Designed &amp;&nbsp;Developed
+                                by Ekaterina Vernigorova
+                                &copy;&nbsp;2022</span>
+        <ul class="contact">
+          <!-- <li><a href="http://www.behance.net/katyavernigorova" class="fa fa-behance"></a></li> -->
+          <li><a href="https://www.instagram.com/blukipp/" class="fa fa-instagram" target="_blank"></a></li>
+          <li><a href="http://linkedin.com/in/ekaterina-vernigorova-09b708210" class="fa fa-linkedin" target="_blank"></a></li>
+          <li><a href="mailto:katya_vernigorova@fastmail.com" class="fa fa-envelope-o" target="_blank"></a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>

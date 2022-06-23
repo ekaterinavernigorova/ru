@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>k.i.n.d.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.min.js"></script>
+    <script src="jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+    </script>
+    <script src="sidebar.js" charset="utf-8"></script>
+
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <menu>
+          <div class="flex-wrapper-menu">
+          <div class="left-menu">
+            <ul class="menu-links">
+              <li><a href="#">Ekaterina Vernigorova</a></li>
+            </ul>
+          </div>
+
+            <div class="menu-logo" id="top"><a href="#"></a></div>
+
+          <div class="right-menu">
+            <input type="checkbox" id="menu-toggle">
+            <ul class="menu-links" id="mobile-hamburger">
+              <li><a href="index.html">Портфолио</a></li>
+              <li><a href="https://drive.google.com/file/d/1rS8QZR-4WJ_xSexREimgkVyXL4VpF3A2/view?usp=sharing" target="_blank">Resume</a></li>
+              <!-- language switcher -->
+              <li class="language-button"><a href="https://ekaterinavernigorova.github.io/en/kind.html">En</a></li>
+              <li class="language-button current"><a href="https://ekaterinavernigorova.github.io/ru/kind.html">Ru</a></li>
+            </ul>
+            <label for="menu-toggle" class="menu-toggle-label">
+              <span></span>
+            </label>
+          </div>
+
+        </div>
+      </menu>
+    </header>
+
+    <!-- Left sidebar -->
+    <nav id="dvid">
+      <ul>
+        <li><a href="#h2-overview">Overview</a></li>
+        <li><a href="#h2-why-vegan">Why vegan?</a></li>
+        <li><a href="#h2-research">Research</a></li>
+        <li><a href="#h2-problem">Problem</a></li>
+        <li><a href="#h2-main-features">Main Features</a></li>
+        <li><a href="#h2-information-architecture">Information Architecture</a></li>
+        <li><a href="#h2-user-flow">User Flow</a></li>
+        <li><a href="#video-hifiprototype">High Fidelity Prototype</a></li>
+
+          <ul>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Recipes</a></li>
+          </ul>
+
+        <li><a href="#img-design-system">Design System</a></li>
+        <li><a href="#h2-conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <!-- First screen image -->
+        <section id= "first-screen">
+          <div class="text-wrapper-700px hero-title">
+            <h1>k.i.n.d.</h1>
+            <p>Бесплатная веганская книга рецептов и трекер макро и микро элементов</p>
+          </div>
+          <!-- change bg color and img -->
+          <div class="hero-image-wrapper kind">
+            <img src="images/kind-hero_img@2x.png" alt="k.i.n.d. app hero image">
+          </div>
+        </section>
+
+        <!-- Overview -->
+        <section id="othdiv" class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-overview">Overview</h2>
+            <p>k.i.n.d. помогает пользователям узнать больше о растительной диете и предоставляет средства для поддержания здорового и сбалансированного растительного образа жизни.</p>
+            <div class="overview-details">
+
+              <div class="overview-col">
+                <h5>Мои обязанности</h5>
+                <ul>
+                  <li>Branding</li>
+                  <li>User Research</li>
+                  <li>Information Architecture</li>
+                  <li>User Flow</li>
+                  <li>Wireframing</li>
+                  <li>Prototyping</li>
+                </ul>
+              </div>
+
+              <div class="overview-col">
+                <h5>Timeline</h5>
+                <ul>
+                  <li>Dec 2020–Jan 2021</li>
+                </ul>
+              </div>
+
+              <div class="overview-col tag">
+                <h5>Tags</h5>
+                <ul>
+                  <li>mobile app design</li>
+                  <li>2021</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Why vegan? -->
+        <section class="content-wrapper" >
+          <div class="text-wrapper-700px">
+            <h2 id="h2-user-research">Why vegan?</h2>
+            <p>Since intensive animal farming was globalized, the raising and slaughtering of animals both for meat, dairy, eggs, and by-products have become extremely torturous and inhumane. A lot of it has to do with overexploitation of the land as well as a current demand of an ever-growing global population of humans. </p>
+            <p>Aside from being the primary source of deforestation and carbon dioxide emissions, animal farming requires more human-edible protein for feeding livestock than it produces, which makes it questionable whether we need this branch of agriculture at all.</p>
+            <p>The ethical, environmental concerns, as well as innovation and rising awareness of the health benefits of plant-based foods, have led to the significant popularity of veganism over the last couple of years. Nevertheless, there is still a common misconception that cutting animal products completely from our diet is risky.</p>
+          </div>
+        </section>
+
+
+        <!-- User Research -->
+        <section class="content-wrapper" >
+          <div class="text-wrapper-700px">
+            <h2 id="h2-user-research">Research</h2>
+            <p>In the initial stage of the project, I conducted competitive research to identify the key features and major pain points of existing vegan apps on the market.</p>
+            <img id="img-700px" src="images/kind-competitors@2x.png" alt="competitor logotypes">
+            <p>User reviews helped me get an idea of those features that could be improved. </p>
+          </div>
+        </section>
+
+          <!-- Problem -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-problem">Problem</h2>
+            <p>Lack of apps teaching the vegan philosophy as well as giving access to a variety of plant-based recipes.</p>
+            <p>No nutrition tracking function integrated into those vegan recipe apps that exist on the market now, which might turn away people who would potentially try a vegan diet but are afraid of nutrient deficiencies associated with it.</p>
+          </div>
+          <div class="problem-takeaways">
+            <div class="takeaway-wrapper">
+              <img src="images/kind_63%@2x.png" alt="63% icon">
+              <p><em>Interviewees are afraid of malnutrition due to the meatless and dairyless diet. Most of them are unaware of cancer and cardio-disease risks associated with meat and dairy consumption.</em></p>
+            </div>
+
+            <div class="takeaway-wrapper">
+              <img src="images/kind_40%@2x.png" alt="40% icon">
+              <p><em>Interviewees, who are regularly physically active, believe that they won't be able to get enough protein to build muscles on a plant–based diet.</em></p>
+            </div>
+
+            <div class="takeaway-wrapper">
+              <img src="images/kind_27%@2x.png" alt="27% icon">
+              <p><em>Interviewees, who are vegetarians, don't want to give up dairy and eggs as they are afraid that their diet may get boring and repetitive.</em></p>
+            </div>
+
+          </div>
+
+          <div class="spacer-L_desktop"></div>
+          <div class="spacer-L_mobile"></div>
+        </section>
+
+        <!-- Main Features -->
+        <section class="content-wrapper" id="opaque-background-1">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-main-features">Main Features</h2>
+          </div>
+
+          <!-- Carousel -->
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="images/kind_solution-1@2x.png" />
+              </li>
+              <li>
+                <img src="images/kind_solution-2@2x.png" />
+              </li>
+              <li>
+                <img src="images/kind_solution-3@2x.png" />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Information Architecture -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-information-architecture">Information Architecture</h2>
+          </div>
+
+          <img src="images/kind_IA-desktop@2x.png" alt="Book Nook App Information Architecture image">
+        </section>
+
+        <!-- User Flow -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-user-flow">Key User Flows</h2>
+          </div>
+          <!-- Carousel -->
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <h3 class="flex-caption">Log a meal to journal</h3>
+                <img src="images/kind_key task flows-1@2x.png" />
+              </li>
+              <li>
+                <h3 class="flex-caption">Find a recipe — A user knows what he wants to cook</h3>
+                <img src="images/kind_key task flows-2@2x.png" />
+              </li>
+              <li>
+                <h3 class="flex-caption">Find a recipe — A user wants to explore new recipes</h3>
+                <img src="images/kind_key task flows-3@2x.png" />
+              </li>
+            </ul>
+          </div>
+
+        </section>
+
+        <!-- High Fidelity Prototype -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="video-hifiprototype">High Fidelity Prototype</h2>
+          </div>
+          <div style="height:56px;"></div>
+        </section>
+
+        <section class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/0QZAj9b-CoI?&vq=hd1080&amp;ecver=1&amp;controls=1&amp;fs=1&amp;modestbranding=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;iv_load_policy=3&amp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <div style="height:10px;"></div>
+        <section class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/cSnDrEw3snw?&vq=hd1080&amp;ecver=1&amp;controls=1&amp;fs=1&amp;modestbranding=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;iv_load_policy=3&amp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <div class="spacer-L_desktop"></div>
+        <div class="spacer-L_mobile"></div>
+
+
+        <!-- Design System -->
+        <section class="content-wrapper" id="opaque-background-2">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-design-system">Design System</h2>
+          </div>
+
+          <img class="desktop" src="images/kind_Design System img-desktop@2x.png" alt="Book Nook App Design System image">
+          <img class="mobile" src="images/kind_Design System img-mobile@2x.png" alt="Book Nook App Design System image">
+
+        </section>
+
+        <!-- Conclusion -->
+        <section class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-conclusion">Conclusion</h2>
+            <p>The biggest challenge of this app was its data-heavy content. In the beginning, I didn't know how to reveal the data gradually: from a broad overview to the finest details, so that a user won't get too overwhelmed with it. After several iterations, I managed to create quite a minimalist layout without sacrificing the user experience.</p>
+            <p>Another thing to consider was how to make the process of cooking more enjoyable and easy for a user. After all, for many users who are used to eat meat changing their eating habits can be hard and sometimes even cause frustration. That's why apart from shooting a video for the recipe, I decided to design a visual list of ingredients.</p>
+          </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="bottom-navigation">
+          <div class="flex-wrapper-700px">
+            <a class="other-projects" href="#top">
+            <p>Back to&nbsp;top</p>
+            </a>
+
+            <a class="other-projects" href="index.html">
+              <p id="p-other-projects">Other projects</p>
+            </a>
+          </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer class="case_studies">
+      <div class="flex-wrapper-footer">
+        <span class="copyright">Designed &amp;&nbsp;Developed
+                                by Ekaterina Vernigorova
+                                &copy;&nbsp;2022</span>
+        <ul class="contact">
+          <!-- <li><a href="http://www.behance.net/katyavernigorova" class="fa fa-behance"></a></li> -->
+          <li><a href="https://www.instagram.com/blukipp/" class="fa fa-instagram" target="_blank"></a></li>
+          <li><a href="http://linkedin.com/in/ekaterina-vernigorova-09b708210" class="fa fa-linkedin" target="_blank"></a></li>
+          <li><a href="mailto:katya_vernigorova@fastmail.com" class="fa fa-envelope-o" target="_blank"></a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
