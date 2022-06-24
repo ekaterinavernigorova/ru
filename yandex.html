@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Яндекс.Учебник</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.min.js" charset="utf-8"></script>
+    <script src="sidebar.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <menu>
+          <div class="flex-wrapper-menu">
+          <div class="left-menu">
+            <ul class="menu-links">
+              <li><a href="index.html">Екатерина Вернигорова</a></li>
+            </ul>
+          </div>
+
+            <div class="menu-logo" id="top"><a href="#"></a></div>
+
+          <div class="right-menu">
+            <input type="checkbox" id="menu-toggle">
+            <ul class="menu-links" id="mobile-hamburger">
+              <li><a href="index.html">Портфолио</a></li>
+              <li><a href="https://drive.google.com/file/d/1rS8QZR-4WJ_xSexREimgkVyXL4VpF3A2/view?usp=sharing" target="_blank">Resume</a></li>
+              <!-- language switcher -->
+              <li class="language-button"><a href="https://ekaterinavernigorova.github.io/en/book-nook.html">En</a></li>
+              <li class="language-button current"><a href="https://ekaterinavernigorova.github.io/ru/book-nook.html">Ru</a></li>
+            </ul>
+            <label for="menu-toggle" class="menu-toggle-label">
+              <span></span>
+            </label>
+          </div>
+
+        </div>
+      </menu>
+    </header>
+
+    <!-- Left sidebar -->
+    <nav id="dvid">
+      <ul>
+        <li><a href="#h2-overview">Overview</a></li>
+        <li><a href="#h2-user-research">UX исследование</a></li>
+        <li><a href="#h2-hypothesis-1">Гипотеза 1</a></li>
+        <li><a href="#h2-hypothesis-2">Гипотеза 2</a></li>
+        <li><a href="#h2-hypothesis-3">Гипотеза 3</a></li>
+        <li><a href="#h2-landing-page-prototype">Landing Page Prototype</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <!-- First screen image -->
+        <section id= "first-screen">
+          <div class="text-wrapper-700px hero-title">
+            <h1>Яндекс.Учебник</h1>
+            <p>Увеличение конверсии лендинга</p>
+          </div>
+          <div class="hero-image-wrapper-web yandex">
+            <img src="images/yandex-hero_img@2x.png" alt="Yandex Uchebnik hero image">
+          </div>
+        </section>
+
+        <!-- Overview -->
+        <section id="othdiv" class="content-wrapper">
+          <div class="text-wrapper-700px">
+            <h2 id="h2-overview">Overview</h2>
+            <p>Яндекс.Учебник – это образовательная платформа, которая предоставляет школьным учителям эффективные инструменты для преподавания онлайн и профессионального роста. Главная цель этого проекта заключалась в том, чтобы увеличить количество людей, заинтересованных в прохождении <a href="https://yandex.ru/promo/education/course/individualnaya-obrazovatelnaya-traektoria" target="_blank">курса "Создание в школе индивидуальной образовательной траектории ученика"</a>, о котором рассказывается на лендинге.</p>
+            <div class="overview-details">
+
+              <div class="overview-col">
+                <h5>Мои обязанности</h5>
+                <ul>
+                  <li>UX исследование</li>
+                  <li>Редизайн лендинга</li>
+                </ul>
+              </div>
+
+              <div class="overview-col">
+                <h5>Timeline</h5>
+                <ul>
+                  <li>Март 2022</li>
+                </ul>
+              </div>
+
+              <div class="overview-col tag">
+                <h5>Tags</h5>
+                <ul>
+                  <li>веб дизайн</li>
+                  <li>2022</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- User Research -->
+        <section class="content-wrapper" >
+          <div class="text-wrapper-700px">
+            <h2 id="h2-user-research">UX исследование</h2>
+            <p>Во время поиска решения я проанализировала лендинги популярных образовательных платформ для русскоязычной и международной аудитории, а также провела интервью с группой учителей разных возрастных категорий, некоторые из которых испытывают трудности в использовании современных технологий.</p>
+          </div>
+            <div class="spacer-L_desktop"></div>
+            <div class="spacer-L_mobile"></div>
+        </section>
+
+        <!-- Hypothesis 1-->
+      <section class="content-wrapper" id="opaque-background-2">
+        <div class="text-wrapper-700px">
+          <h2 id="h2-hypothesis-1">Гипотеза 1</h2>
+          <p><em>Кнопки в начале экрана (1) вводят пользователей в заблуждение (они считают, что, нажав на соответствующую кнопку, перейдут к обучению, а получают описание курса). Особенно это касается мобильной версии сайта, в котором, чтобы просмотреть весь контент курса, нужно долго скроллить:</em></p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-1_img1@2x.png" alt="Yandex Uchebnik hypothesis 1 image 1">
+
+        <div class="text-wrapper-700px">
+          <p>Я решила заменить кнопки привычным для мобильных пользователей элементом Tab Control (2):</p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-1_img2@2x.png" alt="Yandex Uchebnik hypothesis 1 image 2">
+
+        <div class="text-wrapper-700px">
+          <p>Для пользователей, испытывающих трудности в использовании современных технологий, я добавила кнопку перехода на соответствующий курс (3) в описании курса:</p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-1_img3@2x.png" alt="Yandex Uchebnik hypothesis 1 image 3">
+
+      </section>
+
+      <!-- Hypothesis 2-->
+      <section class="content-wrapper" id="opaque-background-2">
+        <div class="text-wrapper-700px">
+          <h2 id="h2-hypothesis-2">Гипотеза 2</h2>
+          <p><em>Пользователи не уверены в ценности данного курса, так как:</em></p>
+          <ol>
+            <li><em>он бесплатный;</em></li>
+            <li><em>ИОТ хорошо звучит в теории, но мало применим в российских реалиях.</em></li>
+          </ol>
+          <p>Чтобы заинтересовать пользователей, я решила сделать первый экран максимально информативным. Таким образом пользователи сразу смогут понять о чем данный курс:</p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-2_img1@2x.png" alt="Yandex Uchebnik hypothesis 2 image 1">
+
+        <div class="text-wrapper-700px">
+          <p>Я убрала описание курса после заголовка, так как оно не дает пользователям четкого представления о материале курса. Блок «О курсе» (1) раскрывается как аккордеон. Программа курса теперь подается в формате видео (2), поскольку таким образом можно более наглядно и привлекательно описать основные этапы прохождения. Рейтинг (3) и отзывы (4), прошедших данный курс пользователей, показывают реальную пользу данных знаний и что меняется в процессе обучения, если применять их на практике:</p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-2_img2@2x.png" alt="Yandex Uchebnik hypothesis 2 image 2">
+
+        <div class="text-wrapper-700px">
+          <p>Сразу после отзывов идет блок с CTA «Начать обучение», который я несколько поменяла только в мобильной версии (5):</p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-2_img3@2x.png" alt="Yandex Uchebnik hypothesis 2 image 3">
+
+        <div class="text-wrapper-700px">
+          <p>В нынешней desktop версии сайта «Статьи по теме курса» расположены в 4 колонки с очень маленькими межколоночными интервалами, из-за чего все заголовки статей сливаются в один трудно читабельный текст. Сетка из трех колонок решает эту проблему:</p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-2_img4@2x.png" alt="Yandex Uchebnik hypothesis 2 image 4">
+
+        <div class="text-wrapper-700px">
+          <p>На мой взгляд в любом лендинге важно рассказать пользователям о ценностях компании и почему вообще она этим занимается, поэтому в блоке «Поделиться в соц. сетях» я добавила описание миссии Яндекс.Учебника:</p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-2_img5@2x.png" alt="Yandex Uchebnik hypothesis 2 image 5">
+
+        <div class="text-wrapper-700px">
+          <p>Оставшиеся блоки – «Другие курсы» ,«Рассылка» и Footer – остались без изменений (кроме кнопки «Все курсы» в блоке «Другие курсы»). Из-за того, что я значительно сократила длину страницы, вероятность того, что большее количество пользователей просмотрит данные блоки, увеличилась. Те пользователи, у которых остались вопросы по курсу, увидят телефон и почту поддержки. Все это потенциально приведет к увеличению конверсии.</p>
+        </div>
+
+      </section>
+
+      <!-- Hypothesis 3-->
+      <section class="content-wrapper" id="opaque-background-2">
+        <div class="text-wrapper-700px">
+          <h2 id="h2-hypothesis-3">Гипотеза 3</h2>
+          <p><em>Курсы повышения квалификации всегда занимают много времени, что подразумевает полный пересмотр своего графика.</em></p>
+          <p>Так как фактор времени является очень важным в принятии решения проходить курс или нет, вместо иконки «Полезные чек-листы и материалы» я добавила иконку «Длительность курса» на первом экране. Стоимость и длительность (1) стоят первые в списке. В мобильной версии я изменила layout, что на мой взгляд делает подачу информации визуально более привлекательной:</p>
+        </div>
+
+        <img src="images/yandex_Hypothesis-3_img1@2x.png" alt="Yandex Uchebnik hypothesis 3 image 1">
+
+        <div class="text-wrapper-700px">
+          <p>Свободный график прохождения курса и доступ к записям в любое время дублируется в видео-ролике и отзывах.</p>
+        </div>
+
+      </section>
+
+      <!-- Prototype -->
+      <section class="content-wrapper">
+        <div class="text-wrapper-700px">
+          <h2 id="h2-landing-page-prototype">Landing Page Prototype</h2>
+        </div>
+
+        <img src="images/yandex_prototype-p1@2x.png" alt="Yandex.Uchebnik Landing Page Prototype image">
+        <img class="no-paddings" src="images/yandex_prototype-p2@2x.png" alt="Yandex.Uchebnik Landing Page Prototype image">
+        <img class="no-paddings" src="images/yandex_prototype-p3@2x.png" alt="Yandex.Uchebnik Landing Page Prototype image">
+
+      </section>
+      <!-- Other Projects -->
+      <section class="bottom-navigation">
+        <div class="flex-wrapper-700px">
+          <a class="other-projects" href="#top">
+          <p>Back to&nbsp;top</p>
+          </a>
+
+          <a class="other-projects" href="index.html">
+            <p id="p-other-projects">Other projects</p>
+          </a>
+        </div>
+      </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="case_studies">
+    <div class="flex-wrapper-footer">
+      <span class="copyright">Designed &amp;&nbsp;Developed
+                              by Ekaterina Vernigorova
+                              &copy;&nbsp;2022</span>
+      <ul class="contact">
+        <!-- <li><a href="http://www.behance.net/katyavernigorova" class="fa fa-behance"></a></li> -->
+        <li><a href="https://www.instagram.com/blukipp/" class="fa fa-instagram" target="_blank"></a></li>
+        <li><a href="http://linkedin.com/in/ekaterina-vernigorova-09b708210" class="fa fa-linkedin" target="_blank"></a></li>
+        <li><a href="mailto:katya_vernigorova@fastmail.com" class="fa fa-envelope-o" target="_blank"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -345,6 +345,11 @@ nav ul ul li {
 
 /* case study unique styles */
 
+/* Yandex Uchebnik */
+.yandex {
+  background: #F4F8FE;
+}
+
 /* sylvan website */
 .sylvan {
   background: rgb(224,227,238);
@@ -615,19 +620,20 @@ article section.content-wrapper {
 }
 
 article {
-  padding: 82px 0 0;
+  padding: 61px 0 0;
 }
 
 .hero-title {
   text-align: center;
-  padding: 72px 0 33px;
+  padding: 92px 0 33px;
 }
 
 .hero-title p {
   padding-top: 12px;
 }
 
-.hero-image-wrapper {
+.hero-image-wrapper-app,
+ .hero-image-wrapper-web {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,9 +645,9 @@ article {
   overflow: hidden;
 }
 
-.hero-image-wrapper img {
+.hero-image-wrapper-app img,
+.hero-image-wrapper-web img  {
   width: 1778px;
-  /* height: 414px; */
   padding-top: 0;
 }
 
@@ -942,10 +948,10 @@ iframe {
 }
 
 article .other-projects {
+  padding: 8px 11px;
   border: 0.5px solid rgba(0, 0, 0, 0.4);
   border-radius: 30px;
   color: rgba(0, 0, 0, 0.4);
-  padding: 0 18px;
 }
 
 article .other-projects:hover {
@@ -969,7 +975,8 @@ article a.other-projects {
 
 .other-projects p {
   padding-top: 0;
-  line-height: 220%;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 
@@ -1025,7 +1032,7 @@ footer {
 }
 
 .contact a:hover {
-    color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .fa {
@@ -1237,7 +1244,7 @@ footer {
   }
 
   ul#mobile-hamburger li {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
   }
 
   ul#mobile-hamburger li a {
@@ -1382,13 +1389,17 @@ footer {
       padding-top: 4px;
     }
 
-    .hero-image-wrapper {
-      padding: 64px 0;
+    .hero-image-wrapper-app,
+    .hero-image-wrapper-web {
+      padding: 44px 0;
     }
 
-    .hero-image-wrapper img {
+    .hero-image-wrapper-app img {
       width: 874px;
-      /* height: 215px; */
+    }
+
+    .hero-image-wrapper-web img {
+      width: 500px;
     }
 
     .text-wrapper-700px {
