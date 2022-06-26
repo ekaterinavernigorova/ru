@@ -656,7 +656,7 @@ article {
   display: grid;
   grid-gap: 10px;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .overview-col h5 {
@@ -819,7 +819,7 @@ article blockquote::before {
   display: block;
   position: absolute;
   width: 2px;
-  height: 60%;
+  height: 70%;
   margin-left: -12px;
   background: black;
 }
