@@ -53,4 +53,11 @@ h3.carousel-caption {
   .owl-carousel-wrapper {
     width: calc(100% - 30px);
   }
+
+  .owl-nav .owl-next {
+      right: 0;
+  }
+  .owl-nav .owl-prev{
+      left: 0;
+  }
 }
