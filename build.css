@@ -841,8 +841,8 @@ article blockquote::before {
   content: "";
   display: block;
   position: absolute;
-  width: 2px;
-  height: 70%;
+  width: 1.5px;
+  height: 90%;
   margin-left: -12px;
   background: black;
 }
