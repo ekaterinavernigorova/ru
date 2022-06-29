@@ -841,10 +841,10 @@ article blockquote::before {
   content: "";
   display: block;
   position: absolute;
-  width: 1.5px;
+  width: 5.5px;
   height: 90%;
-  margin-left: -12px;
-  background: black;
+  margin-left: -16px;
+  background: #61C8F2;
 }
 
  .no-paddings img {
@@ -1390,7 +1390,7 @@ footer {
     }
 
     article blockquote::before {
-      margin: 4px 0 0 -6px;
+      margin: 4px 0 0 -15px;
     }
 
     .footnote {
