@@ -14,7 +14,7 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#3e89cc">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="build.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,7 +79,7 @@
 
         <li><a href="#video-hifiprototype">Прототип Высокой Детализации</a></li>
         <li><a href="#h3-empty_states">Пустые Состояния</a></li>
-        <li><a href="#img-design-system">Дизайн-система</a></li>
+        <li><a href="#h2-design-system">Дизайн-система</a></li>
         <li><a href="#h2-conclusion">Заключение</a></li>
       </ul>
     </nav>
@@ -92,7 +92,11 @@
             <p>Глобальное приложение для буккроссинга</p>
           </div>
           <div class="hero-image-wrapper-app book-nook">
-            <img src="images/book_nook-hero_img@2x.png" alt="Book Nook App hero image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/book-nook/book-nook_hero_img-desktop.png 1x, images/book-nook/book-nook_hero_img-desktop@2x.png 2x, images/book-nook/book-nook_hero_img-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/book-nook/book-nook_hero_img-mobile.png 1x, images/book-nook/book-nook_hero_img-mobile@2x.png 2x, images/book-nook/book-nook_hero_img-mobile@3x.png 3x">
+              <img src="images/book-nook/book-nook_hero_img-desktop.png" alt="Book Nook App hero image">
+            </picture>
           </div>
         </section>
 
@@ -180,9 +184,10 @@
             <p>Для владельцев кофеен эта концепция привлекательна тем, что интересная подборка книг вместе с ароматным кофе привлечет больше посетителей.</p>
 
             <h3>Семантика Логотипа</h3>
+            <img id="img-700px" src="images/book-nook/book-nook_logo-icon-semantics_img-desktop@2x.png" alt="Book Nook App Logo Icon Semantics image">
+
             </div>
 
-            <img id="img-700px" src="images/logo icon semantics img-desktop@2x.png" alt="Book Nook App Logo Icon Semantics image">
         </section>
 
         <!-- Information Architecture -->
@@ -191,7 +196,7 @@
             <h2 id="h2-information-architecture">Информационная Архитектура</h2>
           </div>
 
-          <img src="images/information architecture img-desktop@2x.jpg" alt="Book Nook App Information Architecture image">
+          <img src="images/book-nook/book-nook_information-architecture_img-desktop@2x.png" alt="Book Nook App Information Architecture image">
         </section>
 
         <!-- User Flow -->
@@ -200,7 +205,7 @@
             <h2 id="h2-user-flow">Пользовательские Сценарии</h2>
           </div>
 
-          <img src="images/user flow img-desktop@2x.jpg" alt="Book Nook App User Flow image">
+          <img src="images/book-nook/book-nook_user-flow_img-desktop@2x.png" alt="Book Nook App User Flow image">
           <div class="spacer-L_desktop"></div>
           <div class="spacer-L_mobile"></div>
         </section>
@@ -211,7 +216,7 @@
             <h2 id="h2-wireframes">Вайрфреймы</h2>
           </div>
 
-          <img src="images/wireframes@2x.png" alt="Book Nook App Wireframes image">
+          <img src="images/book-nook/book-nook_wireframes_img-desktop@2x.png" alt="Book Nook App Wireframes image">
         </section>
 
         <!-- Main Features -->
@@ -228,7 +233,7 @@
             <p>Этот экран сразу же предлагает пользователям открыть для себя основные функции приложения. Регистрация потребуется позже, если пользователь захочет добавить книгу в свою библиотеку.</p>
           </div>
           <div id="onboarding-video">
-            <video class="main-preview__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/onboarding.mp4"></video>
+            <video class="main-preview__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/book-nook/onboarding.mp4"></video>
           </div>
         </section>
 
@@ -244,8 +249,12 @@
                 <li>В папке «Входящие» просматривая активность друзей, особенно отзывы с высокой оценкой.</li>
               </ol>
             </div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/book-nook/book-nook_discover_img-desktop.png 1x, images/book-nook/book-nook_discover_img-desktop@2x.png 2x, images/book-nook/book-nook_discover_img-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/book-nook/book-nook_discover_img-mobile.png 1x, images/book-nook/book-nook_discover_img-mobile@2x.png 2x, images/book-nook/book-nook_discover_img-mobile@3x.png 3x">
+              <img src="images/book-nook/book-nook_discover_img-desktop.png" alt="Book Nook App  image">
+            </picture>
 
-            <img src="images/discover_img-desktop@2x.jpg" alt="">
           </section>
 
           <!-- Book details -->
@@ -257,7 +266,7 @@
             <p class="footnote"><span>&#42;</span>поймать книгу — получить книгу в определенном месте после охоты за книгами.</p>
           </div>
           <div id="book-details-video">
-            <video class="main-preview__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/book-details.mp4"></video>
+            <video class="main-preview__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/book-nook/book-details.mp4"></video>
           </div>
           </section>
 
@@ -271,8 +280,11 @@
               </ol>
               <p class="footnote"><span>&#42;</span>освободить книгу — оставить книгу в определенном месте, чтобы ее нашел кто-то другой.</p>
             </div>
-
-            <img src="images/catching-a-book_img-desktop@2x.jpg" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/book-nook/book-nook_catching-a-book_img-desktop.png 1x, images/book-nook/book-nook_catching-a-book_img-desktop@2x.png 2x, images/book-nook/book-nook_catching-a-book_img-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/book-nook/book-nook_catching-a-book_img-mobile.png 1x, images/book-nook/book-nook_catching-a-book_img-mobile@2x.png 2x, images/book-nook/book-nook_catching-a-book_img-mobile@3x.png 3x">
+              <img src="images/book-nook/book-nook_catching-a-book_img-desktop.png" alt="Book Nook App  image">
+            </picture>
             <div style="height:40px;"></div>
           </section>
 
@@ -288,7 +300,11 @@
               <h3 id="h3-empty_states">Пустые Состояния</h3>
               <p>Помимо дизайна основных экранов я также создала пустые состояния, что улучшило пользовательский опыт в приложении.</p>
             </div>
-            <img src="images/empty-states_img-desktop@2x.jpg" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/book-nook/book-nook_empty-states_img-desktop.png 1x, images/book-nook/book-nook_empty-states_img-desktop@2x.png 2x, images/book-nook/book-nook_empty-states_img-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/book-nook/book-nook_empty-states_img-mobile.png 1x, images/book-nook/book-nook_empty-states_img-mobile@2x.png 2x, images/book-nook/book-nook_empty-states_img-mobile@3x.png 3x">
+              <img src="images/book-nook/book-nook_empty-states_img-desktop.png" alt="Book Nook App  image">
+            </picture>
 
             <div class="spacer-L_desktop"></div>
             <div class="spacer-L_mobile"></div>
@@ -299,9 +315,25 @@
           <div class="text-wrapper-700px">
             <h2 id="h2-design-system">Дизайн-система</h2>
           </div>
+          <div class="desktop" style="height: 56px;"></div>
+          <div class="mobile" style="height: 35px;"></div>
 
-          <img class="desktop" src="images/Design System img-desktop@2x.png" alt="Book Nook App Design System image">
-          <img class="mobile" src="images/Design System img-mobile@2x.png" alt="Book Nook App Design System image">
+          <div id="center__video-wrapper">
+            <!-- <video class="center__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted">
+              <source src="images/book-nook/book-nook_loader-s.mp4" type="video/mp4" media="(min-width: 768px)">
+              <source src="images/book-nook/book-nook_loader-s-mobile.mp4" type="video/mp4" media="(max-width: 767px)">
+              <source src="images/book-nook/book-nook_loader-s.mp4" type="video/mp4">
+            </video> -->
+            <video class="center__video desktop" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/book-nook/book-nook_loader-s.mp4"></video>
+            <video class="center__video mobile" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/book-nook/book-nook_loader-s-mobile.mp4"></video>
+          </div>
+
+
+          <picture class="no-paddings">
+            <source media="(min-width: 768px)" srcset="images/book-nook/book-nook_design-system_img2-desktop@3x.png">
+            <source media="(max-width: 767px)" srcset="images/book-nook/book-nook_design-system_img2-mobile@3x.png">
+            <img srcset="images/book-nook/book-nook_design-system_img-desktop@2x.png 1020w, images/book-nook/book-nook_design system img-mobile@2x.png 400w" sizes="(max-width:767px) 400px, 1020px" alt="Book Nook App  design system image">
+          </picture>
 
         </section>
 

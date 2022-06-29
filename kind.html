@@ -18,15 +18,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="build.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="jquery.min.js"></script>
-    <script src="jquery.flexslider-min.js"></script>
-    <script type="text/javascript" charset="utf-8">
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide"
-      });
-    });
-    </script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="owlcarousel/owl.carousel.custom.js"></script>
+
     <script src="sidebar.js" charset="utf-8"></script>
 
 
@@ -93,7 +90,11 @@
           </div>
           <!-- change bg color and img -->
           <div class="hero-image-wrapper-app kind">
-            <img src="images/kind-hero_img@2x.png" alt="k.i.n.d. app hero image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/kind/kind_hero_img-desktop.png 1x, images/kind/kind_hero_img-desktop@2x.png 2x, images/kind/kind_hero_img-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/kind/kind_hero_img-mobile.png 1x, images/kind/kind_hero_img-mobile@2x.png 2x, images/kind/kind_hero_img-mobile@3x.png 3x">
+              <img src="images/kind/kind_hero_img-desktop.png" alt="k.i.n.d. app hero image">
+            </picture>
           </div>
         </section>
 
@@ -151,7 +152,7 @@
           <div class="text-wrapper-700px">
             <h2 id="h2-research">Исследование</h2>
             <p>На начальном этапе проекта я провела конкурентное исследование, чтобы выявить ключевые особенности и основные проблемы существующих веганских приложений на рынке.</p>
-            <img id="img-700px" src="images/kind-competitors@2x.png" alt="competitor logotypes">
+            <img id="img-700px" src="images/kind/kind_competitors_img@2x.png" alt="k.i.n.d. competitor logotypes">
             <p>Отзывы пользователей помогли мне понять, какие функции необходимо улучшить.</p>
           </div>
         </section>
@@ -165,17 +166,17 @@
           </div>
           <div class="problem-takeaways">
             <div class="takeaway-wrapper">
-              <img src="images/kind_63%@2x.png" alt="63% icon">
+              <img src="images/kind/kind_63%_img@2x.png" alt="k.i.n.d. 63% icon">
               <p><em>Опрошенных опасаются недоедания из-за постной и безлактозной диеты. Большинство из них не знают о рисках рака и сердечно-сосудистых заболеваний, связанных с потреблением мяса и молочных продуктов.</em></p>
             </div>
 
             <div class="takeaway-wrapper">
-              <img src="images/kind_40%@2x.png" alt="40% icon">
+              <img src="images/kind/kind_40%_img@2x.png" alt="k.i.n.d. 40% icon">
               <p><em>Опрошенных, регулярно занимающиеся спортом, считают, что на растительной диете они не смогут получать достаточно белка для наращивания мышц.</em></p>
             </div>
 
             <div class="takeaway-wrapper">
-              <img src="images/kind_27%@2x.png" alt="27% icon">
+              <img src="images/kind/kind_27%_img@2x.png" alt="k.i.n.d. 27% icon">
               <p><em>Опрошенных, которые являются вегетарианцами, не хотят отказываться от молочных продуктов и яиц, так как боятся, что их диета может стать скучной и однообразной.</em></p>
             </div>
 
@@ -192,19 +193,32 @@
           </div>
 
           <!-- Carousel -->
-          <div class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="images/kind_solution-1@2x.png" />
-              </li>
-              <li>
-                <img src="images/kind_solution-2@2x.png" />
-              </li>
-              <li>
-                <img src="images/kind_solution-3@2x.png" />
-              </li>
-            </ul>
+          <div class="owl-carousel-wrapper">
+            <div class="owl-carousel owl-theme">
+                  <div>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/kind/kind_solution-1_img-desktop.png 1x, images/kind/kind_solution-1_img-desktop@2x.png 2x, images/kind/kind_solution-1_img-desktop@3x.png 3x">
+                      <source media="(max-width: 767px)" srcset="images/kind/kind_solution-1_img-mobile.png 1x, images/kind/kind_solution-1_img-mobile@2x.png 2x, images/kind/kind_solution-1_img-mobile@3x.png 3x">
+                      <img src="images/kind/kind_solution-1_img-desktop@2x.png" alt="k.i.n.d. app hero image">
+                    </picture>
+                  </div>
+                  <div>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/kind/kind_solution-2_img-desktop.png 1x, images/kind/kind_solution-2_img-desktop@2x.png 2x, images/kind/kind_solution-2_img-desktop@3x.png 3x">
+                      <source media="(max-width: 767px)" srcset="images/kind/kind_solution-2_img-mobile.png 1x, images/kind/kind_solution-2_img-mobile@2x.png 2x, images/kind/kind_solution-2_img-mobile@3x.png 3x">
+                      <img src="images/kind/kind_solution-2_img-desktop@2x.png" alt="k.i.n.d. app hero image">
+                    </picture>
+                  </div>
+                  <div>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/kind/kind_solution-3_img-desktop.png 1x, images/kind/kind_solution-3_img-desktop@2x.png 2x, images/kind/kind_solution-3_img-desktop@3x.png 3x">
+                      <source media="(max-width: 767px)" srcset="images/kind/kind_solution-3_img-mobile.png 1x, images/kind/kind_solution-3_img-mobile@2x.png 2x, images/kind/kind_solution-3_img-mobile@3x.png 3x">
+                      <img src="images/kind/kind_solution-3_img-desktop@2x.png" alt="k.i.n.d. app hero image">
+                    </picture>
+                  </div>
+            </div>
           </div>
+
         </section>
 
         <!-- Information Architecture -->
@@ -213,7 +227,7 @@
             <h2 id="h2-information-architecture">Информационная Архитектура</h2>
           </div>
 
-          <img src="images/kind_IA-desktop@2x.png" alt="Book Nook App Information Architecture image">
+          <img src="images/kind/kind_information-architecture_img@2x.png" alt="Book Nook App Information Architecture image">
         </section>
 
         <!-- User Flow -->
@@ -222,21 +236,21 @@
             <h2 id="h2-user-flow">Пользовательские Сценарии</h2>
           </div>
           <!-- Carousel -->
-          <div class="flexslider">
-            <ul class="slides">
-              <li>
-                <h3 class="flex-caption">Запиcь приема пищи в журнале:</h3>
-                <img src="images/kind_key task flows-1@2x.png" />
-              </li>
-              <li>
-                <h3 class="flex-caption">Поиск рецепта — пользователь знает, что он хочет приготовить:</h3>
-                <img src="images/kind_key task flows-2@2x.png" />
-              </li>
-              <li>
-                <h3 class="flex-caption">Поиск рецепта — пользователь хочет изучить новые рецепты:</h3>
-                <img src="images/kind_key task flows-3@2x.png" />
-              </li>
-            </ul>
+          <div class="owl-carousel-wrapper">
+            <div class="owl-carousel owl-theme">
+                  <div>
+                    <h3 class="carousel-caption">Запиcь приема пищи в журнале:</h3>
+                    <img src="images/kind/kind_key-task-flows-1_img@2x.png" />
+                  </div>
+                  <div>
+                    <h3 class="carousel-caption">Поиск рецепта — пользователь знает, что он хочет приготовить:</h3>
+                    <img src="images/kind/kind_key-task-flows-2_img@2x.png" />
+                  </div>
+                  <div>
+                    <h3 class="carousel-caption">Поиск рецепта — пользователь хочет изучить новые рецепты:</h3>
+                    <img src="images/kind/kind_key-task-flows-3_img@2x.png" />
+                  </div>
+            </div>
           </div>
 
         </section>
@@ -246,14 +260,16 @@
           <div class="text-wrapper-700px">
             <h2 id="video-hifiprototype">Прототип Высокой Детализации</h2>
           </div>
-          <div style="height:56px;"></div>
+          <div class="desktop" style="height: 56px;"></div>
+          <div class="mobile" style="height: 35px;"></div>
+
         </section>
 
-        <section class="video-wrapper" id="video-journal">
+        <section class="video-wrapper" id="video-journal" class="no-paddings">
             <iframe src="https://www.youtube.com/embed/0QZAj9b-CoI?&vq=hd1080&amp;ecver=1&amp;controls=1&amp;fs=1&amp;modestbranding=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;iv_load_policy=3&amp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <div style="height:10px;"></div>
-        <section class="video-wrapper" id="video-recipes">
+        <section class="video-wrapper" id="video-recipes" class="no-paddings">
             <iframe src="https://www.youtube.com/embed/cSnDrEw3snw?&vq=hd1080&amp;ecver=1&amp;controls=1&amp;fs=1&amp;modestbranding=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;iv_load_policy=3&amp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <div class="spacer-L_desktop"></div>
@@ -265,9 +281,11 @@
           <div class="text-wrapper-700px">
             <h2 id="h2-design-system">Дизайн-система</h2>
           </div>
-
-          <img class="desktop" src="images/kind_Design System img-desktop@2x.png" alt="Book Nook App Design System image">
-          <img class="mobile" src="images/kind_Design System img-mobile@2x.png" alt="Book Nook App Design System image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/kind/kind_design-system_img-desktop.png 1x, images/kind/kind_design-system_img-desktop@2x.png 2x, images/kind/kind_design-system_img-desktop@3x.png 3x">
+            <source media="(max-width: 767px)" srcset="images/kind/kind_design-system_img-mobile.png 1x, images/kind/kind_design-system_img-mobile@2x.png 2x, images/kind/kind_design-system_img-mobile@3x.png 3x">
+            <img src="images/kind/kind_design-system_img-desktop.png" alt="k.i.n.d. app design system image">
+          </picture>
 
         </section>
 

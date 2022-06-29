@@ -14,20 +14,16 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#3e89cc">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="build.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="jquery.min.js"></script>
-    <script src="jquery.flexslider-min.js"></script>
-    <script type="text/javascript" charset="utf-8">
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide"
-      });
-    });
-    </script>
-    <!-- <script src="jquery.js" charset="utf-8"></script> -->
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="owlcarousel/owl.carousel.custom.js"></script>
+
     <script src="sidebar.js" charset="utf-8"></script>
 
 
@@ -82,7 +78,7 @@
             <li><a href="#h3-checkout-process">Процесс Оформления Заказа</a></li>
           </ul>
 
-        <li><a href="#h2-conclusion">Заключение</a></li>
+        <!-- <li><a href="#h2-conclusion">Заключение</a></li> -->
       </ul>
     </nav>
 
@@ -95,7 +91,11 @@
           </div>
           <!-- change bg color and img -->
           <div class="hero-image-wrapper-web sylvan">
-            <img src="images/sylvan_hero_img@2x.png" alt="Sylvan website hero image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/sylvan/sylvan_hero_img-desktop.png 1x, images/sylvan/sylvan_hero_img-desktop@2x.png 2x, images/sylvan/sylvan_hero_img-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/sylvan/sylvan_hero_img-mobile.png 1x, images/sylvan/sylvan_hero_img-mobile@2x.png 2x, images/sylvan/sylvan_hero_img-mobile@3x.png 3x">
+              <img src="images/sylvan/sylvan_hero_img-desktop.png" alt="Sylvan website hero image">
+            </picture>
           </div>
         </section>
 
@@ -144,9 +144,11 @@
           <div class="text-wrapper-700px">
             <h2 id="h2-master-brand-logo">Главный логотип</h2>
           </div>
-
-          <img class="desktop" id="img-700px" src="images/sylvan_Master Brand Logo img-desktop@2x.png" alt="Book Nook App Design System image">
-          <img class="mobile" id="img-700px" src="images/sylvan_Master Brand Logo img-mobile@2x.png" alt="Book Nook App Design System image">
+          <picture id="img-700px">
+            <source media="(min-width: 768px)" srcset="images/sylvan/sylvan_master-brand-logo_img-desktop.png 1x, images/sylvan/sylvan_master-brand-logo_img-desktop@2x.png 2x, images/sylvan/sylvan_master-brand-logo_img-desktop@3x.png 3x">
+            <source media="(max-width: 767px)" srcset="images/sylvan/sylvan_master-brand-logo_img-mobile.png 1x, images/sylvan/sylvan_master-brand-logo_img-mobile@2x.png 2x, images/sylvan/sylvan_master-brand-logo_img-mobile@3x.png 3x">
+            <img src="images/sylvan/sylvan_master-brand-logo_img-desktop.png" alt="Sylvan website master brand logo image">
+          </picture>
 
         </section>
 
@@ -159,12 +161,12 @@
           <div class="package-wrapper">
 
             <ul class="package-2r">
-              <li class="cider1-1"><img src="images/orange_pippin_1@2x.png" alt=""></li>
-              <li class="cider1-2"><img src="images/orange_pippin_2@2x.png" alt=""></li>
-              <li class="cider2-2"><img src="images/crispin_cider_1@2x.png" alt=""></li>
-              <li class="cider2-1"><img src="images/crispin_cider_2@2x.png" alt=""></li>
-              <li class="cider3-1"><img src="images/melrose_1@2x.png" alt=""></li>
-              <li class="cider3-2"><img src="images/melrose_2@2x.png" alt=""></li>
+              <li class="cider1-1"><img src="images/sylvan/sylvan_orange_pippin_1_img@2x.png" alt=""></li>
+              <li class="cider1-2"><img src="images/sylvan/sylvan_orange_pippin_2_img@2x.png" alt=""></li>
+              <li class="cider2-2"><img src="images/sylvan/sylvan_crispin_cider_1_img@2x.png" alt=""></li>
+              <li class="cider2-1"><img src="images/sylvan/sylvan_crispin_cider_2_img@2x.png" alt=""></li>
+              <li class="cider3-1"><img src="images/sylvan/sylvan_melrose_1_img@2x.png" alt=""></li>
+              <li class="cider3-2"><img src="images/sylvan/sylvan_melrose_2_img@2x.png" alt=""></li>
             </ul>
 
           </div>
@@ -176,15 +178,13 @@
           <div class="package-wrapper">
 
             <ul class="package-1r">
-              <li class="ocider1-1"><img src="images/o winter!_hoodie@2x.png" alt=""></li>
-              <li class="ocider2-1"><img src="images/o winter! - 3rd edition@2x.png" alt=""></li>
-              <li class="ocider3-1"><img src="images/o winter!_tote@2x.png" alt=""></li>
+              <li class="ocider1-1"><img src="images/sylvan/sylvan_o_hoodie_img@2x.png" alt=""></li>
+              <li class="ocider2-1"><img src="images/sylvan/sylvan_o_3rd_edition_img@2x.png" alt=""></li>
+              <li class="ocider3-1"><img src="images/sylvan/sylvan_o_tote_img@2x.png" alt=""></li>
             </ul>
 
           </div>
 
-          <div class="spacer-L_desktop"></div>
-          <div class="spacer-L_mobile"></div>
         </section>
 
         <!-- Website -->
@@ -201,7 +201,7 @@
             <h2 id="h2-sitemap">Карта Сайта</h2>
           </div>
 
-          <img src="images/sylvan_site map@2x.png" alt="Sylvan Sitemap image">
+          <img src="images/sylvan/sylvan_site-map@2x.png" alt="Sylvan Sitemap image">
         </section>
 
         <!-- Wireframes -->
@@ -210,36 +210,39 @@
             <h2 id="h2-wireframes">Вайерфреймы</h2>
           </div>
           <!-- Carousel -->
-          <div class="flexslider slide-700px">
-            <ul class="slides">
-              <li>
-                <h3 class="flex-caption">Лендинг Страница</h3>
-                <img src="images/sylvan_wireframes – landing page@2x.png" />
-              </li>
-              <li>
-                <h3 class="flex-caption">Листинг Страница</h3>
-                <img src="images/sylvan_wireframes – listings page@2x.png" />
-              </li>
-              <li>
-                <h3 class="flex-caption">Страница Продукта</h3>
-                <img src="images/sylvan_wireframes – product page@2x.png" />
-              </li>
-              <li>
-                <h3 class="flex-caption">Меню корзины и страница оформления заказа</h3>
-                <img src="images/sylvan_wireframes – checkout@2x.png" />
-              </li>
-            </ul>
+          <div class="owl-carousel-wrapper">
+            <div class="owl-carousel owl-theme">
+                  <div>
+                    <h3 class="carousel-caption">Лендинг Страница</h3>
+                    <img src="images/sylvan/sylvan_wireframes–landing-page@2x.png" />
+                  </div>
+                  <div>
+                    <h3 class="carousel-caption">Листинг Страница</h3>
+                    <img src="images/sylvan/sylvan_wireframes–listings-page@2x.png" />
+                  </div>
+                  <div>
+                    <h3 class="carousel-caption">Страница Продукта</h3>
+                    <img src="images/sylvan/sylvan_wireframes–product-page@2x.png" />
+                  </div>
+                  <div>
+                    <h3 class="carousel-caption">Меню корзины и страница оформления заказа</h3>
+                    <img src="images/sylvan/sylvan_wireframes–checkout@2x.png" />
+                  </div>
+            </div>
           </div>
-
+          <div class="spacer-L_desktop"></div>
+          <div class="spacer-L_mobile"></div>
         </section>
         <!-- Style Guide -->
         <section class="content-wrapper web_description">
           <div class="text-wrapper-700px">
             <h2 id="h2-style-guide">Руководство По Стилю</h2>
           </div>
-
-          <img class="desktop" src="images/sylvan_Style Guide img-desktop@2x.png" alt="Book Nook App Design System image">
-          <img class="mobile" src="images/sylvan_Style Guide img-mobile@2x.png" alt="Book Nook App Design System image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/sylvan/sylvan_style-guide_img-desktop.png 1x, images/sylvan/sylvan_style-guide_img-desktop@2x.png 2x, images/sylvan/sylvan_style-guide_img-desktop@3x.png 3x">
+            <source media="(max-width: 767px)" srcset="images/sylvan/sylvan_style-guide_img-mobile.png 1x, images/sylvan/sylvan_style-guide_img-mobile@2x.png 2x, images/sylvan/sylvan_style-guide_img-mobile@3x.png 3x">
+            <img src="images/sylvan/sylvan_style-guide_img-desktop.png" alt="Sylvan website style guide image">
+          </picture>
           <div class="desktop" style="height:40px;"></div>
 
           <!-- Responsive Layout -->
@@ -262,12 +265,21 @@
               <p>УТП Sylvan заключается в производстве превосходного продукта, которое не наносит вреда окружающей среде и в ходе которого используются только свежие местные ингредиенты и полностью перерабатываемая упаковка. Процесс брожения не пытаются ускорить, так как он играет важную роль в насыщенности и глубине вкуса конечного напитка. В результате весь производственный цикл может занять до года в зависимости от времени сбора урожая и сорта яблок.</p>
               <p><strong>Сильная связь с природой и течением времени — вот что делает этот бренд по-настоящему уникальным.</strong> Это ощущается в каждой детали: от визуального контента сайта, дизайна упаковки и описания продуктов до логотипа, этимология которого относится к лесам.</p>
             </div>
-            <img src="images/sylvan_Landing page-1@2x.png" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/sylvan/sylvan_landing-page-1-desktop.png 1x, images/sylvan/sylvan_landing-page-1-desktop@2x.png 2x, images/sylvan/sylvan_landing-page-1-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/sylvan/sylvan_landing-page-1-mobile.png 1x, images/sylvan/sylvan_landing-page-1-mobile@2x.png 2x, images/sylvan/sylvan_landing-page-1-mobile@3x.png 3x">
+              <img src="images/sylvan/sylvan_landing-page-1-desktop.png" alt="Sylvan website landing page 1 image">
+            </picture>
+
 
             <div class="text-wrapper-700px">
               <p>Поскольку ассортимент продуктов относительно небольшой, я решила не использовать категории продуктов и показать несколько товаров на лендинг странице с CTA, который направляет клиентов на листинг страницу с удобной функцией фильтрации.</p>
             </div>
-            <img src="images/sylvan_Landing page-2@2x.png" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/sylvan/sylvan_landing-page-2-desktop.png 1x, images/sylvan/sylvan_landing-page-2-desktop@2x.png 2x, images/sylvan/sylvan_landing-page-2-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/sylvan/sylvan_landing-page-2-mobile.png 1x, images/sylvan/sylvan_landing-page-2-mobile@2x.png 2x, images/sylvan/sylvan_landing-page-2-mobile@3x.png 3x">
+              <img src="images/sylvan/sylvan_landing-page-2-desktop.png" alt="Sylvan website landing page 2 image">
+            </picture>
           </div>
 
           <!-- Listings page -->
@@ -276,7 +288,12 @@
               <h3 id="h3-listings-page">Листинг Страница</h3>
               <p>Большие превью продуктов с лаконичным описанием отображаются при наведении курсора, что дает пользователям достаточно понимания какой вариант соответствует их потребностям.</p>
             </div>
-            <img src="images/sylvan_Listings page@2x.png" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/sylvan/sylvan_listings-page-desktop.png 1x, images/sylvan/sylvan_listings-page-desktop@2x.png 2x, images/sylvan/sylvan_listings-page-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/sylvan/sylvan_listings-page-mobile.png 1x, images/sylvan/sylvan_listings-page-mobile@2x.png 2x, images/sylvan/sylvan_listings-page-mobile@3x.png 3x">
+              <img src="images/sylvan/sylvan_listings-page-desktop.png" alt="Sylvan website listings page image">
+            </picture>
+
           </div>
         </section>
 
@@ -288,8 +305,8 @@
           </div>
           <div style="height:20px;"></div>
 
-        <div id="web_description__video-wrapper">
-          <video class="web_description__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/sylvan-product_page.mp4"></video>
+        <div id="center__video-wrapper">
+          <video class="center__video" autoplay="autoplay" loop="loop" playsinline="true" muted="muted" src="images/sylvan/sylvan-product_page.mp4"></video>
         </div>
         </section>
 
@@ -301,25 +318,34 @@
               <h3 id="h3-checkout-process">Процесс Оформления Заказа</h3>
               <p>Ключевая информация, такая как изображение, название, количество и стоимость товаров, отображается в меню корзины справа. После добавления товаров в корзину пользователь может проверить и внести изменения в свой заказ, если это необходимо.</p>
             </div>
-            <img src="images/sylvan_checkout-1@2x.png" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/sylvan/sylvan_checkout-1-desktop.png 1x, images/sylvan/sylvan_sylvan_checkout-1-desktop@2x.png 2x, images/sylvan/sylvan_sylvan_checkout-1-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/sylvan/sylvan_checkout-1-mobile.png 1x, images/sylvan/sylvan_sylvan_checkout-1-mobile@2x.png 2x, images/sylvan/sylvan_sylvan_checkout-1-mobile@3x.png 3x">
+              <img src="images/sylvan/sylvan_checkout-1-desktop.png" alt="Sylvan website checkout page 1 image">
+            </picture>
 
             <div class="text-wrapper-700px">
               <p>Общая стоимость рассчитывается после выбора способа доставки.</p>
               <p>Процесс оформления заказа состоит из двух столбцов: корзина слева, где пользователи всегда могут видеть содержимое своего заказа, и форма оформления заказа справа.</p>
             </div>
-            <img src="images/sylvan_checkout-2@2x.png" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/sylvan/sylvan_checkout-2-desktop.png 1x, images/sylvan/sylvan_sylvan_checkout-2-desktop@2x.png 2x, images/sylvan/sylvan_sylvan_checkout-2-desktop@3x.png 3x">
+              <source media="(max-width: 767px)" srcset="images/sylvan/sylvan_checkout-2-mobile.png 1x, images/sylvan/sylvan_sylvan_checkout-2-mobile@2x.png 2x, images/sylvan/sylvan_sylvan_checkout-2-mobile@3x.png 3x">
+              <img src="images/sylvan/sylvan_checkout-2-desktop.png" alt="Sylvan website checkout page 2 image">
+            </picture>
+
           </div>
           <div class="desktop" style="height:25px;"></div>
           <div class="mobile" style="height:16px;"></div>
         </section>
 
         <!-- Conclusion -->
-        <section class="content-wrapper">
+        <!-- <section class="content-wrapper">
           <div class="text-wrapper-700px">
             <h2 id="h2-conclusion">Заключение</h2>
             <p>Sylvan был первым интернет-магазином, дизайн которого я создала с нуля, включая текстовый и визуальный контент.</p>
           </div>
-        </section>
+        </section> -->
 
         <!-- Other Projects -->
         <section class="bottom-navigation">
