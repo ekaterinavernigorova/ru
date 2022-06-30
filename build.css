@@ -1042,19 +1042,19 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  align-items: center;
 }
 
 .contact li {
   padding-left: 1.5vw;
 }
 
-.contact a:hover {
-  color: rgba(0, 0, 0, 0.6);
+.contact a img:hover {
+  height: 17.5px;
 }
 
-.fa {
-  font-size: 16px;
-  width: 16px;
+.contact img {
+  height: 16px;
   text-align: center;
   text-decoration: none;
 }
@@ -1519,14 +1519,21 @@ footer {
     }
 
     .contact li {
-      padding-left: 4vw;
       margin-top: 36px;
     }
 
-    .fa {
-      font-size: 14px;
-      width: 14px;
+    .contact li + li {
+      padding-left: 5vw;
     }
+
+    .contact a img:hover {
+      height: 15.5px;
+    }
+
+    .contact img {
+      height: 14px;
+    }
+
 }
 
 @media (min-device-width: 320px) and (max-device-width: 414px) and (orientation: portrait) {
