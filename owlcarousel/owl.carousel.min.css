@@ -16,17 +16,22 @@ h3.carousel-caption {
 .owl-nav .owl-next, .owl-nav .owl-prev {
        position: absolute;
        top: 48%;
-       transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+           transform: translateY(-50%);
        -webkit-transform: translateY(-50%);
    }
    .owl-nav .owl-next {
        right: 35px;
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
        font-size: 50px !important;
        opacity: 0.3;
    }
    .owl-nav .owl-prev{
        left: 35px;
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
        font-size: 50px !important;
        opacity: 0.3;
