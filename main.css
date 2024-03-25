@@ -2327,7 +2327,14 @@ nav a.black{
   display: inline-block;
 }
 
-.switch > a {
+button.language {
+  background-color: #fff;
+  color: #000; 
+  padding: 5px 12px;
+  border-radius: 6px;
+ }
+
+/* .switch > a {
   position: absolute;
   top: 3px;
   pointer-events: none;
@@ -2414,7 +2421,7 @@ input.check-toggle-round-flat:checked + label {
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
-}
+} */
 
 /* footer */
 .contact {
