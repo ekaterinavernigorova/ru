@@ -2327,9 +2327,9 @@ nav a.black{
   display: inline-block;
 }
 
-button.language {
+.switch button {
   background-color: #fff;
-  color: #000; 
+  color: #000 !important; 
   padding: 5px 12px;
   border-radius: 6px;
  }
