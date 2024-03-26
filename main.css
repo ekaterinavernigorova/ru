@@ -2431,6 +2431,8 @@ input.check-toggle-round-flat:checked + label:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; 
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify; 
       -ms-flex-pack: justify; 
           justify-content: space-between; 
