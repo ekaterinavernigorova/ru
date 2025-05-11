@@ -2875,11 +2875,7 @@ img.case-thumbnail:hover {
  z-index: 2; 
 }
 
-span.Figma-icon {
-  background-image: url("src/figma-icon.svg");
-  
-  background-repeat: no-repeat;
-}
+
  
 /* arrows */
 .swiper-arrow {
