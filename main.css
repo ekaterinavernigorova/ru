@@ -2859,6 +2859,27 @@ img.case-thumbnail:hover {
 .swiper-controls {
  position: relative;
 }
+
+/* button */
+
+.swiper-button {
+ top: 12%;
+ left: 3%;
+ right: auto;
+ position: absolute;
+ /* width: 2em; */
+ height: 3em;
+ border-radius: 100vw;
+ background-color: transparent;
+ /* border: 1px solid rgba(0, 0, 0, .6); */
+ z-index: 2; 
+}
+
+span.Figma-icon {
+  background-image: url("src/figma-icon.svg");
+  
+  background-repeat: no-repeat;
+}
  
 /* arrows */
 .swiper-arrow {
