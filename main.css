@@ -2862,18 +2862,17 @@ img.case-thumbnail:hover {
 
 /* button */
 
-.swiper-button {
+.swiper-button_desktop {
  top: 10%;
  left: 3%;
  right: auto;
  position: absolute;
- /* width: 2em; */
  height: 41px;
  background-color: transparent;
  z-index: 2; 
 }
 
-.swiper-button button {
+.swiper-button_desktop button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2884,19 +2883,24 @@ img.case-thumbnail:hover {
   padding: 0 10px 0 0;
 }
 
-.swiper-button button a {
+.swiper-button_desktop button a {
     color: rgba(0, 0, 0, .6);
     text-decoration: none;
     font-size: 21px;
-    font-family: 'Ppneuemontreal', sans-serif;
-    font-weight: 500;
+    font-family: Font Pp Neue Montreal Semi, sans-serif;
+    src: url("https://cdn.prod.website-files.com/64d4a1975f8da735703ec793/682105fa892bdafbfa715681_font-pp-neue-montreal-semi-bold.otf") format("opentype");
+    font-weight: 600;
 }
 
-.swiper-button button:hover {
+.swiper-button_desktop button:hover {
   border: 1px solid rgba(255, 255, 255, 1);
    -webkit-transition: all 100ms ease;
   -o-transition: all 100ms ease;
   transition: all 100ms ease;
+}
+
+.swiper-button_mobile {
+  display: none;
 }
  
 /* arrows */
@@ -2933,7 +2937,7 @@ img.case-thumbnail:hover {
 }
 
 .swiper-arrow.button-prev {
-  background-image: url("src/arrow-180.svg");
+ background-image: url("src/arrow-180.svg");
  top: 12%;
  left: auto;
  right: 6%;
@@ -5909,10 +5913,57 @@ display: none;
   padding: 0 2em 2em 2em;
 }
 
+.swiper-button_mobile {
+  top: 4%;
+  left: 7%;
+  right: auto;
+  height: 30px;
+  position: absolute;
+  background-color: transparent;
+  z-index: 2; 
+}
+
+
+.swiper-button_mobile button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(55, 50, 53, 0.06);
+  border-radius: 6px;
+  padding: 0 8px 0 0px;
+}
+
+.swiper-button_mobile button a {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .6);
+    text-decoration: none;
+    font-family: Font Pp Neue Montreal Semi, sans-serif;
+    src: url("https://cdn.prod.website-files.com/64d4a1975f8da735703ec793/682105fa892bdafbfa715681_font-pp-neue-montreal-semi-bold.otf") format("opentype");
+    font-weight: 600;
+}  
+
+
+.swiper-button_mobile button:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+   -webkit-transition: all 100ms ease;
+  -o-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+
+.swiper-button_mobile {
+  display: block;
+}
+
+.swiper-button_desktop {
+  display: none;
+}
+
 .swiper-arrow.button-prev {
   top: 4%;
-  left: 3%;
-  right: auto;
+  right: 12%;
+  left: auto;
 }
 
 .swiper-arrow.button-next {
