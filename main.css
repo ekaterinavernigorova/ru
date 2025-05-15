@@ -6009,7 +6009,7 @@ display: none;
 }
 
 .swiper-button_mobile_portrait {
-  top: 2%;
+  top: 2.5%;
   left: 7%;
   right: auto;
   height: 30px;
@@ -6097,7 +6097,7 @@ display: none;
 }
 
 .swiper-arrow.button-prev_portrait {
-  top: 3%;
+  top: 2.5%;
   right: 12%;
   left: auto;
 }
@@ -6109,7 +6109,7 @@ display: none;
 }
 
 .swiper-arrow.button-next_portrait {
-  top: 3%;
+  top: 2.5%;
   right: 3%;
   left: auto;
 }
