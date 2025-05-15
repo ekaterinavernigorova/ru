@@ -2446,9 +2446,13 @@ h6.tag {
   color: black;
   background-color: rgb(0, 0, 0, 0.04);
   mix-blend-mode: multiply;
-  border-radius: 100px;
+  border-radius: 6px;
 	padding: 2px 0.75rem 3px;
-  margin-right: 8px;
+  margin-left: 6px;
+}
+
+h6.tag:first-child {
+ margin-left: 0; 
 }
 
 h6.tag.button {
@@ -2533,7 +2537,7 @@ p {
   letter-spacing:0em;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -4790,7 +4794,7 @@ right: auto;
 .case_infoblock {
 width: 100%;
 grid-column-gap: 0px;
-grid-row-gap: 36px;
+grid-row-gap: 20px;
 -webkit-box-pack: justify;
 -ms-flex-pack: justify;
 justify-content: space-between;
