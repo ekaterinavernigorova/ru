@@ -2294,7 +2294,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
   font-size: 21px;
   font-family: 'Ppneuemontreal', sans-serif;
