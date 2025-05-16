@@ -36,7 +36,7 @@
         <div class="page-wrapper-2">            
 
              <!-- navbar -->
-            <nav>
+            <nav class="navbar">
               <!-- SVG Logo -->
               <div class="left-items">
 
@@ -349,6 +349,12 @@
 
 <script src="https://unpkg.com/split-type"></script>
 <script>
+    // NAVBAR TRANSPARENT TO SOLID COLOR ON SCROLL  
+    window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // HERO SLIDER
     let splitType = new SplitType(".slider_cms_title",{
         types: "words, chars",
         tagName: "span"

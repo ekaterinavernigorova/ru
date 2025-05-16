@@ -2250,9 +2250,7 @@ max-height: fill-available;
 /* Basic styling for navbar */
   
 nav {
-  background-color: rgba(0,0,0,0);
   
-  color: black;
   padding: 1.5vw 4vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2266,6 +2264,16 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 200;
+}
+
+nav .navbar {
+background-color: rgba(0,0,0,0);
+color: white;
+}
+
+nav .navbar.scrolled {
+background-color: rgba(240,240,240,100);
+color: black;
 }
 
 /* Styling for navigation items */
@@ -2320,9 +2328,7 @@ nav a.black{
           align-items: center;
 }
 
-.right-items {
-  mix-blend-mode: difference;
-}
+
 
 /* Language toggle */
 
