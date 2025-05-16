@@ -2251,6 +2251,7 @@ max-height: fill-available;
   
 nav {
   background-color: rgba(0,0,0,0);
+  mix-blend-mode: difference;
   color: black;
   padding: 1.5vw 4vw;
   display: -webkit-box;
@@ -2263,7 +2264,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  /* top: 0; */
   width: 100%;
   z-index: 200;
 }
@@ -2328,13 +2328,24 @@ nav a.black{
 }
 
 .switch button {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 2px 12px;
+  border-radius: 6px;
+  border: 1px solid black;
+ }
+
+ .switch button a {
+  color: #000000 !important; 
+ }
+
+ .get-in-touch button {
   background-color: #222626;
   padding: 2px 12px;
   border-radius: 6px;
  }
 
- .switch button a {
-  color: #fff !important; 
+ .get-in-touch button a {
+  color: #ffffff !important; 
  }
 
 
