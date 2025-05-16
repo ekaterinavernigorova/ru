@@ -351,7 +351,7 @@
 <script>
     // NAVBAR TRANSPARENT TO SOLID COLOR ON SCROLL  
     window.addEventListener('scroll', () => {
-    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > window.innerHeight);
     });
 
     // HERO SLIDER
