@@ -2266,12 +2266,12 @@ nav {
   z-index: 200;
 }
 
-nav .navbar {
+.navbar {
 background-color: rgba(0,0,0,0);
 color: white;
 }
 
-nav .navbar.scrolled {
+.navbar.scrolled {
 background-color: rgba(240,240,240,100);
 color: black;
 }
