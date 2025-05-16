@@ -2262,7 +2262,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: sticky;
+  position: fixed;
   /* top: 0; */
   width: 100%;
   z-index: 200;
@@ -2604,7 +2604,7 @@ img.case-thumbnail:hover {
 .slider_wrap {
   position: relative;
   z-index: 100;
-  margin-top: -82px;
+  /* margin-top: -82px; */
 }
 
 .slider_cms_list {
