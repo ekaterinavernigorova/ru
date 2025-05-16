@@ -5896,10 +5896,10 @@ display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: fixed;
+    /* position: fixed; */
     /* top: 0; */
     width: 100%;
-    z-index: 200;
+    /* z-index: 200; */
   }
 
   .contact {
