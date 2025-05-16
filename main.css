@@ -2332,7 +2332,7 @@ nav a.black{
 }
 
 .switch button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #F0F0F0);
   padding: 2px 12px;
   border-radius: 6px;
   border: 1px solid black;
