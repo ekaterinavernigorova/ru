@@ -4853,6 +4853,11 @@ display: -ms-flexbox;
 display: flex;
 }
 
+.contact_copy {
+  line-height: 1.1;
+  width: 50%;
+}
+
 .submit-button_wrapper {
 width: 70%;
 border-bottom: 1px solid #fff;
