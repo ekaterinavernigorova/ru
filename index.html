@@ -229,7 +229,167 @@
 
             <!-- selected work --> 
             <div class="selected-work_wrapper">
-             <h1 class="heading">Кейсы</h1>
+             <h1 id="tabs-title">Кейсы</h1>
+
+             
+             <!-- tabs container -->
+
+            <div class="tabs-container">
+                <ul aria-labelledby="tabs-title">
+                <li><a id="tab-1" href="#advertising"> Tab 1 </a></li>
+                <li><a id="tab-2" href="#social-media"> Tab 2 </a></li>
+                </ul>
+
+                <div class="tabs__panels flow">
+                <div id="advertising" aria-labelledby="tab-1">
+                    <p>
+                    A marketing company can use targeted advertising to reach specific
+                    audiences based on demographics, interests, and behaviors. This
+                    can increase the effectiveness of advertising campaigns and
+                    improve return on investment.
+                    </p>
+                </div>
+                <div id="social-media" aria-labelledby="tab-2">
+                    <p>
+                    A marketing company can leverage social media platforms to engage
+                    with customers and promote products or services. Social media can
+                    also be used to gather customer feedback and insights to inform
+                    future marketing strategies.
+                    </p>
+                </div>
+                </div>
+
+                <style>
+                    [role="tablist"] {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    gap: 1rem;
+                    }
+
+                    [aria-selected="true"] {
+                    text-decoration-thickness: 0.25em;
+                    text-underline-offset: 0.5em;
+                    color: orangered;
+                    }
+
+                    /* extra styling to make the tabs look better that wasn't in the video */
+                    .tabs-container {
+                    padding: 2.5rem;
+                    border-radius: 0.5rem;
+                    background: hsl(0 0% 50% / 0.1);
+                    }
+
+                    .visually-hidden {
+                    clip: rect(0 0 0 0);
+                    clip-path: inset(50%);
+                    height: 1px;
+                    overflow: hidden;
+                    position: absolute;
+                    white-space: nowrap;
+                    width: 1px;
+                    }
+                </style>
+
+                <script>
+                    const tabsContainer = document.querySelector(".tabs-container");
+                    const tabsList = tabsContainer.querySelector("ul");
+                    const tabButtons = tabsList.querySelectorAll("a");
+                    const tabPanels = tabsContainer.querySelectorAll(".tabs__panels > div");
+
+                    tabsList.setAttribute("role", "tablist");
+
+                    tabsList.querySelectorAll("li").forEach((listitem) => {
+                    listitem.setAttribute("role", "presentation");
+                    });
+
+                    tabButtons.forEach((tab, index) => {
+                    tab.setAttribute("role", "tab");
+                    if (index === 0) {
+                        tab.setAttribute("aria-selected", "true");
+                        // we'll add something here
+                    } else {
+                        tab.setAttribute("tabindex", "-1");
+                        tabPanels[index].setAttribute("hidden", "");
+                    }
+                    });
+
+                    tabPanels.forEach((panel) => {
+                    panel.setAttribute("role", "tabpanel");
+                    panel.setAttribute("tabindex", "0");
+                    });
+
+                    tabsContainer.addEventListener("click", (e) => {
+                    const clickedTab = e.target.closest("a");
+                    if (!clickedTab) return;
+                    e.preventDefault();
+
+                    switchTab(clickedTab);
+                    });
+
+                    tabsContainer.addEventListener("keydown", (e) => {
+                    switch (e.key) {
+                        case "ArrowLeft":
+                        moveLeft();
+                        break;
+                        case "ArrowRight":
+                        moveRight();
+                        break;
+                        case "Home":
+                        e.preventDefault();
+                        switchTab(tabButtons[0]);
+                        break;
+                        case "End":
+                        e.preventDefault();
+                        switchTab(tabButtons[tabButtons.length - 1]);
+                        break;
+                    }
+                    });
+
+                    function moveLeft() {
+                    const currentTab = document.activeElement;
+                    if (!currentTab.parentElement.previousElementSibling) {
+                        switchTab(tabButtons[tabButtons.length - 1]);
+                    } else {
+                        switchTab(
+                        currentTab.parentElement.previousElementSibling.querySelector("a")
+                        );
+                    }
+                    }
+
+                    function moveRight() {
+                    const currentTab = document.activeElement;
+                    if (!currentTab.parentElement.nextElementSibling) {
+                        switchTab(tabButtons[0]);
+                    } else {
+                        switchTab(currentTab.parentElement.nextElementSibling.querySelector("a"));
+                    }
+                    }
+
+                    function switchTab(newTab) {
+                    const activePanelId = newTab.getAttribute("href");
+                    const activePanel = tabsContainer.querySelector(activePanelId);
+
+                    tabButtons.forEach((button) => {
+                        button.setAttribute("aria-selected", false);
+                        button.setAttribute("tabindex", "-1");
+                    });
+
+                    tabPanels.forEach((panel) => {
+                        panel.setAttribute("hidden", true);
+                    });
+
+                    activePanel.removeAttribute("hidden", false);
+
+                    newTab.setAttribute("aria-selected", true);
+                    newTab.setAttribute("tabindex", "0");
+                    newTab.focus();
+                    }
+
+                </script>
+
+ 
 
 <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
 	<div class="tabs-menu w-tab-menu" role="tablist">
