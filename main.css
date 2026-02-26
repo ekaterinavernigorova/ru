@@ -2519,13 +2519,13 @@ h5 {
 }
 
 h6 {
-  font-size: .75rem;
+  font-size: 1.125rem;
   font-weight: 500;
   font-family: 'Ppneuemontreal', Helvetica, sans-serif;
   line-height: 1.75;
 	display: inline-block;
 	margin: 0;
-  
+  text-transform: capitalize;
 }
 
 h6.tag {
@@ -2535,8 +2535,8 @@ h6.tag {
   border-radius: 6px;
 	padding: 2px 0.75rem 3px;
   margin-left: 6px;
-  text-transform: uppercase;
-  letter-spacing: .01rem;
+  /* text-transform: uppercase; */
+  /* letter-spacing: .01rem; */
 }
 
 h6.tag:first-child {
