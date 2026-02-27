@@ -3776,10 +3776,10 @@ a.case_wrapper.case3 {
   text-align: center;
   align-items: center;
   justify-content: start;
-  width: 13.5rem;
-  height: 2.25rem;
-  padding: 0;
-  margin-bottom: 20px;
+  /* width: 13.5rem;
+  height: 2.25rem; */
+  /* padding: 0; */
+  /* margin-bottom: 20px; */
 }
 
 ._2col_wrapper {
@@ -4196,7 +4196,7 @@ a.case_wrapper.case3 {
 }
 
 .intro_copy {
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   
