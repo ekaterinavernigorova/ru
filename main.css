@@ -5427,6 +5427,15 @@ display: none;
     height: 250px;
 }
 
+.bb-grid-section._3с {
+    grid-row-gap: 54px;
+    -ms-grid-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
 }
 
 
@@ -5847,12 +5856,12 @@ display: none;
   }
 
   .bb-grid-section._3с {
+    grid-row-gap: 54px;
     -ms-grid-rows: auto auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto auto;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    padding-left: 20px;
-    padding-right: 20px;
+    
   }
 
   .bb-grid-section._3с > *:nth-child(1) {
