@@ -2053,7 +2053,33 @@ h1#tabs-title {
 
 
 
+/* tab 2>list */
+.list_wrapper {
+  padding: 0; margin: 0;
 
+  a {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+  }
+}
+
+.list_wrapper li {
+  border-bottom: 1px solid rgba(0, 0, 0, .25); 
+  padding: 1rem 0;
+  position: relative;
+}
+
+.project-title {
+  width: 70%;
+}
+
+.project-details {
+  width: 30%; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
 
 /* custom styles */
 
