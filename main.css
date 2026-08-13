@@ -316,8 +316,14 @@ figcaption {
 
 ul, ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom:0;
+
   padding-left: 40px;
+}
+
+.tab-nav ul {
+    margin-bottom: 10px;
+
 }
 
 .w-list-unstyled {
@@ -2377,22 +2383,24 @@ nav {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     display:flex;
     justify-content:center;
-    padding-top:64px;
+    
     overflow-x:hidden;
   }
 
   .stage{
-    position:relative;
-    width:min(92vw, 480px);
+    position: fixed;
+    width:100%;
+    padding: 20px 0;
     display:flex;
     flex-direction:column;
     align-items:center;
+    z-index: 200;
   }
 
   /* ---------- TOGGLE PILL ---------- */
   .pill{
     position:relative;
-    z-index:20;
+    z-index:200;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -2520,12 +2528,12 @@ nav {
     left:50%;
     /* Keep the final panel position exactly where it was in the previous version:
        its top edge ends up 30px above the top of the black pill. */
-    top:-8px;
+    top:13px;
     width:var(--panel-w);
     max-width:90vw;
     height:var(--panel-h);
     transform:translateX(-50%);
-    z-index:10;
+    z-index:199;
     pointer-events:none;
   }
 
@@ -2570,7 +2578,8 @@ nav {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    align-items:center;  }
+    align-items:center; 
+    padding: 16px 0; }
 
   .eyebrow{
     font-size:17px;
@@ -2597,6 +2606,10 @@ nav {
     background-color: rgb(138 138 134 / .5)
   }
   .nav-links a:hover{ opacity:.6; }
+
+  .nav-links ul {
+    margin-bottom:0;
+  }
 
   .divider-line{
     height:1px;
