@@ -38,59 +38,59 @@
             <nav class="navbar">
               <div class="stage" id="stage">
 
-                <div class="pill">
+                  <div class="pill">
+
+                    <!-- <button class="moon-btn" aria-label="Toggle theme">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button> -->
+                    <button class="badge">Katya Vernigorova</button>
+                    <button class="language" aria-expanded="false" aria-controls="panel">En</button>
                 
-                  <!-- <button class="moon-btn" aria-label="Toggle theme">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button> -->
-                  <button class="badge">Katya Vernigorova</button>
-                  <button class="language">En</button>
+                    <button class="toggle-btn" id="toggleBtn" aria-expanded="false" aria-controls="panel">
+                      <span class="icon"><span></span><span></span><span></span></span>
+                      <!-- <span class="toggle-label">
+                        <span class="txt-closed">Menu</span>
+                        <span class="txt-open">Close</span>
+                      </span> -->
+                    </button>
+                  </div>
               
-                  <button class="toggle-btn" id="toggleBtn" aria-expanded="false" aria-controls="panel">
-                    <span class="icon"><span></span><span></span><span></span></span>
-                    <!-- <span class="toggle-label">
-                      <span class="txt-closed">Menu</span>
-                      <span class="txt-open">Close</span>
-                    </span> -->
-                  </button>
-                </div>
-            
-                <div class="panel-wrap">
-                  <div class="panel" id="panel">
-                    <div class="panel-content">
+                  <div class="panel-wrap">
+                    <div class="panel" id="panel">
+                      <div class="panel-content">
                     
-                      <div class="nav-item">
-                        <p class="eyebrow">Change language:</p>
-                        <ul class="nav-links">
-                          <li><a href="#">Russian</a></li>
-                        </ul>
+                        <div class="nav-item">
+                          <p class="eyebrow">Change language:</p>
+                          <ul class="nav-links">
+                            <li><a href="#">Russian</a></li>
+                          </ul>
+                        </div>
+                    
+                        <div class="divider-line"></div>
+                    
+                        <div class="nav-item">
+                          <p class="eyebrow">Contact:</p>
+                          <ul class="nav-links">
+                            <li><a href="#">LinkedIn</a></li>
+                          </ul>
+                        </div>
+                    
+                        <div class="divider-line"></div>
+                    
+                        <div class="nav-item">
+                          <p class="eyebrow">Follow:</p>
+                          <ul class="nav-links">
+                            <li><a href="#">Instagram</a></li>
+                          </ul>
+                        </div>
+                    
                       </div>
-                  
-                      <div class="divider-line"></div>
-                  
-                      <div class="nav-item">
-                        <p class="eyebrow">Contact:</p>
-                        <ul class="nav-links">
-                          <li><a href="#">LinkedIn</a></li>
-                        </ul>
-                      </div>
-                  
-                      <div class="divider-line"></div>
-                  
-                      <div class="nav-item">
-                        <p class="eyebrow">Follow:</p>
-                        <ul class="nav-links">
-                          <li><a href="#">Instagram</a></li>
-                        </ul>
-                      </div>
-                  
                     </div>
                   </div>
+              
                 </div>
-            
-            </div>
             </nav>
             
 
@@ -565,9 +565,10 @@
 </script> -->
 
 <!-- navbar open/close pill funcionality-->
- <script>
+<script>
   const stage = document.getElementById('stage');
   const toggleBtn = document.getElementById('toggleBtn');
+  const languageBtn = document.querySelector('.language');
   const pill = document.querySelector('.pill');
   const panel = document.getElementById('panel');
 
@@ -596,6 +597,7 @@
     syncPillWidth();
     stage.classList.add('open');
     toggleBtn.setAttribute('aria-expanded', 'true');
+    languageBtn.setAttribute('aria-expanded', 'true');
 
     // reveal content once the panel has mostly grown
     setTimeout(() => {
@@ -615,6 +617,7 @@
     // fade content out first
     stage.classList.remove('content-visible');
     toggleBtn.setAttribute('aria-expanded', 'false');
+    languageBtn.setAttribute('aria-expanded', 'false');
 
     setTimeout(() => {
       stage.classList.remove('open');
@@ -622,9 +625,12 @@
     }, CONTENT_FADE_OUT_MS);
   }
 
-  toggleBtn.addEventListener('click', () => {
+  function toggleMenu(){
     isOpen ? closeMenu() : openMenu();
-  });
+  }
+
+  toggleBtn.addEventListener('click', toggleMenu);
+  languageBtn.addEventListener('click', toggleMenu);
 
   // click outside to close
   document.addEventListener('click', (e) => {
