@@ -2030,9 +2030,9 @@ h1#tabs-title {
   align-items: center;
   gap: 2px;
   margin: 0;
-  padding: 3px;
+  padding: 6px;
   list-style: none;
-  background: #000;
+  background: #0d0d0d;
   border-radius: 14px;
 }
 
@@ -2057,7 +2057,7 @@ h1#tabs-title {
 
 .tab-nav ul li a.active {
   color: #fff;
-  background-color: #3a3a3a;
+  background-color: rgba(255, 255, 255, 0.156);
 }
 
 .tab-content {
