@@ -2043,6 +2043,7 @@ h1#tabs-title {
 
 .tab-nav ul li a {
   font-size:17px;
+  line-height: 24px;
   font-weight:500;
   cursor:pointer;
   display: block;
