@@ -2115,6 +2115,13 @@ h1#tabs-title {
   align-items: center;
 }
 
+.case-thumbnail-list img{
+  border-radius: 16px;
+  width: 76px;
+  height: 63px;
+  margin-right: 20px;
+}
+
 .project-details {
   width: 60%; 
   display: flex; 
