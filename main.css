@@ -2033,7 +2033,7 @@ h1#tabs-title {
   padding: 6px;
   list-style: none;
   background: #0d0d0d;
-  border-radius: 14px;
+  border-radius: 16px;
 }
 
 .tab-nav ul li {
@@ -2044,7 +2044,7 @@ h1#tabs-title {
 .tab-nav ul li a {
   font-size:17px;
   line-height: 24px;
-  font-weight:500;
+  font-weight:550;
   cursor:pointer;
   display: block;
   padding: 6px 10px;
