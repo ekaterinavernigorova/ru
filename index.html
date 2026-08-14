@@ -645,7 +645,7 @@
 </script>
 
 <script>
-    $(document).ready(function(
+    $(document).ready(function(){
       $('body').on('click', '.tab-nav a', function(){
         $('.tab-nav a').removeClass('active');
         $(this).addClass('active');
@@ -662,10 +662,7 @@
 
 <script src="https://unpkg.com/split-type"></script>
 <script>
-    // NAVBAR TRANSPARENT TO SOLID COLOR ON SCROLL  
-    window.addEventListener('scroll', () => {
-    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > window.innerHeight);
-    });
+   
 
     // HERO SLIDER
     let splitType = new SplitType(".slider_cms_title",{
