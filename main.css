@@ -2057,6 +2057,7 @@ h1#tabs-title {
 
 .tab-nav ul li a.active {
   color: #fff;
+  border: 1.5px solid #54535B;
   background-color: rgba(255, 255, 255, 0.156);
 }
 
