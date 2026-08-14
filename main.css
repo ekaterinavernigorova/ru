@@ -2108,7 +2108,7 @@ h1#tabs-title {
     border-top: 1px solid rgba(0, 0, 0,.25); 
 }
 
-.list_wrapper li:hover {
+.list_wrapper li a:hover {
 background-color: rgba(255, 255, 255, 0.156);}
 
 
