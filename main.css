@@ -2111,7 +2111,6 @@ h1#tabs-title {
 .project-title {
   width: 30%;
   display: flex; 
-  justify-content: space-between; 
   align-items: center;
 }
 
