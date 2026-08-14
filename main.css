@@ -2775,7 +2775,7 @@ h6.tag {
   mix-blend-mode: multiply;
   border-radius: 13px;
 	padding: 2px 0.75rem 3px;
-  margin-left: 6px;
+  margin-left: 10px;
   /* text-transform: uppercase; */
   /* letter-spacing: .01rem; */
 }
