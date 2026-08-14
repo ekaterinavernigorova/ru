@@ -2006,10 +2006,7 @@ textarea.w-input, textarea.w-select {
 
 /* home tabs */
 
-h1#tabs-title {
-  position: absolute;
-  line-height: 1;
-}
+
 
 .selected-work_wrapper {
   
@@ -2020,9 +2017,16 @@ h1#tabs-title {
   position: relative;
 }
 
-.tab-nav{
+.tab-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1#tabs-title {
+  position: static;
+  margin: 0;
+  line-height: 1;
 }
 
 .tab-nav ul {
