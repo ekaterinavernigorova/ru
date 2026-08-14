@@ -2098,13 +2098,13 @@ h1#tabs-title {
 }
 
 .list_wrapper li {
-  border-bottom: 1px solid rgba(0,0,0,.08); 
+  border-bottom: 1px solid rgba(0,0,0,.25); 
   padding: 1rem 0;
   position: relative;
 }
 
 .list_wrapper li:first-child {
-    border-top: 1px solid rgba(0, 0, 0,.08); 
+    border-top: 1px solid rgba(0, 0, 0,.25); 
 }
 
 .project-title {
