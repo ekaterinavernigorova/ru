@@ -2774,7 +2774,7 @@ h6.tag {
   border: 1.5px solid rgba(25, 25, 28, 0.4);
   mix-blend-mode: multiply;
   border-radius: 13px;
-	padding: 2px 0.75rem 3px;
+	padding: 1px 12px;
   margin-left: 10px;
   /* text-transform: uppercase; */
   /* letter-spacing: .01rem; */
@@ -5142,7 +5142,7 @@ right: auto;
 .case_infoblock {
 width: 100%;
 grid-column-gap: 0px;
-grid-row-gap: 8px;
+grid-row-gap: 16px;
 -webkit-box-pack: justify;
 -ms-flex-pack: justify;
 justify-content: space-between;
