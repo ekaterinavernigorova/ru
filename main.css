@@ -2115,7 +2115,7 @@ h1#tabs-title {
 
 .list_wrapper li a {
   display: grid;
-  grid-template-columns: 1fr minmax(20rem, 35rem) auto;
+  grid-template-columns: minmax(20rem, 35rem) minmax(20rem, 35rem) auto;
   align-items: center;
 
   column-gap: 4rem;
