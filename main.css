@@ -2102,8 +2102,12 @@ h1#tabs-title {
   width: 100%;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.list_wrapper li:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 /* ----------------------------------------
    Main row
@@ -2129,7 +2133,7 @@ h1#tabs-title {
 }
 
 .list_wrapper li a:hover {
-  background-color: rgba(255, 255, 255, 0.156);
+  background-color: rgba(247, 247, 247, 1);
 }
 
 
