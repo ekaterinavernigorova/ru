@@ -3066,7 +3066,7 @@ img.case-thumbnail {
   opacity: 0;
   visibility: hidden;
 
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .grid-project-description p {
