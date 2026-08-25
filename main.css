@@ -2773,6 +2773,7 @@ nav {
   .nav-links a{
     display:block;
     width: 100px;
+    font-family: 'Ppneuemontreal', Helvetica, sans-serif;
     font-size:17px;
     font-weight:700;
     color:#111;
@@ -2795,13 +2796,18 @@ nav {
     margin:0;
   }
 
-  
+  .social {
+    display:flex
+  }
 
-  .social a{
+  .social a {
+    margin-left: 10px;
     font-size:15px;
     font-weight:600;
+    line-height: 1.4;
     color:#1a1a1a;
     text-decoration:none;
+    border: none;
   }
 
   .note{
