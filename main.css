@@ -2925,6 +2925,8 @@ h6.tag {
   border-radius: 13px;
 	padding: 1px 12px;
   margin-left: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
   /* text-transform: uppercase; */
   /* letter-spacing: .01rem; */
 }
@@ -3039,7 +3041,7 @@ img {
 
 img.case-thumbnail {
   width: 100%;
-  height: 320px;
+  height: 500px;
   -webkit-transition: -webkit-transform 1.5s ease-in-out;
   transition: -webkit-transform 1.5s ease-in-out;
   -o-transition: transform 1.5s ease-in-out;
@@ -3078,7 +3080,7 @@ img.case-thumbnail {
   margin: 0;
   padding: 48px;
   font-size: 1.3rem;
-  line-height: 1.2;
+  line-height: 1.3;
   text-wrap-style: balance;
   text-align: center;
   padding: 48px;
