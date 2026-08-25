@@ -2202,7 +2202,7 @@ h1#tabs-title {
 
 /* Description */
 
-.list_wrapper .project-description {
+.list_wrapper .list-project-description {
   margin: 0;
 
   font-size: 1.3rem;
@@ -2239,7 +2239,7 @@ h1#tabs-title {
    HOVER: description → tags
    ---------------------------------------- */
 
-.list_wrapper li a:hover .project-description {
+.list_wrapper li a:hover .list-project-description {
   opacity: 0;
 }
 
@@ -3051,6 +3051,17 @@ img.case-thumbnail:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+img.case-thumbnail:hover .grid-project-description {
+  opacity: 1;
+  visibility: visible;
+}
+
+.grid-project-description {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 
@@ -5844,7 +5855,7 @@ display: none;
     font-size: 2rem;
   }
 
-  .list_wrapper .project-description {
+  .list_wrapper .list-project-description {
     font-size: 1.25rem;
   }
 
@@ -6380,7 +6391,7 @@ display: none;
   }
 
   /* Hide description completely */
-  .list_wrapper .project-description {
+  .list_wrapper .list-project-description {
     display: none;
   }
 
