@@ -3053,7 +3053,7 @@ img.case-thumbnail:hover {
           transform: scale(1.1);
 }
 
-img.case-thumbnail:hover .grid-project-description {
+.bb-grid-section._3с li a:hover .grid-project-description {
   opacity: 1;
   visibility: visible;
 }
