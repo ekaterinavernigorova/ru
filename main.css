@@ -3058,12 +3058,25 @@ img.case-thumbnail:hover {
   visibility: visible;
 }
 
+.bb-grid-section._3с li a {
+  position: relative;
+}
+
 .grid-project-description {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
+.grid-project-description p {
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  transition: opacity 0.2s ease;
+}
 
 .mobile {
   display: none;
