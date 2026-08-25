@@ -2557,8 +2557,8 @@ nav {
     min-height:100vh;
     background:#ffffff;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    display:flex;
-    justify-content:center;
+    
+    
     
     overflow-x:hidden;
   }
