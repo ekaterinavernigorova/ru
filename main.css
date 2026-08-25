@@ -3047,15 +3047,15 @@ img.case-thumbnail {
   transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
 }
 
-img.case-thumbnail:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .bb-grid-section._3с li a:hover .grid-project-description {
   opacity: 1;
   visibility: visible;
+}
+
+.bb-grid-section._3с li a:hover img.case-thumbnail {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .bb-grid-section._3с li a {
@@ -3076,8 +3076,16 @@ img.case-thumbnail:hover {
   align-items: center;
   justify-content: center;
   margin: 0;
+  padding: 48px;
   font-size: 1.3rem;
   line-height: 1.2;
+  text-wrap-style: balance;
+  text-align: center;
+  padding: 48px;
+  transition: opacity 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 16px;
   transition: opacity 0.2s ease;
 }
 
