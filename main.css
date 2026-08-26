@@ -2773,9 +2773,9 @@ nav {
   .nav-links a{
     display:block;
     width: 100px;
-    font-family: 'Ppneuemontreal', Helvetica, sans-serif;
+    font-family: 'Neuemontreal', Helvetica, sans-serif;
     font-size:17px;
-    font-weight:700;
+    font-weight:600;
     color:#111;
     text-decoration:none;
     text-align:center;
@@ -2861,6 +2861,14 @@ nav {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Neuemontreal';
+  src: url('src/PPNeueMontreal-Variable.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 h1 {
   font-family: 'Ppneuemontreal', Helvetica, sans-serif;
   letter-spacing: -.03em;
@@ -2919,7 +2927,7 @@ h5 {
 h6 {
   font-size: 1.062rem;
   font-weight: 500;
-  font-family: 'Ppneuemontreal', Helvetica, sans-serif;
+  font-family: 'Neuemontreal', Helvetica, sans-serif;
   line-height: 1.75;
 	display: inline-block;
 	margin: 0;
