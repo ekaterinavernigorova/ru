@@ -2960,7 +2960,7 @@ h6.tag.button {
 }
 
 h6.tag.button:hover {
-  background-color: rgba (0, 0, 0, 0.14);
+   opacity:.6;
 }
 
 ul {
