@@ -2874,14 +2874,15 @@ h1 {
 }
 
 h2 {
-  font-family: 'Neuemontreal', Helvetica, sans-serif;
-  letter-spacing: -.03em;
+  font-family: 'Ppneuemontreal', Helvetica, sans-serif;
+  letter-spacing: .02em;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.75rem;
+  font-size: 1.062rem;
   font-weight: 400;
   line-height: 1.2;
   text-transform: uppercase;
+  opacity: .5;
 }
 
 h3 {
@@ -2984,8 +2985,17 @@ ul {
   padding-bottom: 20px;
 }
 
+
 .padding-top-20px {
   padding-top: 20px;
+}
+
+.padding-bottom-30px {
+  padding-bottom: 30px;
+}
+
+.padding-bottom-60px {
+  padding-bottom: 60px;
 }
 
 .padding-top-list-grid {
@@ -3000,6 +3010,9 @@ ul {
   padding-bottom: 1.5em;
 }
 
+.padding-bottom-2em {
+  padding-bottom: 2em;
+}
 
 .padding-bottom-4em {
   padding-bottom: 4em;
@@ -6756,7 +6769,7 @@ display: none;
 }
 
 
-.padding-bottom-4em {
+.padding-bottom-2em {
   padding-bottom: 20px;
 }
 
