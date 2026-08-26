@@ -2996,17 +2996,10 @@ ul {
   padding-top: 4em;
 }
 
-.padding-top-8em {
-  padding-top: 8em;
-}
-
 .padding-bottom-1halfem {
   padding-bottom: 1.5em;
 }
 
-.padding-bottom-2halfem {
-  padding-bottom: 2.5em;
-}
 
 .padding-bottom-4em {
   padding-bottom: 4em;
@@ -3125,8 +3118,7 @@ img.case-thumbnail {
 /* sections */
 
 ._20px_wrapper {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 8em 20px 20px 2.5em;
 }
 
 
@@ -6752,8 +6744,7 @@ display: none;
 }
 
 ._20px_wrapper {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 4em 20px 20px;
 }
 
 .contact_copy {
@@ -6764,9 +6755,6 @@ display: none;
   padding-top: 2em;
 }
 
-.padding-bottom-2halfem {
-  padding-bottom: 20px;
-}
 
 .padding-bottom-4em {
   padding-bottom: 20px;
@@ -6774,10 +6762,6 @@ display: none;
 
 .padding-bottom-20px {
   padding-bottom: 10px;
-}
-
-.padding-top-8em {
-  padding-top: 4em;
 }
 
 .padding-bottom-8em {
