@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css" type="text/css" />
+<title>Shape-morph Menu</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+
+  }
+.credits {
+  width: 100%;
+  max-width: 370px;
+  background: #d9d9d9;
+  border-radius: 18px;
+  overflow: hidden;
+  color: #3a3a3f;
+}
+
+/* HEADER */
+
+.credits__header {
+  height: 62px;
+  padding: 0 14px 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.credits__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* TOGGLE BUTTON */
+
+.credits__toggle {
+  position: relative;
+
+  width: 40px;
+  height: 34px;
+
+  border: 1px solid #a9a9ad;
+  border-radius: 12px;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+/* the two lines making the + */
+
+.credits__toggle span {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 16px;
+  height: 1.5px;
+
+  background: #55555b;
+
+  transform: translate(-50%, -50%);
+  transition: transform 0.35s ease;
+}
+
+.credits__toggle span:last-child {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+/* DROPDOWN */
+
+.credits__details {
+  height: 0;
+  overflow: hidden;
+
+  transition: height 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.credits__content {
+  padding: 0 15px 14px;
+}
+
+
+/* ROWS */
+
+.credits__row {
+  min-height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #a7a7a7;
+
+  font-size: 16px;
+}
+
+.credits__row:last-child {
+  border-bottom: none;
+}
+
+.credits__row span:last-child {
+  text-align: right;
+}
+
+
+/* OPEN STATE */
+
+.credits.is-open .credits__toggle span:first-child {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.credits.is-open .credits__toggle span:last-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+</style>
+
+</head>
+<body>
+  
+  <div class="credits">
+  <div class="credits__header">
+    <div class="credits__title">Credits</div>
+
+    <button class="credits__toggle" type="button" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="credits__details">
+    <div class="credits__content">
+
+      <div class="credits__row">
+        <span>Client:</span>
+        <span>Arctic Invest</span>
+      </div>
+
+      <div class="credits__row">
+        <span>Agency:</span>
+        <span>Vangelis Project</span>
+      </div>
+
+      <div class="credits__row">
+        <span>Art Director:</span>
+        <span>Veronika Boglai</span>
+      </div>
+
+      <div class="credits__row">
+        <span>Designer:</span>
+        <span>Katya Vernigorova</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  const credits = document.querySelector('.credits');
+const creditsToggle = credits.querySelector('.credits__toggle');
+const creditsDetails = credits.querySelector('.credits__details');
+
+creditsToggle.addEventListener('click', () => {
+
+  const isOpen = credits.classList.contains('is-open');
+
+  if (isOpen) {
+    // CLOSE
+
+    creditsDetails.style.height = `${creditsDetails.scrollHeight}px`;
+
+    requestAnimationFrame(() => {
+      creditsDetails.style.height = '0px';
+    });
+
+    credits.classList.remove('is-open');
+    creditsToggle.setAttribute('aria-expanded', 'false');
+
+  } else {
+    // OPEN
+
+    creditsDetails.style.height = `${creditsDetails.scrollHeight}px`;
+
+    credits.classList.add('is-open');
+    creditsToggle.setAttribute('aria-expanded', 'true');
+
+  }
+
+});
+</script>
+
+</body>
+</html>
