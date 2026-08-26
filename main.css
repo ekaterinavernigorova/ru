@@ -2782,7 +2782,9 @@ nav {
     letter-spacing:-0.01em;
     border-radius: 13px;
     padding: 8px;
-    background-color: rgb(138 138 134 / .5)
+    background-color: rgb(138 138 134 / .2)
+    mix-blend-mode: multiply;
+
   }
   .nav-links a:hover{ opacity:.6; }
 
@@ -3122,9 +3124,9 @@ img.case-thumbnail {
 
 /* sections */
 
-._80px_wrapper {
-  padding-right: 80px;
-  padding-left: 80px;
+._20px_wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 
@@ -5384,7 +5386,11 @@ display: flex;
 
 .contact_copy {
   line-height: 1.1;
-  width: 50%;
+  width: 80%;
+}
+
+P.contact_copy {
+  font-size: 1.6em;
 }
 
 .submit-button_wrapper {
@@ -6745,7 +6751,7 @@ display: none;
   width: 100%;
 }
 
-._80px_wrapper {
+._20px_wrapper {
   padding-right: 20px;
   padding-left: 20px;
 }
