@@ -1121,6 +1121,86 @@
     , introDurationMS);
 </script>
 
+<!-- navbar open/close pill funcionality-->
+<script>
+  const stage = document.getElementById('stage');
+  const toggleBtn = document.getElementById('toggleBtn');
+  const languageBtn = document.querySelector('.language');
+  const pill = document.querySelector('.pill');
+  const panel = document.getElementById('panel');
+
+  let isOpen = false;
+  let busy = false;
+
+  // Durations (ms) — must line up with the CSS transition timings above
+  const PANEL_GROW_MS = 600;         // width/height transition
+  const CONTENT_FADE_DELAY_MS = 420; // content starts fading in once panel is nearly full size
+  const CONTENT_FADE_OUT_MS = 250;   // content fades out before the panel shrinks back
+
+  // Keep the panel's collapsed width locked to the pill's actual rendered
+  // width, so it always starts flush and grows outward from exactly there.
+  function syncPillWidth(){
+    const w = pill.getBoundingClientRect().width;
+    stage.style.setProperty('--pill-w', w + 'px');
+  }
+  syncPillWidth();
+  window.addEventListener('resize', syncPillWidth);
+
+  function openMenu(){
+    if (busy || isOpen) return;
+    busy = true;
+    isOpen = true;
+
+    syncPillWidth();
+    stage.classList.add('open');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    languageBtn.setAttribute('aria-expanded', 'true');
+
+    // reveal content once the panel has mostly grown
+    setTimeout(() => {
+      stage.classList.add('content-visible');
+    }, CONTENT_FADE_DELAY_MS);
+
+    setTimeout(() => {
+      busy = false;
+    }, PANEL_GROW_MS);
+  }
+
+  function closeMenu(){
+    if (busy || !isOpen) return;
+    busy = true;
+    isOpen = false;
+
+    // fade content out first
+    stage.classList.remove('content-visible');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    languageBtn.setAttribute('aria-expanded', 'false');
+
+    setTimeout(() => {
+      stage.classList.remove('open');
+      setTimeout(() => { busy = false; }, PANEL_GROW_MS);
+    }, CONTENT_FADE_OUT_MS);
+  }
+
+  function toggleMenu(){
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  toggleBtn.addEventListener('click', toggleMenu);
+  languageBtn.addEventListener('click', toggleMenu);
+
+  // click outside to close
+  document.addEventListener('click', (e) => {
+    if (!isOpen || busy) return;
+    if (!stage.contains(e.target)) closeMenu();
+  });
+
+  // esc to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+</script>
+
 <!-- horizontal carousel scripts -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
