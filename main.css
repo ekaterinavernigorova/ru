@@ -3515,6 +3515,7 @@ img.case-thumbnail {
   width: 40px;
   height: 34px;
   border-radius: 13px;
+  border: 1px solid rgba(84, 83, 91, .3);
   background-color: transparent;
   background-image: url("src/arrow.svg");
   
@@ -3539,7 +3540,7 @@ img.case-thumbnail {
 }
 .swiper-arrow.button-prev_portrait{
  background-image: url("src/arrow-180.svg");
- background-position: 53% 50%;
+ background-position: 47% 50%;
  top: 7%;
  left: auto;
  right: 6%;
@@ -3547,6 +3548,7 @@ img.case-thumbnail {
 }
 
 .swiper-arrow.button-next {
+background-position: 53% 50%;
 top: 12%;
 left: auto;
 right: 3%;
@@ -3554,6 +3556,7 @@ position: absolute;
 }
 
 .swiper-arrow.button-next_portrait{
+background-position: 53% 50%;
 top: 7%;
 left: auto;
 right: 3%;
