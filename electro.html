@@ -37,14 +37,20 @@
             .credits {
               width: 100%;
               max-width: 370px;
+              padding: 0;
+              border: none;
+              text-align: left;
               background: rgb(138 138 134 / .2);
               border-radius: 18px;
               overflow: hidden;
               color: #3a3a3f;
+
+              cursor: pointer;
             }
 
             .credits:hover {
                 opacity: 0.6;
+              
             }
 
             /* HEADER */
@@ -339,15 +345,15 @@
                            <div class="case-intro_actions">
 
 
-                                <div class="credits">
+                                <button class="credits" type="button" aria-expanded="false">
                                     <!-- credits + -->
                                    <div class="credits__header">
                                      <div class="credits__title">Credits</div>
                                     
-                                     <button class="credits__toggle" type="button" aria-expanded="false">
+                                     <div class="credits__toggle" aria-hidden="true">
                                        <span></span>
                                        <span></span>
-                                     </button>
+                                     </div>
                                    </div>
                                    <!-- credits dropdown content -->
                                    <div class="credits__details">
@@ -378,7 +384,7 @@
 
                                    </div>
                                    <!-- credits dropdown content end -->
-                                </div>
+                                </button>
 
                            </div>
                        
@@ -1273,36 +1279,31 @@ function horizontalLoop(items, config) {
 <!-- Credits dropdown testing out -->
 <script>
     const credits = document.querySelector('.credits');
-    const creditsToggle = credits.querySelector('.credits__toggle');
-    const creditsDetails = credits.querySelector('.credits__details');
+const creditsDetails = credits.querySelector('.credits__details');
 
-    creditsToggle.addEventListener('click', () => {
+credits.addEventListener('click', () => {
 
-      const isOpen = credits.classList.contains('is-open');
+    const isOpen = credits.classList.contains('is-open');
 
-      if (isOpen) {
+    if (isOpen) {
         // CLOSE
-
         creditsDetails.style.height = `${creditsDetails.scrollHeight}px`;
 
         requestAnimationFrame(() => {
-          creditsDetails.style.height = '0px';
+            creditsDetails.style.height = '0px';
         });
 
         credits.classList.remove('is-open');
-        creditsToggle.setAttribute('aria-expanded', 'false');
+        credits.setAttribute('aria-expanded', 'false');
 
-      } else {
+    } else {
         // OPEN
-
         creditsDetails.style.height = `${creditsDetails.scrollHeight}px`;
 
         credits.classList.add('is-open');
-        creditsToggle.setAttribute('aria-expanded', 'true');
-
-      }
-
-    });
+        credits.setAttribute('aria-expanded', 'true');
+    }
+});
 </script>
 
 </body>
