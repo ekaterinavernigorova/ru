@@ -4270,7 +4270,7 @@ a.case_wrapper.case3 {
   line-height: 140%;
 }
 
-.selected-work_list,
+
 .selected-work_wrapper,
 .recent-work_wrapper {
   grid-column-gap: 20px;
@@ -6794,7 +6794,7 @@ display: none;
     margin-right: 0;
   }
 
-  .selected-work_list, .selected-work_wrapper, .recent-work_wrapper {
+  .selected-work_wrapper, .recent-work_wrapper {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     -webkit-box-pack: center;
