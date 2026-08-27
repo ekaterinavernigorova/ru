@@ -3444,8 +3444,8 @@ img.case-thumbnail {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(55, 50, 53, 0.06);
-  border-radius: 6px;
+  background-color: rgb(138 138 134 / .2);
+  border-radius: 13px;
   padding: 0 10px 0 0;
 }
 
@@ -3455,8 +3455,8 @@ img.case-thumbnail {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(55, 50, 53, 0.06);
-  border-radius: 6px;
+  background-color: rgb(138 138 134 / .2);
+  border-radius: 13px;
   padding: 0 10px 0 0;
 }
 
@@ -3464,7 +3464,7 @@ img.case-thumbnail {
     color: rgba(0, 0, 0, .6);
     text-decoration: none;
     font-size: 21px;
-    font-family: Font Pp Neue Montreal Semi, sans-serif;
+    font-family: 'Neuemontreal', Helvetica, sans-serif;
     src: url("https://cdn.prod.website-files.com/64d4a1975f8da735703ec793/682105fa892bdafbfa715681_font-pp-neue-montreal-semi-bold.otf") format("opentype");
     font-weight: 600;
 }
@@ -3473,20 +3473,20 @@ img.case-thumbnail {
     color: rgba(0, 0, 0, .6);
     text-decoration: none;
     font-size: 21px;
-    font-family: Font Pp Neue Montreal Semi, sans-serif;
+    font-family: 'Neuemontreal', Helvetica, sans-serif;
     src: url("https://cdn.prod.website-files.com/64d4a1975f8da735703ec793/682105fa892bdafbfa715681_font-pp-neue-montreal-semi-bold.otf") format("opentype");
     font-weight: 600;
 }
 
 .swiper-button_desktop button:hover {
-  border: 1px solid rgba(255, 255, 255, 1);
+  opacity: 0.6;
    -webkit-transition: all 100ms ease;
   -o-transition: all 100ms ease;
   transition: all 100ms ease;
 }
 
 .swiper-button_desktop_portrait button:hover {
-  border: 1px solid rgba(255, 255, 255, 1);
+  opacity: 0.6;
    -webkit-transition: all 100ms ease;
   -o-transition: all 100ms ease;
   transition: all 100ms ease;
@@ -3511,17 +3511,14 @@ img.case-thumbnail {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-}
 
-
-.swiper-arrow {
-  width: 2em;
-  height: 2em;
-  border-radius: 6px;
+  width: 40px;
+  height: 34px;
+  border-radius: 13px;
   background-color: transparent;
   background-image: url("src/arrow.svg");
-  background-position: 50% 50%;
-  background-size: 55%;
+  
+  background-size: 45%;
   background-repeat: no-repeat;
   -webkit-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -3534,6 +3531,7 @@ img.case-thumbnail {
 }
 .swiper-arrow.button-prev {
  background-image: url("src/arrow-180.svg");
+ background-position: 47% 50%;
  top: 12%;
  left: auto;
  right: 6%;
@@ -3541,6 +3539,7 @@ img.case-thumbnail {
 }
 .swiper-arrow.button-prev_portrait{
  background-image: url("src/arrow-180.svg");
+ background-position: 53% 50%;
  top: 7%;
  left: auto;
  right: 6%;
@@ -4894,7 +4893,7 @@ flex-direction: column;
 -webkit-box-pack: justify;
 -ms-flex-pack: justify;
 justify-content: space-between;
-padding: 8em 40px 1.5em;
+padding: 160px 40px 56px;
 display: block;
 position: static;
 }
@@ -4905,6 +4904,10 @@ position: static;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.fullscreen_centered p {
+  max-width: 960px;
   text-align: center;
 }
 
