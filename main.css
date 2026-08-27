@@ -4464,20 +4464,7 @@ a.case_wrapper.case3 {
   border-radius: 15px;
 }
 
-.fullscreen_grid {
-  width: auto;
-  max-width: 100vw;
-  grid-column-gap: 60px;
-  grid-row-gap: 20px;
-  -ms-grid-rows: auto 20px auto 20px auto;
-  -ms-grid-columns: 1fr 60px 1fr;
-      grid-template: "."
-                 "Area"
-                 "."
-                 / 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: block;
-}
+
 
 .bento-intro_section {
   background-repeat: no-repeat;
@@ -4910,6 +4897,14 @@ justify-content: space-between;
 padding: 8em 40px 1.5em;
 display: block;
 position: static;
+}
+
+.fullscreen_centered {
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .paragraph {
@@ -6025,10 +6020,7 @@ display: none;
     padding-right: 20px;
   }
 
-  .fullscreen_grid {
-    -ms-grid-rows: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-  }
+ 
 
   .bento-intro_section {
     margin-left: 20px;
@@ -6991,10 +6983,7 @@ img.case-thumbnail {
     padding-right: 20px;
   }
 
-  .fullscreen_grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
+
 
   .bento-intro_section {
     margin-left: 0;
