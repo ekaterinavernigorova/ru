@@ -2786,7 +2786,9 @@ nav {
     mix-blend-mode: multiply;
 
   }
-  .nav-links a:hover{ opacity:.8; }
+  .nav-links a:hover{ 
+    opacity: 0.6; 
+  }
 
   .nav-links ul {
     margin-bottom:0;
@@ -2973,7 +2975,7 @@ h6.tag.button {
 }
 
 h6.tag.button:hover {
-   opacity:.8;
+   opacity: 0.6;
 }
 
 ul {
@@ -3439,31 +3441,36 @@ img.case-thumbnail {
 }
 
 .swiper-button_desktop button {
+  height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(138 138 134 / .2);
+  background-color: transparent;
   border-radius: 13px;
+  border: 1px solid rgba(84, 83, 91, .3);
   padding: 0 10px 0 0;
 }
 
 .swiper-button_desktop_portrait button {
+  height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(138 138 134 / .2);
+  background-color: transparent;
   border-radius: 13px;
-  padding: 0 10px 0 0;
+  border: 1px solid rgba(84, 83, 91, .3);
+  padding: 0 10px 0 2px;
 }
 
 .swiper-button_desktop button a {
     color: rgba(0, 0, 0, .6);
     text-decoration: none;
-    font-size: 21px;
+    font-size: 17px;
+    line-height: 24px;
     font-family: 'Neuemontreal', Helvetica, sans-serif;
     src: url("https://cdn.prod.website-files.com/64d4a1975f8da735703ec793/682105fa892bdafbfa715681_font-pp-neue-montreal-semi-bold.otf") format("opentype");
     font-weight: 600;
