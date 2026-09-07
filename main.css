@@ -3537,7 +3537,7 @@ img.case-thumbnail {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   opacity: 0;
   transition: opacity 0.25s ease;
   pointer-events: none;
