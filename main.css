@@ -3532,8 +3532,20 @@ img.case-thumbnail {
   z-index: 2;
 }
 
-.swiper-arrow:hover {
-  opacity: 0.8;
+
+.swiper-arrow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.swiper-arrow:hover::after {
+  opacity: 1;
 }
 .swiper-arrow.button-prev {
  background-image: url("src/arrow-180.svg");
