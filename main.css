@@ -3533,7 +3533,7 @@ img.case-thumbnail {
 }
 
 .swiper-arrow:hover {
-  background-color: rgba(55, 50, 53, 0.06);
+  opacity: 0.8;
 }
 .swiper-arrow.button-prev {
  background-image: url("src/arrow-180.svg");
