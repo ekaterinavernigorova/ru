@@ -2154,7 +2154,7 @@ h1#tabs-title {
 .list_wrapper .project-title p {
   margin: 0;
 
-  font-family: Ppneuemontreal, Helvetica, sans-serif;
+  font-family: Neuemontreal, Helvetica, sans-serif;
   font-size: 2em;
   font-weight: 500;
   line-height: 1.1;
@@ -2842,15 +2842,15 @@ nav {
 /* typefaces */
 
 @font-face {
-  font-family: 'Ppneuemontreal';
-  src: url('https://uploads-ssl.webflow.com/65d06d2bec88e5ad6e8bfcd8/65d06d2bec88e5ad6e8bfd07_PPNeueMontreal-Medium.otf') format('opentype');
+  font-family: 'Neuemontreal';
+  src: url('https://uploads-ssl.webflow.com/65d06d2bec88e5ad6e8bfcd8/65d06d2bec88e5ad6e8bfd07_Neuemontreal-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Ppneuemontreal';
-  src: url('https://uploads-ssl.webflow.com/65d06d2bec88e5ad6e8bfcd8/65d06d2bec88e5ad6e8bfd08_PPNeueMontreal-Bold.otf') format('opentype');
+  font-family: 'Neuemontreal';
+  src: url('https://uploads-ssl.webflow.com/65d06d2bec88e5ad6e8bfcd8/65d06d2bec88e5ad6e8bfd08_Neuemontreal-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2865,14 +2865,14 @@ nav {
 
 @font-face {
   font-family: 'Neuemontreal';
-  src: url('src/6530cfb4ca61531e2748b216_PPNeueMontreal-SemiBold.woff2') format('woff2');
+  src: url('src/6530cfb4ca61531e2748b216_Neuemontreal-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 h1 {
-  font-family: 'Ppneuemontreal', Helvetica, sans-serif;
+  font-family: 'Neuemontreal', Helvetica, sans-serif;
   letter-spacing: -.03em;
   margin-top: 0;
   margin-bottom: 0;
@@ -2884,7 +2884,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Ppneuemontreal', Helvetica, sans-serif;
+  font-family: 'Neuemontreal', Helvetica, sans-serif;
   letter-spacing: .02em;
   margin-top: 0;
   margin-bottom: 0;
@@ -2920,7 +2920,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'Ppneuemontreal', Helvetica, sans-serif;
+  font-family: 'Neuemontreal', Helvetica, sans-serif;
   letter-spacing: 0.055em;
   margin-top: 0;
   margin-bottom: 0;
@@ -4774,7 +4774,7 @@ a.case_wrapper.case3 {
 }
 
 .project-title p{
-  font-family: Ppneuemontreal, Helvetica, sans-serif;
+  font-family: Neuemontreal, Helvetica, sans-serif;
   font-size: 2.5em;
   font-weight: 500;
   line-height: 1.1;
