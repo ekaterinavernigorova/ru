@@ -3425,7 +3425,7 @@ img.case-thumbnail {
  left: 3%;
  right: auto;
  position: absolute;
- height: 41px;
+ height: 32px;
  background-color: transparent;
  z-index: 2; 
 }
@@ -3435,7 +3435,7 @@ img.case-thumbnail {
  left: 3%;
  right: auto;
  position: absolute;
- height: 38px;
+ height: 32px;
  background-color: transparent;
  z-index: 2; 
 }
