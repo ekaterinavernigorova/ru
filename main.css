@@ -3358,6 +3358,8 @@ img.case-thumbnail {
     width: calc(100% - 40px);
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 8em;
+    margin-bottom: 6em;
   }
 }
 
@@ -3524,7 +3526,7 @@ img.case-thumbnail {
 
 
 .section.is--dark {
-  background-color: #F2F0F1;
+  background-color: var(--gray);
   color: #dfdad5;
 }
 
@@ -5664,6 +5666,7 @@ display: flex;
 position: sticky;
 bottom: 0;
 overflow: hidden;
+background:var(--gray);
 }
 
 .footer_link-block {
