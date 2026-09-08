@@ -3996,6 +3996,11 @@ horizontal>.swiper-pagination-progressbar,
    padding-bottom: 60px;
  }
 
+ .case-breadcrumbs h2 {
+  color: rgba(25, 25, 28, 0.4); 
+  border-bottom: 1.5px solid rgba(25, 25, 28, 0.4); 
+ }
+
  .case-intro.is-case-study h1 {
   width: 100%;
   max-width: 1400px;
@@ -4012,6 +4017,8 @@ horizontal>.swiper-pagination-progressbar,
    align-items: center;
  }
 
+ 
+
  .case-intro_bottom {
    width: 100%;
    display: flex;
@@ -4024,7 +4031,7 @@ horizontal>.swiper-pagination-progressbar,
 
  .case-intro_description p {
    max-width: 750px;
-   
+
    margin: 0;
    font-size: 1.6em;
    line-height: 1.15;
