@@ -3384,7 +3384,8 @@ img.case-thumbnail {
 
 .before-after__image--before {
   z-index: 2;
-  width: 50%;
+  width: 100%;
+  clip-path: inset(0 50% 0 0);
 }
 
 /* before overlay */

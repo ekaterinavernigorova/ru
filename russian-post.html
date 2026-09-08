@@ -1001,7 +1001,7 @@ document.querySelectorAll(".before-after").forEach((slider) => {
 
     percentage = Math.max(0, Math.min(100, percentage));
 
-    before.style.width = percentage + "%";
+    before.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
     handle.style.left = percentage + "%";
   }
 
