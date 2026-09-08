@@ -3351,6 +3351,8 @@ img.case-thumbnail {
   border-radius: 24px;
   user-select: none;
   touch-action: none;
+  margin-top: 8em;
+  margin-bottom: 6em;
 }
 
 @media screen and (max-width: 991px) {
