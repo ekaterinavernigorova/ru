@@ -544,6 +544,34 @@
                             </div>
                         </div>
 
+                        <!-- before-after comparison slider -->
+
+                        <div class="before-after">
+
+                             <div class="before-after__image before-after__image--after">
+                               <img src="src/post_slide-after.webp" alt="After">
+                             </div>
+                         
+                             <div class="before-after__image before-after__image--before">
+                               <img src="src/post_slide-before.webp" alt="Before">
+                               <div class="before-after__overlay"></div>
+                             </div>
+                         
+                             <div class="before-after__label before-after__label--before">
+                               Before
+                             </div>
+                         
+                             <div class="before-after__label before-after__label--after">
+                               After
+                             </div>
+                         
+                             <div class="before-after__handle">
+                               <div class="before-after__arrow before-after__arrow--left"></div>
+                               <div class="before-after__arrow before-after__arrow--right"></div>
+                             </div>
+
+                        </div>
+
                         <!-- horizontal carousel section -->
                         <div class="overflow">
                             
@@ -954,6 +982,51 @@
         });
     }
     , introDurationMS);
+</script>
+
+<!-- before/after comparison slider -->
+ <script>
+document.querySelectorAll(".before-after").forEach((slider) => {
+
+  const before = slider.querySelector(".before-after__image--before");
+  const handle = slider.querySelector(".before-after__handle");
+
+  let dragging = false;
+
+  function updateSlider(clientX) {
+    const rect = slider.getBoundingClientRect();
+
+    let percentage =
+      ((clientX - rect.left) / rect.width) * 100;
+
+    percentage = Math.max(0, Math.min(100, percentage));
+
+    before.style.width = percentage + "%";
+    handle.style.left = percentage + "%";
+  }
+
+  handle.addEventListener("pointerdown", (event) => {
+    dragging = true;
+    handle.setPointerCapture(event.pointerId);
+
+    updateSlider(event.clientX);
+  });
+
+  handle.addEventListener("pointermove", (event) => {
+    if (!dragging) return;
+
+    updateSlider(event.clientX);
+  });
+
+  handle.addEventListener("pointerup", () => {
+    dragging = false;
+  });
+
+  handle.addEventListener("pointercancel", () => {
+    dragging = false;
+  });
+
+});
 </script>
 
 <!-- horizontal carousel scripts -->
