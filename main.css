@@ -2872,6 +2872,11 @@ nav {
   font-display: swap;
 }
 
+h1, p {
+  text-wrap: balance;
+}
+
+
 h1 {
   font-family: 'Neuemontreal', Helvetica, sans-serif;
   letter-spacing: -.03em;
