@@ -4034,7 +4034,7 @@ horizontal>.swiper-pagination-progressbar,
  }
 
  .case-intro_description p {
-   max-width: 750px;
+   max-width: 960px;
    font-weight: 700;
    margin: 0;
    font-size: 1.6rem;
@@ -5258,7 +5258,7 @@ flex-direction: column;
 -webkit-box-pack: justify;
 -ms-flex-pack: justify;
 justify-content: space-between;
-padding: 160px 40px 56px;
+padding: 128px 40px 56px;
 display: block;
 position: static;
 }
@@ -5268,7 +5268,7 @@ position: static;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
+  gap: 2em;
 }
 
 .fullscreen_centered p {
