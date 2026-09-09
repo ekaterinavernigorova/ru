@@ -2933,6 +2933,7 @@ h5 {
 h6 {
   font-size: 1.062rem;
   font-weight: 700;
+  letter-spacing: -0.01em;
   font-family: 'Neuemontreal', Helvetica, sans-serif;
   line-height: 1.75;
 	display: inline-block;
@@ -2961,14 +2962,9 @@ h6.tag:first-child {
 h6.tag.button {
   display: block;
   width: 100px;
-  font-size: 1.0625rem;
-  font-weight: 600;
-  line-height: 1.4;
   color: #fff;
   text-decoration: none;
   text-align: center;
-  letter-spacing: -0.01em;
-  border-radius: 13px;
   padding: 8px;
   background-color: #0d0d0d;
   border: 1.5px solid #0d0d0d;
