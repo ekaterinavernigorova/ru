@@ -3997,7 +3997,7 @@ horizontal>.swiper-pagination-progressbar,
    display: flex;
    align-items: center;
    gap: 0.5rem;
-   padding-bottom: 60px;
+   padding-bottom: 45px;
  }
 
  .case-breadcrumbs h2 {
