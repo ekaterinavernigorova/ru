@@ -2879,7 +2879,7 @@ h1 {
   margin-bottom: 0;
   color: var(--dark);
   text-align: left;
-  font-size: 3.75rem;
+  font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.1;
 }
@@ -2889,7 +2889,7 @@ h2 {
   letter-spacing: .02em;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 0.9375rem;
+  font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
@@ -5268,11 +5268,11 @@ position: static;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 52px;
+  gap: 28px;
 }
 
 .fullscreen_centered p {
-  max-width: 960px;
+  max-width: 840px;
   text-align: center;
 }
 
