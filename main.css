@@ -7441,10 +7441,6 @@ img.case-thumbnail {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-a8ebe29c-4f6b-f0cd-b500-044b4a333ffd-cce3f5c1 {
-  grid-area: 1 / 2 / 2 / 3;
-  align-self: end;
-}
 
 #w-node-a8ebe29c-4f6b-f0cd-b500-044b4a333fff-cce3f5c1 {
   grid-area: 3 / 1 / 4 / 3;
