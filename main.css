@@ -2781,6 +2781,7 @@ nav {
     text-align:center;
     letter-spacing:-0.01em;
     border-radius: 13px;
+    border: 1.5px rgb(138 138 134 / .2);
     padding: 8px;
     background-color: rgb(138 138 134 / .2);
     mix-blend-mode: multiply;
@@ -2968,6 +2969,13 @@ h6.tag.button {
   padding: 8px;
   background-color: #0d0d0d;
   border: 1.5px solid #0d0d0d;
+}
+
+.social h6.tag.button {
+  background-color: rgb(138 138 134 / .2);
+  border: 1.5px rgb(138 138 134 / .2);
+  color: #111;
+  mix-blend-mode: multiply;
 }
 
 h6.tag.button:hover {
