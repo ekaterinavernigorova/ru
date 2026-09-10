@@ -2154,7 +2154,7 @@ h1#tabs-title {
 .list_wrapper .project-title p {
   margin: 0;
   font-family: Neuemontreal, Helvetica, sans-serif;
-  font-size: clamp(2rem, 0.0368vw + 1.882rem, 2.5rem);  
+  font-size: clamp(2rem, 1.667vw, 2.5rem);  
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -2897,7 +2897,7 @@ h1 {
   margin-bottom: 0;
   color: var(--dark);
   text-align: left;
-  font-size: clamp(2rem, 0.1103vw + 1.647rem, 3.5rem);
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
   font-weight: 600;
   line-height: 1.1;
 }
@@ -2950,7 +2950,7 @@ h5 {
 }
 
 h6 {
-  font-size: clamp(0.8rem, 0.0193vw + 0.738rem, 1.063rem);
+  font-size: clamp(0.8rem, 0.875vw, 1.063rem);
   font-weight: 700;
   letter-spacing: -0.01em;
   font-family: 'Neuemontreal', Helvetica, sans-serif;
@@ -3078,7 +3078,7 @@ p {
   letter-spacing:0em;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: clamp(1.0625rem, 0.0395vw + 0.936rem, 1.6rem);
+  font-size: clamp(1.0625rem, 1.79vw, 1.6rem);
   font-weight: 600;
 }
 
@@ -3227,7 +3227,7 @@ img.case-thumbnail {
 }
 
 .slider_cms_title {
-  font-size: clamp(4.5rem, 0.1103vw + 4.147rem, 6rem);
+  font-size: clamp(4.5rem, 5vw, 6rem);
   font-weight: 600;
   line-height: 0.9; 
   letter-spacing: -.03em;
