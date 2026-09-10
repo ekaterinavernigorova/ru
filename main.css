@@ -2046,8 +2046,8 @@ h1#tabs-title {
 }
 
 .tab-nav ul li a {
-  font-size:17px;
-  line-height: 24px;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
   font-weight:600;
   cursor:pointer;
   display: block;
@@ -2154,7 +2154,7 @@ h1#tabs-title {
 .list_wrapper .project-title p {
   margin: 0;
   font-family: Neuemontreal, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: clamp(2rem, calc(1.882rem + 0.0368vw), 2.5rem);  
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -2773,7 +2773,7 @@ nav {
     padding: 16px 0; }
 
   .eyebrow{
-    font-size:17px;
+    font-size: 1.0625rem;
     color:rgb(138 138 134);
    
   }
@@ -2897,7 +2897,7 @@ h1 {
   margin-bottom: 0;
   color: var(--dark);
   text-align: left;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, calc(1.647rem + 0.1103vw), 3.5rem);
   font-weight: 600;
   line-height: 1.1;
 }
@@ -2907,7 +2907,7 @@ h2 {
   letter-spacing: .02em;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.1rem;
+  font-size:  1.0625rem;
   font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
@@ -2950,7 +2950,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.062rem;
+  font-size: clamp(0.8rem, calc(0.738rem + 0.0193vw), 1.0625rem);
   font-weight: 700;
   letter-spacing: -0.01em;
   font-family: 'Neuemontreal', Helvetica, sans-serif;
@@ -3078,7 +3078,7 @@ p {
   letter-spacing:0em;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.6rem;
+  font-size: clamp(1.0625rem, calc(0.936rem + 0.0395vw), 1.6rem);
   font-weight: 600;
 }
 
@@ -3143,7 +3143,7 @@ img.case-thumbnail {
   justify-content: center;
   margin: 0;
   padding: 48px;
-  font-size: 1.3rem;
+  font-size:  1.0625rem;
   line-height: 1.3;
   text-wrap-style: balance;
   text-align: center;
@@ -3227,8 +3227,7 @@ img.case-thumbnail {
 }
 
 .slider_cms_title {
-  max-width: 11ch;
-  font-size: 6rem;
+  font-size: clamp(4.5rem, calc(4.147rem + 0.1103vw), 6rem);
   font-weight: 600;
   line-height: 0.9; 
   letter-spacing: -.03em;
@@ -3966,7 +3965,6 @@ horizontal>.swiper-pagination-progressbar,
   width: 100%;
   max-width: 1400px;
   font-family: 'Neuemontreal', Helvetica, sans-serif;
-  font-weight: 600;
   margin: 0;
   text-align: left;
  }
@@ -5730,7 +5728,7 @@ display: flex;
 }
 
 P.contact_copy {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .submit-button_wrapper {
@@ -6154,10 +6152,7 @@ display: none;
     -ms-grid-column: 3;
   }
 
-  h6 {
-    font-size: 0.85rem;
-    
-  }
+
 
   .list-grid-border-bottom_desktop {
     border-bottom: 0;
@@ -6172,10 +6167,6 @@ display: none;
     grid-row-gap: 80px;
   }
 
-
-  h1 {
-    font-size: 2.5rem;
-  }
 
 
 
@@ -6302,9 +6293,6 @@ display: none;
     max-width: 25rem;
   }
 
-  .list_wrapper .project-title p {
-    font-size: 2rem;
-  }
 
   .list_wrapper .list-project-description {
     font-size: 1.25rem;
@@ -6322,9 +6310,7 @@ display: none;
 
 /* 767px */
 @media screen and (max-width: 767px) {
-  .slider_cms_title {
-    font-size: 2.2rem;
-  }
+  
 
   ._2col_wrapper {
     grid-column-gap: 45px;
@@ -6379,9 +6365,7 @@ display: none;
     -ms-grid-row: 4;
     -ms-grid-column: 2;
   }
-  h1 {
-    font-size: 2rem;
-  }
+  
 
 
   .case-details_wrapper, .case-intro.is-case-study {
@@ -6866,17 +6850,10 @@ display: none;
 
 /* >479px */
 @media screen and (max-width: 479px) {
-  h1 {
-    font-size: 2rem;
-}
 
   h6.tag {
     margin-right: 8px;
     margin-bottom: 10px;  
-  }
-
-  p {
-    font-size: 1.25em;
   }
 
   nav {
@@ -6924,10 +6901,6 @@ display: none;
 
   .slider_cms_title {
     max-width: 22ch;
-    font-size: 4.5rem;
-    line-height: 0.9; 
-    letter-spacing: -.03em;
-    position: relative;
   }
 
   .slider_cms_item {
@@ -7194,9 +7167,6 @@ display: none;
     display: block;
   }
 
-  .recent-work_wrapper p {
-    font-size: 2rem;
-  }
 
   .list-grid-section {
     grid-column-gap: 0;
@@ -7410,9 +7380,7 @@ img.case-thumbnail {
     line-height: 2rem;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
+
 
   .footer_right-columns {
     width: 100%;
