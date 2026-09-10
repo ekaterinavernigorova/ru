@@ -4805,6 +4805,11 @@ a.case_wrapper.case3 {
   background-position: 0%;
 }
 
+.bento-intro_grid {
+  outline: 2px solid red;
+  background: rgba(255, 0, 0, 0.1);
+}
+
 
 .bento-intro_grid {
   grid-column-gap: 20px;
