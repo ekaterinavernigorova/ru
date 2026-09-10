@@ -3217,6 +3217,7 @@ img.case-thumbnail {
   line-height: 0.9; 
   letter-spacing: -.03em;
   position: relative;
+  text-wrap-style: balance;
 }
 
 .slider_cms_item-copy {
