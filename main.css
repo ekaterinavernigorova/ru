@@ -3872,73 +3872,7 @@ horizontal>.swiper-pagination-progressbar,
 
 
 
-@media screen and (max-width: 1024px) {
-  .container {
-    padding-right: 5vw;
-    padding-left: 5vw;
-  }
 
-  .header {
-    width: 100%;
-    height: auto;
-  }
-
-  .hero_right {
-    overflow: hidden;
-    height: 58em;
-    padding-right: 4vw;
-    padding-left: 4vw;
-    font-size: 1vw;
-  }
-
-  .nav-link {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .hero_content {
-    padding-top: 7.8em;
-  }
-
-  .nav-menu {
-    display: none;
-  }
-
-  .splide.slider1.pill {
-    padding-right: 6vw;
-  }
-
-  .splide.slider2.pill {
-    padding-right: 6vw;
-  }
-
-  .splide__slide {
-    width: 50%;
-  }
-
-  .splide__slide.five-cards {
-    width: 33.333333333333336%;
-  }
-
-  .slider-pill_img {
-    padding-top: 148%;
-  }
-
-  .splide__pagination {
-    position: relative;
-    padding-top: 1.9em;
-  }
-
-  .splide__pagination__page {
-    width: 2em;
-    height: 3px;
-    margin-right: 0.3em;
-    margin-left: 0em;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .container {
@@ -6076,9 +6010,12 @@ right: 0%;
 
 
 
-/* 1025px */
-@media screen and (max-width: 1025px) {
-  .slider_cms_item-copy {
+--------------------------------------
+/* 1024px */
+--------------------------------------
+@media screen and (max-width: 1024px) {
+  
+ .slider_cms_item-copy {
     height: 85vh;
 }
 
@@ -6094,15 +6031,73 @@ right: 0%;
 display: none;
 }
 
-.case-intro.is-case-study {
-  height: 85vh;
-}
 
-}
---------------------------------------
-/* 1024px */
---------------------------------------
-@media screen and (max-width: 1024px) {
+  .container {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero_right {
+    overflow: hidden;
+    height: 58em;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    font-size: 1vw;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero_content {
+    padding-top: 7.8em;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .splide.slider1.pill {
+    padding-right: 6vw;
+  }
+
+  .splide.slider2.pill {
+    padding-right: 6vw;
+  }
+
+  .splide__slide {
+    width: 50%;
+  }
+
+  .splide__slide.five-cards {
+    width: 33.333333333333336%;
+  }
+
+  .slider-pill_img {
+    padding-top: 148%;
+  }
+
+  .splide__pagination {
+    position: relative;
+    padding-top: 1.9em;
+  }
+
+  .splide__pagination__page {
+    width: 2em;
+    height: 3px;
+    margin-right: 0.3em;
+    margin-left: 0em;
+  }
+
 
 
   .desktop {
