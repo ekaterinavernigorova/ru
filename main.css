@@ -2153,10 +2153,10 @@ h1#tabs-title {
 
 .list_wrapper .project-title p {
   margin: 0;
-
   font-family: Neuemontreal, Helvetica, sans-serif;
   font-size: 2em;
   font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
@@ -4789,6 +4789,7 @@ a.case_wrapper.case3 {
   font-family: Neuemontreal, Helvetica, sans-serif;
   font-size: 2.5em;
   font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
