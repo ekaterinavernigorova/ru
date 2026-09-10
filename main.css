@@ -677,7 +677,7 @@ textarea.w-input, textarea.w-select {
   display: none !important;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   .w-container {
     max-width: 728px;
   }
@@ -1847,7 +1847,7 @@ textarea.w-input, textarea.w-select {
   position: static;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
   }
@@ -2397,7 +2397,7 @@ font-size: inherit;
   display: none !important;
 }
 
-@media screen and (max-width: 991px), @media screen and (max-width: 767px), @media screen and (max-width: 479px) {
+@media screen and (max-width: 1024px), @media screen and (max-width: 767px), @media screen and (max-width: 479px) {
   .hide, .hide-tablet {
       display: none !important;
   }
@@ -2512,7 +2512,7 @@ html {
 }
 
 /* fix 100vh on mobile safari */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
 .webkit-fill {
 max-height: -webkit-fill-available;
 max-height: -moz-available;
@@ -3366,7 +3366,7 @@ img.case-thumbnail {
   margin-bottom: 6em;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   .before-after {
     width: calc(100% - 40px);
     margin-left: 20px;
@@ -3872,7 +3872,7 @@ horizontal>.swiper-pagination-progressbar,
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   .container {
     padding-right: 5vw;
     padding-left: 5vw;
@@ -6099,9 +6099,9 @@ display: none;
 
 }
 --------------------------------------
-/* 991px */
+/* 1024px */
 --------------------------------------
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
 
 
   .desktop {
@@ -7521,7 +7521,7 @@ img.case-thumbnail {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   #w-node-_91f460f7-742b-098f-aab0-0c63816aa323-cce3f5c1, #w-node-_91f460f7-742b-098f-aab0-0c63816aa32e-cce3f5c1 {
     grid-row-end: 4;
   }
