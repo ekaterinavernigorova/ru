@@ -4797,12 +4797,6 @@ a.case_wrapper.case3 {
 
 .assets_bg {
   background-image:
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.55) 0%,
-      rgba(0, 0, 0, 0.35) 55%,
-      rgba(0, 0, 0, 0) 100%
-    ),
     url("src/assets-intro_bg.webp");
   background-position: 50%;
 }
@@ -4848,6 +4842,17 @@ a.case_wrapper.case3 {
     width: 100%;
   
   }
+
+  .assets_bg {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.35) 99%
+    ),
+    url("src/assets-intro_bg.webp");
+  background-position: 50%;
+}
 }
 
 
