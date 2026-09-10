@@ -3213,6 +3213,7 @@ img.case-thumbnail {
 .slider_cms_title {
   max-width: 11ch;
   font-size: 6rem;
+  font-weight: 600;
   line-height: 0.9; 
   letter-spacing: -.03em;
   position: relative;
