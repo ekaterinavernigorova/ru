@@ -2397,11 +2397,24 @@ font-size: inherit;
   display: none !important;
 }
 
-@media screen and (max-width: 1024px), @media screen and (max-width: 767px), @media screen and (max-width: 479px) {
+@media screen and (max-width: 1024px){
   .hide, .hide-tablet {
       display: none !important;
   }
 }
+
+@media screen and (max-width: 767px){
+  .hide, .hide-tablet {
+      display: none !important;
+  }
+}
+
+
+@media screen and (max-width: 479px){
+  .hide, .hide-tablet {
+      display: none !important;
+  }
+} 
 
 @media screen and (max-width: 767px) {
   .hide-mobile-landscape {
@@ -6014,7 +6027,7 @@ right: 0%;
 /* 1024px */
 --------------------------------------
 @media screen and (max-width: 1024px) {
-  
+
  .slider_cms_item-copy {
     height: 85vh;
 }
