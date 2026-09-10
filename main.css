@@ -6163,7 +6163,7 @@ display: none;
 
 
   h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 
 
@@ -6856,7 +6856,7 @@ display: none;
 /* >479px */
 @media screen and (max-width: 479px) {
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
   h6.tag {
