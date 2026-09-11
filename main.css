@@ -2858,21 +2858,21 @@ nav {
 
 @font-face {
   font-family: 'Neuemontreal';
-  src: url('https://uploads-ssl.webflow.com/65d06d2bec88e5ad6e8bfcd8/65d06d2bec88e5ad6e8bfd07_Neuemontreal-Medium.otf') format('opentype');
+  src: url('src/NeueMontreal-Medium.woff2') format('woff2');
   font-weight: 500;
-  font-style: normal;
+  font-style: medium;
   font-display: swap;
 }
 @font-face {
   font-family: 'Neuemontreal';
-  src: url('https://uploads-ssl.webflow.com/65d06d2bec88e5ad6e8bfcd8/65d06d2bec88e5ad6e8bfd08_Neuemontreal-Bold.otf') format('opentype');
+  src: url('src/NeueMontreal-Bold.woff2') format('woff2');
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
 }
 @font-face {
   font-family: 'Neuemontreal';
-  src: url('https://uploads-ssl.webflow.com/65d06d2bec88e5ad6e8bfcd8/65d06d2bec88e5ad6e8bfd59_NeueMontreal-Regular.otf') format('opentype');
+  src: url('src/NeueMontreal-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2880,9 +2880,9 @@ nav {
 
 @font-face {
   font-family: 'Neuemontreal';
-  src: url('src/6530cfb4ca61531e2748b216_Neuemontreal-SemiBold.woff2') format('woff2');
+  src: url('src/NeueMontreal-Semibold.woff2') format('woff2');
   font-weight: 600;
-  font-style: normal;
+  font-style: semibold;
   font-display: swap;
 }
 
