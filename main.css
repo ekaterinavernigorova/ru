@@ -4843,7 +4843,7 @@ a.case_wrapper.case3 {
   
   }
 
-  .paragraph.white span {
+  span.paragraph.white {
     max-width: 100%;
   }
 
@@ -5244,7 +5244,7 @@ align-items: baseline;
 gap: 10px;
 }
 
-.paragraph.white span{
+span.paragraph.white{
   max-width: 40vw;
 }
 
