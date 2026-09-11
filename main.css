@@ -3887,6 +3887,22 @@ horizontal>.swiper-pagination-progressbar,
   object-fit: cover;
 }
 
+.other-work_list {
+  width: 100%; 
+  padding: 128px 20px 74px;
+}
+
+  .next_copy {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 2rem; 
+    padding-bottom: 54px;
+  }
+
 
 
 
@@ -7154,21 +7170,6 @@ display: none;
   padding-bottom: 4em;
 }
 
-.other-work_list {
-  width: 100%; 
-  padding: 128px 20px 74px;
-}
-
-  .next_copy {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    gap: 2rem; 
-    padding-bottom: 54px;
-  }
 
   .selected-work_wrapper, .recent-work_wrapper {
     grid-column-gap: 20px;
