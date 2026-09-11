@@ -1985,6 +1985,10 @@ textarea.w-input, textarea.w-select {
   display: flex;
 }
 
+.w-layout-hflex.tag-wrapper {
+  gap: 5px;
+}
+
 .w-layout-grid {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
@@ -2968,16 +2972,12 @@ h6.tag {
   mix-blend-mode: multiply;
   border-radius: 13px;
 	padding: 1px 8px;
-  margin-left: 10px;
   white-space: nowrap;
   flex-shrink: 0;
   /* text-transform: uppercase; */
   /* letter-spacing: .01rem; */
 }
 
-h6.tag:first-child {
- margin-left: 0; 
-}
 
 h6.tag.button {
   display: block;
