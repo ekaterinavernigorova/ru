@@ -5236,11 +5236,10 @@ position: static;
 .paragraph {
 text-align: left;
 margin-top: 0;
-line-height: 1.4;
+line-height: 1.2;
 }
 
 .paragraph.white {
-line-height: 1.6;
 display: flex;
 align-items: baseline;
 gap: 10px;
@@ -5248,6 +5247,7 @@ gap: 10px;
 
 .paragraph.white p{
   max-width: 40vw;
+  
 }
 
 .div-block-5 {
