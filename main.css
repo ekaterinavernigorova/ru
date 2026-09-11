@@ -5238,6 +5238,7 @@ line-height: 1.4;
 line-height: 1.6;
 display: flex;
 align-items: center;
+gap: 10px;
 }
 
 .div-block-5 {
