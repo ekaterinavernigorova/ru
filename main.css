@@ -4826,9 +4826,9 @@ a.case_wrapper.case3 {
 }
 
 @media screen and (max-width: 1024px) {
-  .bento-intro_text {
+  /* .bento-intro_text {
     width: 380px;
-  }
+  } */
 }
 
 @media screen and (max-width: 767px) {
@@ -4841,6 +4841,10 @@ a.case_wrapper.case3 {
   .bento-intro_text {
     width: 100%;
   
+  }
+
+  .paragraph.white span {
+    max-width: 100%;
   }
 
   .assets_bg {
