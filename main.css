@@ -5222,17 +5222,17 @@ display: block;
 position: static;
 }
 
-.fullscreen_centered {
+.fullscreen_left {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 2em;
 }
 
-.fullscreen_centered p {
-  max-width: 840px;
-  text-align: center;
+.fullscreen_left p {
+  max-width: 50vw;
+  text-align: left;
 }
 
 .paragraph {
