@@ -4797,7 +4797,7 @@ a.case_wrapper.case3 {
 
 .assets_bg {
   background-image:
-    url("src/assets-intro_bg.webp");
+    url("src/assets-intro_bg.jpg");
   background-position: 50%;
 }
 
@@ -4820,7 +4820,7 @@ a.case_wrapper.case3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 1.25rem;
 }
 
 .bento-intro_text .paragraph {
@@ -4856,7 +4856,7 @@ a.case_wrapper.case3 {
       rgba(0, 0, 0, 0.55) 0%,
       rgba(0, 0, 0, 0.35) 99%
     ),
-    url("src/assets-intro_bg.webp");
+    url("src/assets-intro_bg.jpg");
   background-position: 50%;
 }
 }
