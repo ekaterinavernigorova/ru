@@ -4816,10 +4816,10 @@ a.case_wrapper.case3 {
   margin: 0 0 2em 0;
 }
 
-.bento-intro_text {
+/* .bento-intro_text {
   width: 500px;
   
-}
+} */
 
 .bento-intro_text .paragraph {
   margin: 0;
@@ -5237,8 +5237,12 @@ line-height: 1.4;
 .paragraph.white {
 line-height: 1.6;
 display: flex;
-align-items: center;
+align-items: baseline;
 gap: 10px;
+}
+
+.paragraph white p{
+  max-width: 40vw;
 }
 
 .div-block-5 {
