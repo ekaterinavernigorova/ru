@@ -5236,6 +5236,8 @@ line-height: 1.4;
 
 .paragraph.white {
 line-height: 1.6;
+display: flex;
+align-items: center;
 }
 
 .div-block-5 {
