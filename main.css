@@ -3079,8 +3079,9 @@ p {
   letter-spacing:0em;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: clamp(1.0625rem, 1.79vw, 1.6rem);
+  font-size: clamp(1.0625rem, 1.79vw, 1.5rem);
   font-weight: 600;
+  line-height: 1.2;
 }
 
 a {
