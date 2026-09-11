@@ -4816,10 +4816,12 @@ a.case_wrapper.case3 {
   margin: 0 0 2em 0;
 }
 
-/* .bento-intro_text {
-  width: 500px;
+.bento-intro_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   
-} */
+}
 
 .bento-intro_text .paragraph {
   margin: 0;
