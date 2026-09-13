@@ -3760,6 +3760,18 @@ img.case-thumbnail {
  position: absolute;
 }
 
+
+@media screen and (max-width: 1024px) {
+
+  .swiper-arrow.button-prev_portrait {
+    right: 9%;
+  }
+
+  .swiper-arrow.button-prev {
+    right: 9%;
+  }
+}
+
 .swiper-arrow.button-next {
 background-position: 53% 50%;
 top: 12%;
@@ -6049,13 +6061,7 @@ right: 0%;
 --------------------------------------
 @media screen and (max-width: 1024px) {
 
-  .swiper-arrow.button-prev_portrait {
-    right: 9%;
-  }
-
-  .swiper-arrow.button-prev {
-    right: 9%;
-  }
+ 
 
  .slider_cms_item-copy {
     height: 85vh;
