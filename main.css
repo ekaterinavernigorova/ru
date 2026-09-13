@@ -4846,10 +4846,7 @@ a.case_wrapper.case3 {
 }
 
 @media screen and (max-width: 1024px) {
-  /* .bento-intro_text {
-    width: 380px;
-  } */
-}
+ 
 
 @media screen and (max-width: 767px) {
   .bento-intro_section {
@@ -6051,6 +6048,14 @@ right: 0%;
 --------------------------------------
 @media screen and (max-width: 1024px) {
 
+  .swiper-arrow.button-prev_portrait {
+    right: 9%;
+  }
+
+  .swiper-arrow.button-prev {
+    right: 9%;
+  }
+
  .slider_cms_item-copy {
     height: 85vh;
 }
@@ -6872,6 +6877,19 @@ display: none;
 
 /* >479px */
 @media screen and (max-width: 479px) {
+
+  .case-intro_bottom {
+    flex-direction: column;
+  }
+
+  .case-intro_actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .credits {
+    max-width: none;
+    width: 100%;
+  }
 
   h6.tag {
     margin-right: 8px;
