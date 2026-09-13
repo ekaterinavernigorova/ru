@@ -7362,7 +7362,7 @@ img.case-thumbnail {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-top: 4em;
+    padding-top: 6em;
     padding-bottom: 4em;
   }
 
