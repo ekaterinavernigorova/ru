@@ -3764,6 +3764,17 @@ img.case-thumbnail {
 @media screen and (max-width: 1024px) {
 
   .swiper-arrow.button-prev_portrait {
+    right: 8%;
+  }
+
+  .swiper-arrow.button-prev {
+    right: 8%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .swiper-arrow.button-prev_portrait {
     right: 9%;
   }
 
