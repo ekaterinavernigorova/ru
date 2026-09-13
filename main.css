@@ -6914,7 +6914,7 @@ display: none;
 
   h6.tag {
     margin-right: 8px;
-    margin-bottom: 10px;  
+    /* margin-bottom: 10px;   */
   }
 
   nav {
