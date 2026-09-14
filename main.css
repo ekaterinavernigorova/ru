@@ -4923,7 +4923,7 @@ a.case_wrapper.case3 {
 }
 
 .paragraph.white p{
-    max-width: 55vw;
+    max-width: 40vw;
   }
 
 @media screen and (max-width: 1024px) {
