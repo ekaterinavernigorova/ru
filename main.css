@@ -5305,6 +5305,10 @@ position: static;
     max-width: none;
     width: 100%;
   }
+
+  .other-work_list {
+  padding: 4em 20px 2em;
+}
 }
 
 .paragraph {
