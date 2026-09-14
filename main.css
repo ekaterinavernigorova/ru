@@ -5369,10 +5369,7 @@ align-items: baseline;
 gap: 10px;
 }
 
-.paragraph.white p{
-  max-width: none;
-  width:100%;
-}
+
 
 .div-block-5 {
 width: 100%;
