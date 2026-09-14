@@ -4879,12 +4879,15 @@ a.case_wrapper.case3 {
   margin-left: 40px;
   margin-right: 40px;
   padding: 4em 40px;
+  overflow: hidden;
 }
+
 
 .assets_bg {
   background-image:
     url("src/assets-intro_bg.jpg");
   background-position: 50%;
+  
 }
 
 .presentation_bg {
@@ -4936,12 +4939,32 @@ a.case_wrapper.case3 {
   background-image:
     linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.55) 0%,
-      rgba(0, 0, 0, 0.35) 99%
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.55) 99%
     ),
-    url("src/assets-intro_bg.jpg");
-  background-position: 50%;
+    
+  background-position: 90%;
+  /* Apply the blur here */
+    filter: blur(8px);
+  
+  /* Scale slightly to hide white/unblurred artifact edges caused by the blur */
+    transform: scale(1.1); 
 }
+  .presentation_bg {
+    background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.55) 99%
+    ),
+    
+  background-position: 90%;
+  /* Apply the blur here */
+    filter: blur(8px);
+  
+  /* Scale slightly to hide white/unblurred artifact edges caused by the blur */
+    transform: scale(1.1); 
+  }
 }
 
 
@@ -5334,8 +5357,8 @@ gap: 10px;
 }
 
 .paragraph.white p{
-  max-width: 40vw;
-  
+  max-width: none;
+  width:100%;
 }
 
 .div-block-5 {
@@ -7421,7 +7444,7 @@ img.case-thumbnail {
   }
 
   ._100vw-img_section {
-    padding-bottom: 0;
+    padding-bottom: 2em;
   }
 
   .image-12 {
