@@ -7619,6 +7619,7 @@ img.case-thumbnail {
    LOGO PARALLAX SECTION
    ========================================================= */
 
+/* Logo parallax section */
 .sticky_container {
     width: 100vw;
     height: 200vh;
@@ -7631,26 +7632,10 @@ img.case-thumbnail {
     height: 100vh;
     position: sticky;
     top: 0;
-    left: 0;
     overflow: hidden;
 }
 
-.sticky_container .image11.z1,
-.sticky_container .image-111.z2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
-.sticky_container .image11.z1 {
-    object-fit: cover;
-}
-
-.sticky_container .image-111.z2 {
-    object-fit: contain;
-}
 
 
 
