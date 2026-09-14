@@ -5274,17 +5274,29 @@ position: static;
 }
 
 @media screen and (max-width: 1024px) {
+._20px_wrapper {
+    padding: 5em 20px 2.5em 20px;
+}
+
+.next_copy.bb-grid-section._3с {
+  grid-row-gap: 0;
+}
+
+.other-work_list {
+  padding: 5em 20px 4em;
+}
+
   .fullscreen_left p{
     max-width: none;
     width: 100%;
   }
 
   .fullscreen_section {
-    padding: 4em 40px 3.5em;
+    padding: 5em 40px 3.5em;
   }
 
   .padding-top-4em {
-    padding-top: 2em;
+    padding-top: 3em;
 }
 }
 
