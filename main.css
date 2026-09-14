@@ -5344,6 +5344,10 @@ position: static;
   .padding-top-4em {
     padding-top: 3em;
 }
+
+ .padding-bottom-4em {
+    padding-bottom: 3em;
+}
 }
 
 @media screen and (max-width: 479px) {
@@ -7302,6 +7306,10 @@ display: none;
 
 .padding-top-4em {
   padding-top: 2em;
+}
+
+.padding-top-4em {
+  padding-bottom: 2em;
 }
 
 
