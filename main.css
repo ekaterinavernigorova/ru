@@ -3132,9 +3132,7 @@ img.case-thumbnail {
   visibility: visible;
 }
 
-.mobile {
-  display: none;
-}
+
 
 @media screen and (max-width: 1024px) {
   .bb-grid-section._3с li a:hover .grid-project-description {
@@ -7050,6 +7048,10 @@ display: none;
     display: none;
   }
 
+  .desktoptablet {
+  display: none;
+}
+
   .padding-40px.mobile {
     height: 40px;
   }
@@ -7766,6 +7768,14 @@ img.case-thumbnail {
   @media (prefers-reduced-motion: reduce){
     .parallax__bg, .parallax__logo-wrap{ transform:none !important; }
   }
+
+  .mobile {
+  display: none;
+}
+
+.desktoptablet {
+  display: block;
+}
 
 
 
