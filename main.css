@@ -3132,6 +3132,10 @@ img.case-thumbnail {
   visibility: visible;
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .bb-grid-section._3с li a:hover .grid-project-description {
     opacity: 0;
