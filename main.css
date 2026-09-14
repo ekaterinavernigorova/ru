@@ -3415,6 +3415,16 @@ img.case-thumbnail {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .before-after {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 4em;
+  }
+}
+
 /* image layers */
 
 .before-after__image {
