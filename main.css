@@ -4922,8 +4922,15 @@ a.case_wrapper.case3 {
   flex-shrink: 0;
 }
 
+.paragraph.white p{
+    max-width: 55vw;
+  }
+
 @media screen and (max-width: 1024px) {
  
+  .paragraph.white p{
+    max-width: 55vw;
+  }
 
 @media screen and (max-width: 767px) {
   .bento-intro_section {
