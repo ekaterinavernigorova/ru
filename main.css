@@ -7627,10 +7627,10 @@ img.case-thumbnail {
   }
 
   @media (max-width: 1024px){
-    .parallax{height:80vh;}
+    .parallax{height:50vh;}
   }
   @media (max-width: 640px){
-    .parallax{height:50vh;}
+    .parallax{height:30vh;}
   }
 
   @media (prefers-reduced-motion: reduce){
