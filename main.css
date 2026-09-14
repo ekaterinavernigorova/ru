@@ -4916,6 +4916,10 @@ a.case_wrapper.case3 {
   margin: 0;
 }
 
+.paragraph.white svg {
+  flex-shrink: 0;
+}
+
 @media screen and (max-width: 1024px) {
  
 
@@ -4945,10 +4949,10 @@ a.case_wrapper.case3 {
     
   background-position: 90%;
   /* Apply the blur here */
-    filter: blur(8px);
+    /* filter: blur(8px); */
   
   /* Scale slightly to hide white/unblurred artifact edges caused by the blur */
-    transform: scale(1.1); 
+    /* transform: scale(1.1);  */
 }
   .presentation_bg {
     background-image:
@@ -4960,10 +4964,10 @@ a.case_wrapper.case3 {
     
   background-position: 90%;
   /* Apply the blur here */
-    filter: blur(8px);
+    /* filter: blur(8px); */
   
   /* Scale slightly to hide white/unblurred artifact edges caused by the blur */
-    transform: scale(1.1); 
+    /* transform: scale(1.1);  */
   }
 }
 
