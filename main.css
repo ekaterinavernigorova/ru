@@ -4770,6 +4770,12 @@ a.case_wrapper.case3 {
   border-bottom: 1px solid rgba(0, 0, 0, .25);
 }
 
+.expertise {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 5px;
+}
+
 
 .list-grid-r1,
 .list-grid-r2,
@@ -6906,7 +6912,7 @@ display: none;
   }
 
   h6.tag {
-    margin-right: 8px;
+    /* margin-right: 8px; */
     /* margin-bottom: 10px;   */
   }
 
