@@ -3355,6 +3355,13 @@ img.case-thumbnail {
   z-index: 3;
   color: var(--light);
   position: relative;
+  max-width: 40vw;
+}
+
+@media screen and (max-width: 479px) {
+  .slider_cms_link {
+    max-width: 100%;
+  }
 }
 
 
