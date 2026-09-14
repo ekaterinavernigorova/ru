@@ -3127,6 +3127,13 @@ img.case-thumbnail {
   visibility: visible;
 }
 
+@media screen and (max-width: 1024px) {
+  .bb-grid-section._3с li a:hover .grid-project-description {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .bb-grid-section._3с li a:hover img.case-thumbnail {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
