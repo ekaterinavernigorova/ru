@@ -6141,7 +6141,13 @@ left: 0%;
 right: 0%;
 }
 
+  .mobile {
+  display: none;
+}
 
+.desktoptablet {
+  display: block;
+}
 
 
 
@@ -7769,13 +7775,7 @@ img.case-thumbnail {
     .parallax__bg, .parallax__logo-wrap{ transform:none !important; }
   }
 
-  .mobile {
-  display: none;
-}
 
-.desktoptablet {
-  display: block;
-}
 
 
 
