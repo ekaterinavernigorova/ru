@@ -4945,7 +4945,7 @@ a.case_wrapper.case3 {
       90deg,
       rgba(0, 0, 0, 0.75) 0%,
       rgba(0, 0, 0, 0.55) 99%
-    );
+    ), url(src/assets-intro_bg_mob.jpg);;
     
   background-position: 90%;
   /* Apply the blur here */
@@ -4960,9 +4960,9 @@ a.case_wrapper.case3 {
       90deg,
       rgba(0, 0, 0, 0.75) 0%,
       rgba(0, 0, 0, 0.55) 99%
-    ),
+    ), url(src/presentation-intro-bg.webp);
     
-  background-position: 90%;
+  background-position: 3%;
   /* Apply the blur here */
     /* filter: blur(8px); */
   
