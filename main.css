@@ -6865,6 +6865,12 @@ display: none;
     justify-content: space-between;
   }
 
+  @media screen and (max-width: 479px) {
+    .list_wrapper .project-details {
+      display: none;
+    }
+  }
+
   .list_wrapper .type {
     max-width: none;
     min-height: auto;
