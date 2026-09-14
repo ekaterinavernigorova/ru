@@ -7245,6 +7245,9 @@ display: none;
     padding-bottom: 20px;
 }
 
+.case-intro_center {
+  padding-bottom: 20px;
+}
 
   .selected-work_wrapper, .recent-work_wrapper {
     grid-column-gap: 20px;
