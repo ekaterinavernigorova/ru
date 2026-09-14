@@ -4603,6 +4603,13 @@ a.case_wrapper.case3 {
   height: 110%;
 }
 
+.case-details {
+  z-index: 3;
+  background-color: #F9F9F9;
+  position: relative;
+  /* top: auto; */
+}
+
 .case-details_wrapper h6.tag {
   text-align: center;
   align-items: center;
