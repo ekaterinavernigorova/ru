@@ -192,11 +192,20 @@
 
 
 
- <!-- logo parallax section -->
- <div class="sticky_container">
-    <div data-w-id="a8ebe29c-4f6b-f0cd-b500-044b4a333ff0" class="img_container">
-        <img src="src/sk_logo-section_bg.webp" loading="lazy" sizes="100vw"  alt="" class="image11 z1"/>
-        <img src="src/sk_logo-section.webp" loading="lazy" sizes="100vw"  alt="" class="image-111 z2"/>
+<!-- logo parallax section -->
+<div class="sticky_container">
+    <div class="img_container">
+        <img src="src/sk_logo-section_bg.webp"
+             loading="lazy"
+             sizes="100vw"
+             alt=""
+             class="image11 z1"/>
+
+        <img src="src/sk_logo-section.webp"
+             loading="lazy"
+             sizes="100vw"
+             alt=""
+             class="image-111 z2"/>
     </div>
 </div>
 
@@ -994,6 +1003,51 @@
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeMenu();
   });
+</script>
+
+
+<!-- parallax script -->
+
+<script>
+(function () {
+
+    const section = document.querySelector('.sticky_container');
+    const bg = section?.querySelector('.image11.z1');
+    const logo = section?.querySelector('.image-111.z2');
+
+    if (!section || !bg || !logo) return;
+
+    function updateParallax() {
+
+        const rect = section.getBoundingClientRect();
+        const scrollDistance = section.offsetHeight - window.innerHeight;
+
+        if (scrollDistance <= 0) return;
+
+        /*
+         * 0 = section just entering viewport
+         * 1 = section just leaving viewport
+         */
+        let progress = -rect.top / scrollDistance;
+        progress = Math.max(0, Math.min(1, progress));
+
+        /*
+         * Background moves slowly.
+         * Logo moves faster in the opposite direction.
+         */
+        const bgY = progress * -8;
+        const logoY = progress * -18;
+
+        bg.style.transform = `translate3d(0, ${bgY}vh, 0)`;
+        logo.style.transform = `translate3d(0, ${logoY}vh, 0)`;
+    }
+
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    window.addEventListener('resize', updateParallax);
+
+    updateParallax();
+
+})();
 </script>
 
 <!-- horizontal carousel scripts -->
