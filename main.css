@@ -3410,7 +3410,7 @@ img.case-thumbnail {
     width: calc(100% - 40px);
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 8em;
+    margin-top: 0;
     margin-bottom: 6em;
   }
 }
@@ -5287,7 +5287,7 @@ position: static;
 }
 
   .fullscreen_left p{
-    max-width: none;
+    max-width: 55vw;
     width: 100%;
   }
 
