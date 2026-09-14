@@ -2832,7 +2832,7 @@ nav {
 
   .social {
     display:flex;
-    gap: 10px;
+    gap: 5spx;
   }
 
   .social a {
@@ -5298,6 +5298,13 @@ position: static;
   .padding-top-4em {
     padding-top: 3em;
 }
+}
+
+@media screen and (max-width: 479px) {
+  .fullscreen_left p{
+    max-width: none;
+    width: 100%;
+  }
 }
 
 .paragraph {
