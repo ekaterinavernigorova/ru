@@ -2165,6 +2165,12 @@ h1#tabs-title {
   line-height: 1.1;
 }
 
+@media screen and (max-width: 1024px) {
+  .project-title p, .list_wrapper p {
+    font-size: 2rem;
+  }
+}
+
 
 /* Thumbnail */
 
