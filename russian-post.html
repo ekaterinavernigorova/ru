@@ -1359,6 +1359,44 @@ credits.addEventListener('click', () => {
 });
 </script>
 
+<!-- logo parallax script -->
+<script>
+(function(){
+  var section = document.getElementById('parallax');
+  var bg = document.getElementById('parallaxBg');
+  var logo = document.getElementById('parallaxLogo');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ticking = false;
+
+  function update(){
+    ticking = false;
+    if (reduce) return;
+    var rect = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    // progress: -1 (section below viewport) .. 0 (centered) .. 1 (section above viewport)
+    var center = rect.top + rect.height / 2;
+    var progress = (vh / 2 - center) / (vh / 2 + rect.height / 2);
+
+    var bgShift = progress * 60;   // background drifts slower/wider
+    var logoShift = progress * 110; // logo drifts a touch faster, creating separation
+
+    bg.style.transform = 'translate3d(0,' + bgShift.toFixed(2) + 'px,0)';
+    logo.style.transform = 'translate3d(0,' + logoShift.toFixed(2) + 'px,0)';
+  }
+
+  function onScroll(){
+    if (!ticking){
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+})();
+</script>
+
 <!-- before/after comparison slider -->
  <script>
 document.querySelectorAll(".before-after").forEach((slider) => {

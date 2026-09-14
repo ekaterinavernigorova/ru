@@ -7595,10 +7595,15 @@ img.case-thumbnail {
     left:0;
     width:100%;
     height:120%;
-    background-image: url('src/sk_logo-section_bg.webp');
-    background-size:cover;
-    background-position:center;
+    overflow:hidden;
     will-change:transform;
+  }
+  .parallax__bg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
   }
   .parallax__scrim{
     position:absolute;
@@ -7613,6 +7618,7 @@ img.case-thumbnail {
     justify-content:center;
     will-change:transform;
   }
+
   .parallax__logo{
     /* width:min(46vw, 620px); */
     width:100%;
@@ -7621,12 +7627,10 @@ img.case-thumbnail {
   }
 
   @media (max-width: 1024px){
-    .parallax{height:50vh;}
+    .parallax{height:80vh;}
   }
   @media (max-width: 640px){
-    .block{padding:4.5rem 1.25rem;}
-    .cols{grid-template-columns:1fr; gap:2.5rem; padding:4rem 1.25rem;}
-    .cta-row{padding:4rem 1.25rem; flex-direction:column; align-items:flex-start;}
+    .parallax{height:50vh;}
   }
 
   @media (prefers-reduced-motion: reduce){
