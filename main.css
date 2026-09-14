@@ -2113,6 +2113,10 @@ h1#tabs-title {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.list_wrapper li:last-child {
+  border-bottom: none;
+}
+
 /* ----------------------------------------
    Main row
    ---------------------------------------- */
