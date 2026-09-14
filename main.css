@@ -5247,6 +5247,14 @@ position: static;
     max-width: none;
     width: 100%;
   }
+
+  .fullscreen_section {
+    padding: 4em 40px 3.5em;
+  }
+
+  .padding-top-4em {
+    padding-top: 2em;
+}
 }
 
 .paragraph {
