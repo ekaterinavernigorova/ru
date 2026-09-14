@@ -191,13 +191,14 @@
 
 
 
-
-<div class="sticky_container">
-    <div data-w-id="a8ebe29c-4f6b-f0cd-b500-044b4a333ff0" class="img_container">
-        <img src="src/sk_logo-section_bg.webp" loading="lazy" sizes="100vw" alt="" class="image11 z1"/>
-        <img src="src/sk_logo-section.webp" loading="lazy" sizes="100vw" alt="" class="image-111 z2"/>
+<!-- ================= parallax section ================= -->
+  <section class="parallax" id="parallax">
+    <div class="parallax__bg" id="parallaxBg"></div>
+    <div class="parallax__scrim"></div>
+    <div class="parallax__logo-wrap" id="parallaxLogo">
+      <img class="parallax__logo" src="src/sk_logo-section.webp" alt="Logo mark">
     </div>
-</div>
+  </section>
 
 
 <!-- case main content -->
@@ -996,6 +997,43 @@
   });
 </script>
 
+<!-- logo parallax script -->
+<script>
+(function(){
+  var section = document.getElementById('parallax');
+  var bg = document.getElementById('parallaxBg');
+  var logo = document.getElementById('parallaxLogo');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ticking = false;
+
+  function update(){
+    ticking = false;
+    if (reduce) return;
+    var rect = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    // progress: -1 (section below viewport) .. 0 (centered) .. 1 (section above viewport)
+    var center = rect.top + rect.height / 2;
+    var progress = (vh / 2 - center) / (vh / 2 + rect.height / 2);
+
+    var bgShift = progress * 60;   // background drifts slower/wider
+    var logoShift = progress * 110; // logo drifts a touch faster, creating separation
+
+    bg.style.transform = 'translate3d(0,' + bgShift.toFixed(2) + 'px,0)';
+    logo.style.transform = 'translate3d(0,' + logoShift.toFixed(2) + 'px,0)';
+  }
+
+  function onScroll(){
+    if (!ticking){
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+})();
+</script>
 
 <!-- horizontal carousel scripts -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

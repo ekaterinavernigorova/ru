@@ -5027,20 +5027,6 @@ a.case_wrapper.case3 {
   padding-top: 1.5em;
 }
 
-.image-111 {
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: auto;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
-}
 
 .image-111.z2 {
   z-index: 2;
@@ -5223,19 +5209,6 @@ font-weight: 700;
 
 
 
-.image11.z1 {
-z-index: 1;
-width: 100%;
-height: 100%;
--o-object-fit: cover;
-object-fit: cover;
-position: absolute;
-top: 0%;
-bottom: 0%;
-left: 0%;
-right: 0%;
-overflow: hidden;
-}
 
 .image-7 {
 width: 100%;
@@ -6079,9 +6052,6 @@ right: 0%;
   padding: 14vw 4vw;
 }
 
-.sticky_container {
-  height: 50vh;
-}
 
 .intro-heading {
 display: none;
@@ -6233,9 +6203,7 @@ display: none;
        object-fit: contain;
   }
 
-  .sticky_container {
-    width: 100vw;
-  }
+  
 
   .intro-heading {
     font-size: 1.1rem;
@@ -6247,12 +6215,7 @@ display: none;
 
   
 
-  .image11.z1 {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+
 
   .fullscreen_section {
     padding-top: 7em;
@@ -7380,9 +7343,7 @@ img.case-thumbnail {
     padding-top: 0;
   }
 
-  .image-111 {
-    width: auto;
-  }
+  
 
 
   ._2col-img {
@@ -7619,39 +7580,58 @@ img.case-thumbnail {
    LOGO PARALLAX SECTION
    ========================================================= */
 
-/* Logo parallax section */
-.sticky_container {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
 
-.img_container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
+.parallax{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background:var(--deep);
+    isolation:isolate;
+  }
+  .parallax__bg{
+    position:absolute;
+    top:-10%;
+    left:0;
+    width:100%;
+    height:120%;
+    background-image: url('src/sk_logo-section_bg.webp');
+    background-size:cover;
+    background-position:center;
+    will-change:transform;
+  }
+  .parallax__scrim{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(6,12,22,0.15) 0%, rgba(6,12,22,0) 30%, rgba(6,12,22,0) 70%, rgba(6,12,22,0.25) 100%);
+  }
+  .parallax__logo-wrap{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    will-change:transform;
+  }
+  .parallax__logo{
+    /* width:min(46vw, 620px); */
+    width:100%;
+    height:auto;
+    display:block;
+  }
 
-.image-111 {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-}
+  @media (max-width: 1024px){
+    .parallax{height:50vh;}
+  }
+  @media (max-width: 640px){
+    .block{padding:4.5rem 1.25rem;}
+    .cols{grid-template-columns:1fr; gap:2.5rem; padding:4rem 1.25rem;}
+    .cta-row{padding:4rem 1.25rem; flex-direction:column; align-items:flex-start;}
+  }
 
-.image-111.z2 {
-    z-index: 2;
-    overflow: hidden;
-}
-
+  @media (prefers-reduced-motion: reduce){
+    .parallax__bg, .parallax__logo-wrap{ transform:none !important; }
+  }
 
 
 
