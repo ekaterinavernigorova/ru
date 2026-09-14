@@ -2142,6 +2142,13 @@ h1#tabs-title {
   transition: background-color 0.25s ease;
 }
 
+@media screen and (max-width: 479px) {
+  .list_wrapper li a {
+    grid-template-columns: minmax(20rem, 35rem) auto;
+    column-gap: 2rem;
+  }
+}
+
 .list_wrapper li a:hover {
   background-color: rgba(247, 247, 247, 1);
 }
