@@ -7217,7 +7217,7 @@ display: none;
 }
 
 ._20px_wrapper {
-  padding: 4em 20px 20px;
+  padding: 2.5em 20px 20px;
 }
 
 .contact_copy {
@@ -7255,10 +7255,14 @@ display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 2.5em 20px;
+    
     display: block;
   }
+
+  .tab-content {
+    padding-top: 2.5em;
+}
 
 
   .list-grid-section {
