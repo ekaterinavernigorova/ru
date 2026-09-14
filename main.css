@@ -5242,6 +5242,13 @@ position: static;
   text-align: left;
 }
 
+@media screen and (max-width: 1024px) {
+  .fullscreen_left p{
+    max-width: none;
+    width: 100%;
+  }
+}
+
 .paragraph {
 text-align: left;
 margin-top: 0;
@@ -6861,10 +6868,7 @@ display: none;
     
   }
 
-  .fullscreen_left p{
-    max-width: none;
-    width: 100%;
-  }
+  
 
   .padding-bottom-60px {
     padding-bottom: 10px;
