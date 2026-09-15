@@ -6190,6 +6190,7 @@ right: 0%;
 }
 
 .bb-grid-section_3c_1r {
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-auto-rows: auto;
     grid-column-gap: 18px;
