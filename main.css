@@ -4819,8 +4819,7 @@ a.case_wrapper.case3 {
   padding: 0.5rem 0;
 }  
 
-.bb-grid-section._3c, 
-.bb-grid-section._3c_1r {
+.bb-grid-section._3c {
   grid-column-gap: 18px;
   grid-row-gap: 54px;
   background-color: rgba(0, 0, 0, 0);
