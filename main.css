@@ -2803,7 +2803,7 @@ nav {
     display:block;
     width: 100px;
     font-family: 'Neuemontreal', Helvetica, sans-serif;
-    font-size:17px;
+    font-size: clamp(0.8rem, 0.875vw, 1.063rem);
     font-weight:600;
     color:#111;
     text-decoration:none;
