@@ -2832,7 +2832,7 @@ nav {
 
   .social {
     display:flex;
-    gap: 5spx;
+    gap: 5px;
   }
 
   .social a {
