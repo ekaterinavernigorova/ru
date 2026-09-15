@@ -4937,13 +4937,25 @@ a.case_wrapper.case3 {
     max-width: 55vw;
   }
 
+   .assets_bg {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.55) 99%
+    ), url(src/assets-intro_bg_mob.jpg);;
+    
+  background-position: 90%;
+  
+}
+
    .presentation_bg {
     background-image:
     linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.75) 0%,
       rgba(0, 0, 0, 0.55) 99%
-    ), url(src/presentation-intro-bg.webp);
+    ), url(src/presentation-intro-bg_mob.jpg);
     
   background-position: 10%;
   
@@ -4986,7 +4998,7 @@ a.case_wrapper.case3 {
       90deg,
       rgba(0, 0, 0, 0.75) 0%,
       rgba(0, 0, 0, 0.55) 99%
-    ), url(src/presentation-intro-bg.webp);
+    ), url(src/presentation-intro-bg_mob.jpg);
     
   background-position: 3%;
   /* Apply the blur here */
