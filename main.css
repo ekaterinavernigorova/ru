@@ -6206,7 +6206,7 @@ right: 0%;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 540px) {
   .bb-grid-section_3c_1r {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
