@@ -5361,7 +5361,7 @@ position: static;
 
 
 .other-work_list {
-  padding: 5em 20px 2em;
+  padding: 5em 20px 4em;
 }
 
   .fullscreen_left p{
@@ -6214,6 +6214,10 @@ right: 0%;
     grid-row-gap: 18px;
     padding: 0 0 3em;
   }
+
+  .padding-top-20px {
+    padding-top: 18px;
+}
 }
 
 --------------------------------------
