@@ -4708,7 +4708,7 @@ a.case_wrapper.case3 {
 .bb-grid-section {
   grid-column-gap: 18px;
   grid-row-gap: 18px;
-  background-color: #1a1e2c;
+  /* background-color: #1a1e2c; */
   -ms-grid-rows: auto 18px auto;
   grid-template-rows: auto auto;
   -ms-grid-columns: 1fr 18px 1fr 18px 1fr;
