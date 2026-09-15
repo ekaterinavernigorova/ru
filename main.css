@@ -4937,6 +4937,18 @@ a.case_wrapper.case3 {
     max-width: 55vw;
   }
 
+   .presentation_bg {
+    background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.55) 99%
+    ), url(src/presentation-intro-bg.webp);
+    
+  background-position: 10%;
+  
+}
+
 @media screen and (max-width: 767px) {
   .bento-intro_section {
     margin-left: 20px;
