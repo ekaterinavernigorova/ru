@@ -7044,12 +7044,17 @@ display: none;
 
 
 
+/* <700px */
+@media screen and (max-width: 700px) {
+.case-intro_bottom {
+    flex-direction: column;
+  }
+}
 
 
 
 
-
-/* >479px */
+/* <479px */
 @media screen and (max-width: 479px) {
 
   .case-intro_center h6.tag {
@@ -7069,9 +7074,7 @@ display: none;
     gap: 1rem;
   }
 
-  .case-intro_bottom {
-    flex-direction: column;
-  }
+  
 
   .case-intro_actions {
     width: 100%;
