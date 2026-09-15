@@ -6211,13 +6211,11 @@ right: 0%;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     grid-column-gap: 18px;
-    grid-row-gap: 18px;
+    grid-row-gap: 36px;
     padding: 0 0 3em;
   }
 
-  .padding-top-20px {
-    padding-top: 18px;
-}
+  
 }
 
 --------------------------------------
