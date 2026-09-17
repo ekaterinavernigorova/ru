@@ -2967,7 +2967,7 @@ h5 {
 }
 
 h6 {
-  font-size: clamp(0.8rem, 0.875vw, 1.063rem);
+  font-size: clamp(0.8rem, 0.875vw, 1.065rem);
   font-weight: 600;
   letter-spacing: 0.01em;
   font-family: 'Neuemontreal', Helvetica, sans-serif;
@@ -2993,13 +2993,20 @@ h6.tag {
 
 h6.tag.button {
   display: block;
-  width: 100px;
+  width: 150px;
   color: #fff;
   text-decoration: none;
   text-align: center;
   padding: 8px;
   background-color: #0d0d0d;
   border: 1.5px solid #0d0d0d;
+}
+
+@media screen and (max-width: 479px){
+  h6.tag.button {
+  
+  width: 100px;
+}
 }
 
 .social h6.tag.button {
