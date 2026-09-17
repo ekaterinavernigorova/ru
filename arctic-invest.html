@@ -36,96 +36,171 @@
 
 
             <!-- navbar -->
-            <nav class="navbar">
-              <!-- SVG Logo -->
-              <div class="left-items">
+            <div class="stage" id="stage">
 
-                  
-                <!-- <a href="https://ekaterinavernigorova.github.io/ru" style="text-decoration: none; display: flex; align-items: center;">
-                    <img src="src/arrow-180.svg" alt="" style="width: 33px; height: auto; border-radius: 6px;" />
-                    <a href="https://ekaterinavernigorova.github.io/ru" style="margin-left: 13px !important;" class="desktop">Катя Вернигорова</a>
-                </a> -->
-                <a href="https://ekaterinavernigorova.github.io/ru" target="_blank" style="border: 1.5px solid white; border-radius: 6px; background-color: white; color: black;  padding: 2px 0.75rem 3px 0.5rem;">
-                    <img src="src/arrow-180.svg" alt="" style="width: 1rem; height: auto; margin-right: 3px;" />
-                    <h6 > Назад </h6>
-                </a>
+                  <div class="pill">
 
-              </div>
-              <!-- Right-aligned items -->
-              <div class="right-items">
-                <!-- Navigation items -->
-                <!-- <ul>
-                      Language button -->
-                  <!-- <li class="switch">
-                     <button class="language"><a href="https://ekaterinavernigorova.github.io/en">En</a></button>
-                  </li> -->
-                  <!-- contact button
-                  <li class="get-in-touch">
-                    <button><a href="#contact-details" target="_blank">Get in touch</a></button>
-                  </li>
-                </ul> -->
+                    <!-- <button class="moon-btn" aria-label="Toggle theme">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button> -->
+                    <button class="badge">Катя Вернигорова</button>
+                    <button class="language" aria-expanded="false" aria-controls="panel">Ру</button>
                 
-                <div class="social">
-                        <a href="https://wa.me/79774588710" target="_blank">
-                             <h6 class="tag button white"> Whatsapp </h6>
-                        </a>
-
-                        <a href="mailto:evernigorova229@gmail.com" target="_blank">
-                            <h6 class="tag button white"> Email </h6>
-                       </a>
-
-                        <!-- <a href="http://linkedin.com/in/ekaterina-vernigorova-09b708210" target="_blank">
-                             <h6 class="tag button"> Linkedin</h6>
-                        </a>
-
-                        <a href="#" target="_blank">
-                             <h6 class="tag button"> Resume </h6>
-                        </a>
-                </div> -->
-              </div>
-            </nav>
+                    <button class="toggle-btn" id="toggleBtn" aria-expanded="false" aria-controls="panel">
+                      <span class="icon"><span></span><span></span><span></span></span>
+                      <!-- <span class="toggle-label">
+                        <span class="txt-closed">Menu</span>
+                        <span class="txt-open">Close</span>
+                      </span> -->
+                    </button>
+                  </div>
+              
+                  <div class="panel-wrap">
+                    <div class="panel" id="panel">
+                      <div class="panel-content">
+                    
+                        <div class="nav-item">
+                          <p class="eyebrow">Язык</p>
+                          <ul class="nav-links">
+                            <li><a href="https://ekaterinavernigorova.github.io/en/arctic-invest.html">English</a></li>
+                          </ul>
+                        </div>
+                    
+                        <div class="divider-line"></div>
+                    
+                        <div class="nav-item">
+                          <p class="eyebrow">Контакты</p>
+                          <ul class="nav-links">
+                            <li><a href="https://www.linkedin.com/in/ekaterina-vernigorova-09b708210/" target="_blank">LinkedIn</a></li>
+                          </ul>
+                        </div>
+                    
+                        <div class="divider-line"></div>
+                    
+                        <div class="nav-item">
+                          <p class="eyebrow">Соцсети</p>
+                          <ul class="nav-links">
+                            <li><a href="https://www.instagram.com/blukipp" target="_blank">Instagram</a></li>
+                          </ul>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+              
+            </div>
 
 
             <main class="page-main">
 
                 <div tr-ajaxmodal-element="cms-page-content" class="case-study_section">
+
                     <!-- case intro -->
                     <div class="case-intro is-case-study">
                         
-                        <div class="intro_copy">
-                            <h1>Дизайн инфографики для Арктик Инвест, участника Инновационного центра Сколково</h1>
-                            
-                        </div>
                         
-                        <div class="case-details_wrapper" >
-                            <h6 id="w-node-a8ebe29c-4f6b-f0cd-b500-044b4a333ffb-cce3f5c1" class="tag">Дизайн презентаций</h6>
-                            <div class="_2col_wrapper" style="border-top: 1px solid rgba(0, 0, 0, .25); padding-top: 20px;">                              
+                        <div class="case-intro_top padding-bottom-60px">
 
-                                    
-                                    <div class="col-1">
-                                        <p>Инфографика для keynote презентации секторального анализа мировой экономики</p>
-                                         
-                                    </div>
-                                    <div class="col-2">
-                                        <h5>Клиент: Арктик Инвест<br>Агенство: Vangelis Project<br>Дизайнер: Катя Вернигорова</h5>
-                                        <h5>Период: Сентябрь 2023</h5>
-                                    </div>
-                                
+                            <div class="case-breadcrumbs">
+                              <a href="https://ekaterinavernigorova.github.io/ru"><h2>Главная</h2></a>
+                              <span>></span>
+                              <h2 style="color: var(--dark); border-bottom: none;">Кейс</h2>
                             </div>
+                        
+                            <h1>
+                              Дизайн инфографики для Арктик Инвест, участника Инновационного центра Сколково
+                            </h1>
+
+                         </div>
+
+                         <div class="case-intro_center padding-bottom-2em">
+                              <h6 class="tag">Дизайн презентаций</h6>
+                              <h6 class="tag">Дизайн инфографики</h6>
+                              
+                              <h6 class="tag">● 2023</h6>
                         </div>
+                     
+                         <div class="case-intro_bottom">
+                        
+                           <div class="case-intro_description">
+                             <p>
+                                Инфографика для keynote презентации секторального анализа мировой экономики
+                             </p>
+                           </div>
+                       
+                           <div class="case-intro_actions">
+
+
+                                <button class="credits" type="button" aria-expanded="false">
+                                    <!-- credits + -->
+                                   <div class="credits__header">
+                                     <div class="credits__title">Команда</div>
+                                    
+                                     <div class="credits__toggle" aria-hidden="true">
+                                       <span></span>
+                                       <span></span>
+                                     </div>
+                                   </div>
+                                   <!-- credits dropdown content -->
+                                   <div class="credits__details">
+
+                                     <div class="credits__content">
+                                       <!-- line 1 -->
+                                       <div class="credits__row">
+                                         <span>Клиент:</span>
+                                         <span>Арктик Инвест</span>
+                                       </div>
+                                       <!-- line 2 -->
+                                       <div class="credits__row">
+                                         <span>Агенство:</span>
+                                         <span>Vangelis Project</span>
+                                       </div>
+                                       <!-- line 3 -->
+                                       <div class="credits__row">
+                                         <span>Арт директор:</span>
+                                         <span>Вероника Боглай</span>
+                                       </div>
+                                       <!-- line 4 -->
+                                       <div class="credits__row">
+                                         <span>Дизайнер:</span>
+                                         <span>Катя Вернигорова</span>
+                                       </div>
+                                    
+                                     </div>
+
+                                   </div>
+                                   <!-- credits dropdown content end -->
+                                </button>
+
+                           </div>
+                       
+                         </div>
+                        
+                        
+                        
+                        
                     </div>
 
 
+                
 
 
 
- <!-- logo parallax section -->
- <div class="sticky_container">
-    <div data-w-id="a8ebe29c-4f6b-f0cd-b500-044b4a333ff0" class="img_container">
-        <img src="src/sk_logo-section_bg.webp" loading="lazy" sizes="100vw"  alt="" class="image11 z1"/>
-        <img src="src/sk_logo-section.webp" loading="lazy" sizes="100vw"  alt="" class="image-111 z2"/>
-    </div>
-</div>
+
+
+                    <!-- ================= parallax section ================= -->
+                     <section class="parallax" id="parallax">
+                       <div class="parallax__bg" id="parallaxBg">
+                               <img src="src/arctik-parallax_bg_ru.webp" alt="" role="presentation">
+
+                       </div>
+                       <div class="parallax__scrim"></div>
+                       <div class="parallax__logo-wrap" id="parallaxLogo">
+                         <img class="parallax__logo" src="src/arctik-parallax_logo_ru.webp" alt="Logo mark">
+                       </div>
+                     </section>
 
 <!-- case main content -->
 <div class="case-details">
