@@ -4112,6 +4112,12 @@ horizontal>.swiper-pagination-progressbar,
      justify-content: space-between;
    }
 
+   @media screen and (max-width: 479px) {
+     .credits__header {
+       gap: auto;
+     }
+   }
+
   .credits__title {
     font-family: 'Neuemontreal', Helvetica, sans-serif;
     font-size: 1.0625rem;
