@@ -4898,7 +4898,7 @@ a.case_wrapper.case3 {
 
 .assets_bg {
   background-image:
-    url("src/assets-intro_bg.jpg");
+    url("src/assets-intro_bg.webp");
   background-position: 50%;
   
 }
@@ -4954,7 +4954,7 @@ a.case_wrapper.case3 {
       90deg,
       rgba(0, 0, 0, 0.75) 0%,
       rgba(0, 0, 0, 0.55) 99%
-    ), url(src/assets-intro_bg_mob.jpg);;
+    ), url(src/assets-intro_bg_mob.webp);;
     
   background-position: 90%;
   
@@ -4966,7 +4966,7 @@ a.case_wrapper.case3 {
       90deg,
       rgba(0, 0, 0, 0.75) 0%,
       rgba(0, 0, 0, 0.55) 99%
-    ), url(src/presentation-intro-bg_mob.jpg);
+    ), url(src/presentation-intro-bg_mob.webp);
     
   background-position: 10%;
   
