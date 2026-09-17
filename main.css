@@ -4114,7 +4114,7 @@ horizontal>.swiper-pagination-progressbar,
 
    @media screen and (max-width: 479px) {
      .credits__header {
-       gap: auto;
+       gap: 0;
      }
    }
 
