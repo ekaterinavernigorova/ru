@@ -4997,7 +4997,7 @@ a.case_wrapper.case3 {
       rgba(0, 0, 0, 0.55) 99%
     ), url(src/assets-intro_bg_mob.webp);;
     
-  background-position: 90%;
+  background-position: 0%;
   /* Apply the blur here */
     /* filter: blur(8px); */
   
