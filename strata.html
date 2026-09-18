@@ -696,6 +696,154 @@
     , introDurationMS);
 </script>
 
+<!-- navbar open/close pill funcionality-->
+<script>
+  const stage = document.getElementById('stage');
+  const toggleBtn = document.getElementById('toggleBtn');
+  const languageBtn = document.querySelector('.language');
+  const pill = document.querySelector('.pill');
+  const panel = document.getElementById('panel');
+
+  let isOpen = false;
+  let busy = false;
+
+  // Durations (ms) — must line up with the CSS transition timings above
+  const PANEL_GROW_MS = 600;         // width/height transition
+  const CONTENT_FADE_DELAY_MS = 420; // content starts fading in once panel is nearly full size
+  const CONTENT_FADE_OUT_MS = 250;   // content fades out before the panel shrinks back
+
+  // Keep the panel's collapsed width locked to the pill's actual rendered
+  // width, so it always starts flush and grows outward from exactly there.
+  function syncPillWidth(){
+    const w = pill.getBoundingClientRect().width;
+    stage.style.setProperty('--pill-w', w + 'px');
+  }
+  syncPillWidth();
+  window.addEventListener('resize', syncPillWidth);
+
+  function openMenu(){
+    if (busy || isOpen) return;
+    busy = true;
+    isOpen = true;
+
+    syncPillWidth();
+    stage.classList.add('open');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    languageBtn.setAttribute('aria-expanded', 'true');
+
+    // reveal content once the panel has mostly grown
+    setTimeout(() => {
+      stage.classList.add('content-visible');
+    }, CONTENT_FADE_DELAY_MS);
+
+    setTimeout(() => {
+      busy = false;
+    }, PANEL_GROW_MS);
+  }
+
+  function closeMenu(){
+    if (busy || !isOpen) return;
+    busy = true;
+    isOpen = false;
+
+    // fade content out first
+    stage.classList.remove('content-visible');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    languageBtn.setAttribute('aria-expanded', 'false');
+
+    setTimeout(() => {
+      stage.classList.remove('open');
+      setTimeout(() => { busy = false; }, PANEL_GROW_MS);
+    }, CONTENT_FADE_OUT_MS);
+  }
+
+  function toggleMenu(){
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  toggleBtn.addEventListener('click', toggleMenu);
+  languageBtn.addEventListener('click', toggleMenu);
+
+  // click outside to close
+  document.addEventListener('click', (e) => {
+    if (!isOpen || busy) return;
+    if (!stage.contains(e.target)) closeMenu();
+  });
+
+  // esc to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+</script>
+
+<!-- Credits dropdown -->
+<script>
+    const credits = document.querySelector('.credits');
+const creditsDetails = credits.querySelector('.credits__details');
+
+credits.addEventListener('click', () => {
+
+    const isOpen = credits.classList.contains('is-open');
+
+    if (isOpen) {
+        // CLOSE
+        creditsDetails.style.height = `${creditsDetails.scrollHeight}px`;
+
+        requestAnimationFrame(() => {
+            creditsDetails.style.height = '0px';
+        });
+
+        credits.classList.remove('is-open');
+        credits.setAttribute('aria-expanded', 'false');
+
+    } else {
+        // OPEN
+        creditsDetails.style.height = `${creditsDetails.scrollHeight}px`;
+
+        credits.classList.add('is-open');
+        credits.setAttribute('aria-expanded', 'true');
+    }
+});
+</script>
+
+<!-- logo parallax script -->
+<script>
+(function(){
+  var section = document.getElementById('parallax');
+  var bg = document.getElementById('parallaxBg');
+  var logo = document.getElementById('parallaxLogo');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ticking = false;
+
+  function update(){
+    ticking = false;
+    if (reduce) return;
+    var rect = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    // progress: -1 (section below viewport) .. 0 (centered) .. 1 (section above viewport)
+    var center = rect.top + rect.height / 2;
+    var progress = (vh / 2 - center) / (vh / 2 + rect.height / 2);
+
+    var bgShift = progress * 60;   // background drifts slower/wider
+    var logoShift = progress * 110; // logo drifts a touch faster, creating separation
+
+    bg.style.transform = 'translate3d(0,' + bgShift.toFixed(2) + 'px,0)';
+    logo.style.transform = 'translate3d(0,' + logoShift.toFixed(2) + 'px,0)';
+  }
+
+  function onScroll(){
+    if (!ticking){
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+})();
+</script>
+
 <!-- horizontal carousel scripts -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
