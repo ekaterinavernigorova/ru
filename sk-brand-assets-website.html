@@ -660,8 +660,9 @@ document.addEventListener('DOMContentLoaded', function () {
   cards.forEach(function (card) {
 
     const viewport = card.querySelector('.doc-scroll-viewport');
-    const image = card.querySelector('.doc-scroll-main .doc-scroll-image');
-    const thumb = card.querySelector('.doc-scrollbar-thumb');
+    const image =
+    card.querySelector('.doc-scroll-main .doc-scroll-image') ||
+    card.querySelector('.doc-scroll-image');    const thumb = card.querySelector('.doc-scrollbar-thumb');
     const scrollbar = card.querySelector('.doc-scrollbar');
 
     if (!viewport || !image || !thumb || !scrollbar) return;
