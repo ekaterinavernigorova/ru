@@ -275,27 +275,38 @@
                  
                      <!-- AFTER -->
                      <div class="doc-scroll-card" data-scroll-card>
-                    
-                       <div class="doc-scroll-viewport">
 
-                         <img
-                           class="doc-scroll-image"
-                           src="src/sk_web_after_website.webp"
-                           alt="After"
-                         >
-
-                         <div class="doc-scroll-label">
-                           After
-                         </div>
-                     
-                         <div class="doc-scrollbar" aria-hidden="true">
-                           <div class="doc-scrollbar-track"></div>
-                           <div class="doc-scrollbar-thumb"></div>
-                         </div>
-                     
-                       </div>
-                   
-                     </div>
+                          <div class="doc-scroll-viewport">
+                        
+                            <!-- STICKY SIDEBAR -->
+                            <div class="doc-scroll-sidebar">
+                              <img
+                                src="src/sk_web_after_website_sidebar.webp"
+                                alt=""
+                              >
+                            </div>
+                        
+                            <!-- SCROLLING MAIN CONTENT -->
+                            <div class="doc-scroll-main">
+                              <img
+                                class="doc-scroll-image"
+                                src="src/sk_web_after_website_main-content.webp"
+                                alt="After"
+                              >
+                            </div>
+                        
+                            <div class="doc-scroll-label">
+                              After
+                            </div>
+                        
+                            <div class="doc-scrollbar">
+                              <div class="doc-scrollbar-track"></div>
+                              <div class="doc-scrollbar-thumb"></div>
+                            </div>
+                        
+                          </div>
+                      
+                        </div>
 
                     </section>   
 
@@ -649,7 +660,7 @@ document.addEventListener('DOMContentLoaded', function () {
   cards.forEach(function (card) {
 
     const viewport = card.querySelector('.doc-scroll-viewport');
-    const image = card.querySelector('.doc-scroll-image');
+    const image = card.querySelector('.doc-scroll-main .doc-scroll-image');
     const thumb = card.querySelector('.doc-scrollbar-thumb');
     const scrollbar = card.querySelector('.doc-scrollbar');
 

@@ -7896,32 +7896,60 @@ img.case-thumbnail {
 
 .doc-scroll-viewport {
   position: relative;
-
   width: 100%;
-
-  /*
-    Fixed viewport ratio.
-    Change this value if you want the fields taller/shorter.
-  */
   aspect-ratio: 16 / 10;
-
   overflow: hidden;
-
   border-radius: 16px;
-
   background: #eee;
-
-  isolation: isolate;
-
-  cursor: default;
 }
 
 
-/* ---------------------------------------------------------
-   LONG IMAGE
-   --------------------------------------------------------- */
+/* =========================================
+   STICKY SIDEBAR
+   ========================================= */
 
-.doc-scroll-image {
+.doc-scroll-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 15%;
+  height: 100%;
+
+  z-index: 10;
+
+  pointer-events: none;
+}
+
+.doc-scroll-sidebar img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: left top;
+}
+
+/* =========================================
+   MAIN SCROLLING CONTENT
+   ========================================= */
+
+.doc-scroll-main {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 85%;
+  height: 100%;
+
+  overflow: hidden;
+
+  z-index: 1;
+}
+
+.doc-scroll-main .doc-scroll-image {
   position: absolute;
 
   top: 0;
@@ -7934,21 +7962,12 @@ img.case-thumbnail {
 
   display: block;
 
-  /*
-    Important:
-    DO NOT use object-fit: cover here.
-
-    The image needs to retain its full height so
-    we can move it vertically inside the viewport.
-  */
-
-  user-select: none;
-  -webkit-user-drag: none;
-
   pointer-events: none;
 
   will-change: transform;
 }
+
+
 
 
 /* ---------------------------------------------------------
